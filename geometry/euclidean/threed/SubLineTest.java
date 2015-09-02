@@ -18,18 +18,18 @@ public class SubLineTest extends TestJPF {
     }
 
     @Test(timeout=1800000)
-    public void testNoEndPoints() throws Exception {
-        if (verifyNoPropertyViolation(config)) {
-               org.apache.commons.math3.geometry.euclidean.threed.SubLineTest object = new org.apache.commons.math3.geometry.euclidean.threed.SubLineTest();
-               object.testNoEndPoints();
-        }
-    }
-
-    @Test(timeout=1800000)
     public void testNoSegments() throws Exception {
         if (verifyNoPropertyViolation(config)) {
                org.apache.commons.math3.geometry.euclidean.threed.SubLineTest object = new org.apache.commons.math3.geometry.euclidean.threed.SubLineTest();
                object.testNoSegments();
+        }
+    }
+
+    @Test(timeout=1800000)
+    public void testNoEndPoints() throws Exception {
+        if (verifyNoPropertyViolation(config)) {
+               org.apache.commons.math3.geometry.euclidean.threed.SubLineTest object = new org.apache.commons.math3.geometry.euclidean.threed.SubLineTest();
+               object.testNoEndPoints();
         }
     }
 

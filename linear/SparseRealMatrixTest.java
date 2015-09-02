@@ -10,6 +10,14 @@ public class SparseRealMatrixTest extends TestJPF {
         runTestsOfThisClass(testMethods);
     }
     @Test(timeout=1800000)
+    public void testScalarAdd() throws Exception {
+        if (verifyNoPropertyViolation(config)) {
+               org.apache.commons.math3.linear.SparseRealMatrixTest object = new org.apache.commons.math3.linear.SparseRealMatrixTest();
+               object.testScalarAdd();
+        }
+    }
+
+    @Test(timeout=1800000)
     public void testAdd() throws Exception {
         if (verifyNoPropertyViolation(config)) {
                org.apache.commons.math3.linear.SparseRealMatrixTest object = new org.apache.commons.math3.linear.SparseRealMatrixTest();
@@ -26,10 +34,10 @@ public class SparseRealMatrixTest extends TestJPF {
     }
 
     @Test(timeout=1800000)
-    public void testScalarAdd() throws Exception {
+    public void testSerial() throws Exception {
         if (verifyNoPropertyViolation(config)) {
                org.apache.commons.math3.linear.SparseRealMatrixTest object = new org.apache.commons.math3.linear.SparseRealMatrixTest();
-               object.testScalarAdd();
+               object.testSerial();
         }
     }
 
@@ -62,14 +70,6 @@ public class SparseRealMatrixTest extends TestJPF {
         if (verifyNoPropertyViolation(config)) {
                org.apache.commons.math3.linear.SparseRealMatrixTest object = new org.apache.commons.math3.linear.SparseRealMatrixTest();
                object.testSubMatrix();
-        }
-    }
-
-    @Test(timeout=1800000)
-    public void testSerial() throws Exception {
-        if (verifyNoPropertyViolation(config)) {
-               org.apache.commons.math3.linear.SparseRealMatrixTest object = new org.apache.commons.math3.linear.SparseRealMatrixTest();
-               object.testSerial();
         }
     }
 

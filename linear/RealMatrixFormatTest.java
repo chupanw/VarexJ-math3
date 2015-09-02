@@ -10,94 +10,6 @@ public class RealMatrixFormatTest extends TestJPF {
         runTestsOfThisClass(testMethods);
     }
     @Test(timeout=1800000)
-    public void testParseNoComponents() throws Exception {
-        if (verifyNoPropertyViolation(config)) {
-               org.apache.commons.math3.linear.RealMatrixFormatTest object = new org.apache.commons.math3.linear.RealMatrixFormatTest();
-               object.testParseNoComponents();
-        }
-    }
-
-    @Test(timeout=1800000)
-    public void testParseManyComponents() throws Exception {
-        if (verifyNoPropertyViolation(config)) {
-               org.apache.commons.math3.linear.RealMatrixFormatTest object = new org.apache.commons.math3.linear.RealMatrixFormatTest();
-               object.testParseManyComponents();
-        }
-    }
-
-    @Test(timeout=1800000)
-    public void testNonDefaultSetting() throws Exception {
-        if (verifyNoPropertyViolation(config)) {
-               org.apache.commons.math3.linear.RealMatrixFormatTest object = new org.apache.commons.math3.linear.RealMatrixFormatTest();
-               object.testNonDefaultSetting();
-        }
-    }
-
-    @Test(timeout=1800000)
-    public void tesNegativeInfinity() throws Exception {
-        if (verifyNoPropertyViolation(config)) {
-               org.apache.commons.math3.linear.RealMatrixFormatTest object = new org.apache.commons.math3.linear.RealMatrixFormatTest();
-               object.tesNegativeInfinity();
-        }
-    }
-
-    @Test(timeout=1800000)
-    public void testParseIgnoredWhitespace() throws Exception {
-        if (verifyNoPropertyViolation(config)) {
-               org.apache.commons.math3.linear.RealMatrixFormatTest object = new org.apache.commons.math3.linear.RealMatrixFormatTest();
-               object.testParseIgnoredWhitespace();
-        }
-    }
-
-    @Test(timeout=1800000)
-    public void testParseNegativeAll() throws Exception {
-        if (verifyNoPropertyViolation(config)) {
-               org.apache.commons.math3.linear.RealMatrixFormatTest object = new org.apache.commons.math3.linear.RealMatrixFormatTest();
-               object.testParseNegativeAll();
-        }
-    }
-
-    @Test(timeout=1800000)
-    public void testParseNonDefaultSetting() throws Exception {
-        if (verifyNoPropertyViolation(config)) {
-               org.apache.commons.math3.linear.RealMatrixFormatTest object = new org.apache.commons.math3.linear.RealMatrixFormatTest();
-               object.testParseNonDefaultSetting();
-        }
-    }
-
-    @Test(timeout=1800000)
-    public void testParseNegativeInfinity() throws Exception {
-        if (verifyNoPropertyViolation(config)) {
-               org.apache.commons.math3.linear.RealMatrixFormatTest object = new org.apache.commons.math3.linear.RealMatrixFormatTest();
-               object.testParseNegativeInfinity();
-        }
-    }
-
-    @Test(timeout=1800000)
-    public void testForgottenPrefix() throws Exception {
-        if (verifyNoPropertyViolation(config)) {
-               org.apache.commons.math3.linear.RealMatrixFormatTest object = new org.apache.commons.math3.linear.RealMatrixFormatTest();
-               object.testForgottenPrefix();
-        }
-    }
-
-    @Test(timeout=1800000)
-    public void testForgottenSeparator() throws Exception {
-        if (verifyNoPropertyViolation(config)) {
-               org.apache.commons.math3.linear.RealMatrixFormatTest object = new org.apache.commons.math3.linear.RealMatrixFormatTest();
-               object.testForgottenSeparator();
-        }
-    }
-
-    @Test(timeout=1800000)
-    public void testForgottenSuffix() throws Exception {
-        if (verifyNoPropertyViolation(config)) {
-               org.apache.commons.math3.linear.RealMatrixFormatTest object = new org.apache.commons.math3.linear.RealMatrixFormatTest();
-               object.testForgottenSuffix();
-        }
-    }
-
-    @Test(timeout=1800000)
     public void testNegativeComponent() throws Exception {
         if (verifyNoPropertyViolation(config)) {
                org.apache.commons.math3.linear.RealMatrixFormatTest object = new org.apache.commons.math3.linear.RealMatrixFormatTest();
@@ -106,18 +18,18 @@ public class RealMatrixFormatTest extends TestJPF {
     }
 
     @Test(timeout=1800000)
-    public void testNegativeComponent2() throws Exception {
-        if (verifyNoPropertyViolation(config)) {
-               org.apache.commons.math3.linear.RealMatrixFormatTest object = new org.apache.commons.math3.linear.RealMatrixFormatTest();
-               object.testNegativeComponent2();
-        }
-    }
-
-    @Test(timeout=1800000)
     public void testNegativeSecondRow() throws Exception {
         if (verifyNoPropertyViolation(config)) {
                org.apache.commons.math3.linear.RealMatrixFormatTest object = new org.apache.commons.math3.linear.RealMatrixFormatTest();
                object.testNegativeSecondRow();
+        }
+    }
+
+    @Test(timeout=1800000)
+    public void testNegativeComponent2() throws Exception {
+        if (verifyNoPropertyViolation(config)) {
+               org.apache.commons.math3.linear.RealMatrixFormatTest object = new org.apache.commons.math3.linear.RealMatrixFormatTest();
+               object.testNegativeComponent2();
         }
     }
 
@@ -238,6 +150,94 @@ public class RealMatrixFormatTest extends TestJPF {
         if (verifyNoPropertyViolation(config)) {
                org.apache.commons.math3.linear.RealMatrixFormatTest object = new org.apache.commons.math3.linear.RealMatrixFormatTest();
                object.testConstructorSingleFormat();
+        }
+    }
+
+    @Test(timeout=1800000)
+    public void testNonDefaultSetting() throws Exception {
+        if (verifyNoPropertyViolation(config)) {
+               org.apache.commons.math3.linear.RealMatrixFormatTest object = new org.apache.commons.math3.linear.RealMatrixFormatTest();
+               object.testNonDefaultSetting();
+        }
+    }
+
+    @Test(timeout=1800000)
+    public void tesNegativeInfinity() throws Exception {
+        if (verifyNoPropertyViolation(config)) {
+               org.apache.commons.math3.linear.RealMatrixFormatTest object = new org.apache.commons.math3.linear.RealMatrixFormatTest();
+               object.tesNegativeInfinity();
+        }
+    }
+
+    @Test(timeout=1800000)
+    public void testParseIgnoredWhitespace() throws Exception {
+        if (verifyNoPropertyViolation(config)) {
+               org.apache.commons.math3.linear.RealMatrixFormatTest object = new org.apache.commons.math3.linear.RealMatrixFormatTest();
+               object.testParseIgnoredWhitespace();
+        }
+    }
+
+    @Test(timeout=1800000)
+    public void testParseNegativeAll() throws Exception {
+        if (verifyNoPropertyViolation(config)) {
+               org.apache.commons.math3.linear.RealMatrixFormatTest object = new org.apache.commons.math3.linear.RealMatrixFormatTest();
+               object.testParseNegativeAll();
+        }
+    }
+
+    @Test(timeout=1800000)
+    public void testParseNonDefaultSetting() throws Exception {
+        if (verifyNoPropertyViolation(config)) {
+               org.apache.commons.math3.linear.RealMatrixFormatTest object = new org.apache.commons.math3.linear.RealMatrixFormatTest();
+               object.testParseNonDefaultSetting();
+        }
+    }
+
+    @Test(timeout=1800000)
+    public void testParseNegativeInfinity() throws Exception {
+        if (verifyNoPropertyViolation(config)) {
+               org.apache.commons.math3.linear.RealMatrixFormatTest object = new org.apache.commons.math3.linear.RealMatrixFormatTest();
+               object.testParseNegativeInfinity();
+        }
+    }
+
+    @Test(timeout=1800000)
+    public void testForgottenPrefix() throws Exception {
+        if (verifyNoPropertyViolation(config)) {
+               org.apache.commons.math3.linear.RealMatrixFormatTest object = new org.apache.commons.math3.linear.RealMatrixFormatTest();
+               object.testForgottenPrefix();
+        }
+    }
+
+    @Test(timeout=1800000)
+    public void testForgottenSeparator() throws Exception {
+        if (verifyNoPropertyViolation(config)) {
+               org.apache.commons.math3.linear.RealMatrixFormatTest object = new org.apache.commons.math3.linear.RealMatrixFormatTest();
+               object.testForgottenSeparator();
+        }
+    }
+
+    @Test(timeout=1800000)
+    public void testForgottenSuffix() throws Exception {
+        if (verifyNoPropertyViolation(config)) {
+               org.apache.commons.math3.linear.RealMatrixFormatTest object = new org.apache.commons.math3.linear.RealMatrixFormatTest();
+               object.testForgottenSuffix();
+        }
+    }
+
+    @Test(timeout=1800000)
+    public void testParseNoComponents() throws Exception {
+        if (verifyNoPropertyViolation(config)) {
+               org.apache.commons.math3.linear.RealMatrixFormatTest object = new org.apache.commons.math3.linear.RealMatrixFormatTest();
+               object.testParseNoComponents();
+        }
+    }
+
+    @Test(timeout=1800000)
+    public void testParseManyComponents() throws Exception {
+        if (verifyNoPropertyViolation(config)) {
+               org.apache.commons.math3.linear.RealMatrixFormatTest object = new org.apache.commons.math3.linear.RealMatrixFormatTest();
+               object.testParseManyComponents();
         }
     }
 

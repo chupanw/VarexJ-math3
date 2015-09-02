@@ -10,14 +10,6 @@ public class TransformerMapTest extends TestJPF {
         runTestsOfThisClass(testMethods);
     }
     @Test(timeout=1800000)
-    public void testPutTransformer() throws Exception {
-        if (verifyNoPropertyViolation(config)) {
-               org.apache.commons.math3.util.TransformerMapTest object = new org.apache.commons.math3.util.TransformerMapTest();
-               object.testPutTransformer();
-        }
-    }
-
-    @Test(timeout=1800000)
     public void testContainsClass() throws Exception {
         if (verifyNoPropertyViolation(config)) {
                org.apache.commons.math3.util.TransformerMapTest object = new org.apache.commons.math3.util.TransformerMapTest();
@@ -30,6 +22,14 @@ public class TransformerMapTest extends TestJPF {
         if (verifyNoPropertyViolation(config)) {
                org.apache.commons.math3.util.TransformerMapTest object = new org.apache.commons.math3.util.TransformerMapTest();
                object.testContainsTransformer();
+        }
+    }
+
+    @Test(timeout=1800000)
+    public void testPutTransformer() throws Exception {
+        if (verifyNoPropertyViolation(config)) {
+               org.apache.commons.math3.util.TransformerMapTest object = new org.apache.commons.math3.util.TransformerMapTest();
+               object.testPutTransformer();
         }
     }
 

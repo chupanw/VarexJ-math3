@@ -28,6 +28,24 @@ public class FastMathTest extends TestJPF {
     }
 
     @Test(timeout=1800000)
+    public void testConstants() throws Exception {
+        if (verifyNoPropertyViolation(config)) {
+               org.apache.commons.math3.util.FastMathTest object = new org.apache.commons.math3.util.FastMathTest();
+               object.setUp();
+               object.testConstants();
+        }
+    }
+
+    @Test(timeout=1800000)
+    public void testNextAfter() throws Exception {
+        if (verifyNoPropertyViolation(config)) {
+               org.apache.commons.math3.util.FastMathTest object = new org.apache.commons.math3.util.FastMathTest();
+               object.setUp();
+               object.testNextAfter();
+        }
+    }
+
+    @Test(timeout=1800000)
     public void testMinMaxDouble() throws Exception {
         if (verifyNoPropertyViolation(config)) {
                org.apache.commons.math3.util.FastMathTest object = new org.apache.commons.math3.util.FastMathTest();
@@ -420,24 +438,6 @@ public class FastMathTest extends TestJPF {
                org.apache.commons.math3.util.FastMathTest object = new org.apache.commons.math3.util.FastMathTest();
                object.setUp();
                object.testIntPow();
-        }
-    }
-
-    @Test(timeout=1800000)
-    public void testConstants() throws Exception {
-        if (verifyNoPropertyViolation(config)) {
-               org.apache.commons.math3.util.FastMathTest object = new org.apache.commons.math3.util.FastMathTest();
-               object.setUp();
-               object.testConstants();
-        }
-    }
-
-    @Test(timeout=1800000)
-    public void testNextAfter() throws Exception {
-        if (verifyNoPropertyViolation(config)) {
-               org.apache.commons.math3.util.FastMathTest object = new org.apache.commons.math3.util.FastMathTest();
-               object.setUp();
-               object.testNextAfter();
         }
     }
 

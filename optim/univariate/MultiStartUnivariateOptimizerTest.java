@@ -18,18 +18,18 @@ public class MultiStartUnivariateOptimizerTest extends TestJPF {
     }
 
     @Test(timeout=1800000)
-    public void testBadFunction() throws Exception {
-        if (verifyNoPropertyViolation(config)) {
-               org.apache.commons.math3.optim.univariate.MultiStartUnivariateOptimizerTest object = new org.apache.commons.math3.optim.univariate.MultiStartUnivariateOptimizerTest();
-               object.testBadFunction();
-        }
-    }
-
-    @Test(timeout=1800000)
     public void testMissingSearchInterval() throws Exception {
         if (verifyUnhandledException("org.apache.commons.math3.exception.MathIllegalStateException", config)) {
                org.apache.commons.math3.optim.univariate.MultiStartUnivariateOptimizerTest object = new org.apache.commons.math3.optim.univariate.MultiStartUnivariateOptimizerTest();
                object.testMissingSearchInterval();
+        }
+    }
+
+    @Test(timeout=1800000)
+    public void testBadFunction() throws Exception {
+        if (verifyNoPropertyViolation(config)) {
+               org.apache.commons.math3.optim.univariate.MultiStartUnivariateOptimizerTest object = new org.apache.commons.math3.optim.univariate.MultiStartUnivariateOptimizerTest();
+               object.testBadFunction();
         }
     }
 

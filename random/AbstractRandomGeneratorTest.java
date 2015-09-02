@@ -226,6 +226,42 @@ public class AbstractRandomGeneratorTest extends TestJPF {
     }
 
     @Test(timeout=1800000)
+    public void testNextLongPositiveRange() throws Exception {
+        if (verifyNoPropertyViolation(config)) {
+               org.apache.commons.math3.random.AbstractRandomGeneratorTest object = new org.apache.commons.math3.random.AbstractRandomGeneratorTest();
+               object.setUp();
+               object.testNextLongPositiveRange();
+        }
+    }
+
+    @Test(timeout=1800000)
+    public void testNextLongWideRange() throws Exception {
+        if (verifyNoPropertyViolation(config)) {
+               org.apache.commons.math3.random.AbstractRandomGeneratorTest object = new org.apache.commons.math3.random.AbstractRandomGeneratorTest();
+               object.setUp();
+               object.testNextLongWideRange();
+        }
+    }
+
+    @Test(timeout=1800000)
+    public void testNextPoisson() throws Exception {
+        if (verifyNoPropertyViolation(config)) {
+               org.apache.commons.math3.random.AbstractRandomGeneratorTest object = new org.apache.commons.math3.random.AbstractRandomGeneratorTest();
+               object.setUp();
+               object.testNextPoisson();
+        }
+    }
+
+    @Test(timeout=1800000)
+    public void testNextPoissonConsistency() throws Exception {
+        if (verifyNoPropertyViolation(config)) {
+               org.apache.commons.math3.random.AbstractRandomGeneratorTest object = new org.apache.commons.math3.random.AbstractRandomGeneratorTest();
+               object.setUp();
+               object.testNextPoissonConsistency();
+        }
+    }
+
+    @Test(timeout=1800000)
     public void testNextHex() throws Exception {
         if (verifyNoPropertyViolation(config)) {
                org.apache.commons.math3.random.AbstractRandomGeneratorTest object = new org.apache.commons.math3.random.AbstractRandomGeneratorTest();
@@ -447,42 +483,6 @@ public class AbstractRandomGeneratorTest extends TestJPF {
                org.apache.commons.math3.random.AbstractRandomGeneratorTest object = new org.apache.commons.math3.random.AbstractRandomGeneratorTest();
                object.setUp();
                object.testReseed();
-        }
-    }
-
-    @Test(timeout=1800000)
-    public void testNextLongWideRange() throws Exception {
-        if (verifyNoPropertyViolation(config)) {
-               org.apache.commons.math3.random.AbstractRandomGeneratorTest object = new org.apache.commons.math3.random.AbstractRandomGeneratorTest();
-               object.setUp();
-               object.testNextLongWideRange();
-        }
-    }
-
-    @Test(timeout=1800000)
-    public void testNextLongPositiveRange() throws Exception {
-        if (verifyNoPropertyViolation(config)) {
-               org.apache.commons.math3.random.AbstractRandomGeneratorTest object = new org.apache.commons.math3.random.AbstractRandomGeneratorTest();
-               object.setUp();
-               object.testNextLongPositiveRange();
-        }
-    }
-
-    @Test(timeout=1800000)
-    public void testNextPoisson() throws Exception {
-        if (verifyNoPropertyViolation(config)) {
-               org.apache.commons.math3.random.AbstractRandomGeneratorTest object = new org.apache.commons.math3.random.AbstractRandomGeneratorTest();
-               object.setUp();
-               object.testNextPoisson();
-        }
-    }
-
-    @Test(timeout=1800000)
-    public void testNextPoissonConsistency() throws Exception {
-        if (verifyNoPropertyViolation(config)) {
-               org.apache.commons.math3.random.AbstractRandomGeneratorTest object = new org.apache.commons.math3.random.AbstractRandomGeneratorTest();
-               object.setUp();
-               object.testNextPoissonConsistency();
         }
     }
 

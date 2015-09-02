@@ -10,20 +10,20 @@ public class WeibullDistributionTest extends TestJPF {
         runTestsOfThisClass(testMethods);
     }
     @Test(timeout=1800000)
-    public void testInverseCumulativeProbabilityExtremes() throws Exception {
-        if (verifyNoPropertyViolation(config)) {
-               org.apache.commons.math3.distribution.WeibullDistributionTest object = new org.apache.commons.math3.distribution.WeibullDistributionTest();
-               object.setUp();
-               object.testInverseCumulativeProbabilityExtremes();
-        }
-    }
-
-    @Test(timeout=1800000)
     public void testMoments() throws Exception {
         if (verifyNoPropertyViolation(config)) {
                org.apache.commons.math3.distribution.WeibullDistributionTest object = new org.apache.commons.math3.distribution.WeibullDistributionTest();
                object.setUp();
                object.testMoments();
+        }
+    }
+
+    @Test(timeout=1800000)
+    public void testInverseCumulativeProbabilityExtremes() throws Exception {
+        if (verifyNoPropertyViolation(config)) {
+               org.apache.commons.math3.distribution.WeibullDistributionTest object = new org.apache.commons.math3.distribution.WeibullDistributionTest();
+               object.setUp();
+               object.testInverseCumulativeProbabilityExtremes();
         }
     }
 
@@ -42,15 +42,6 @@ public class WeibullDistributionTest extends TestJPF {
                org.apache.commons.math3.distribution.WeibullDistributionTest object = new org.apache.commons.math3.distribution.WeibullDistributionTest();
                object.setUp();
                object.testBeta();
-        }
-    }
-
-    @Test(timeout=1800000)
-    public void testIllegalArguments() throws Exception {
-        if (verifyNoPropertyViolation(config)) {
-               org.apache.commons.math3.distribution.WeibullDistributionTest object = new org.apache.commons.math3.distribution.WeibullDistributionTest();
-               object.setUp();
-               object.testIllegalArguments();
         }
     }
 
@@ -100,11 +91,11 @@ public class WeibullDistributionTest extends TestJPF {
     }
 
     @Test(timeout=1800000)
-    public void testDistributionClone() throws Exception {
+    public void testDensityIntegrals() throws Exception {
         if (verifyNoPropertyViolation(config)) {
                org.apache.commons.math3.distribution.WeibullDistributionTest object = new org.apache.commons.math3.distribution.WeibullDistributionTest();
                object.setUp();
-               object.testDistributionClone();
+               object.testDensityIntegrals();
         }
     }
 
@@ -118,20 +109,29 @@ public class WeibullDistributionTest extends TestJPF {
     }
 
     @Test(timeout=1800000)
-    public void testDensityIntegrals() throws Exception {
-        if (verifyNoPropertyViolation(config)) {
-               org.apache.commons.math3.distribution.WeibullDistributionTest object = new org.apache.commons.math3.distribution.WeibullDistributionTest();
-               object.setUp();
-               object.testDensityIntegrals();
-        }
-    }
-
-    @Test(timeout=1800000)
     public void testIsSupportUpperBoundInclusive() throws Exception {
         if (verifyNoPropertyViolation(config)) {
                org.apache.commons.math3.distribution.WeibullDistributionTest object = new org.apache.commons.math3.distribution.WeibullDistributionTest();
                object.setUp();
                object.testIsSupportUpperBoundInclusive();
+        }
+    }
+
+    @Test(timeout=1800000)
+    public void testDistributionClone() throws Exception {
+        if (verifyNoPropertyViolation(config)) {
+               org.apache.commons.math3.distribution.WeibullDistributionTest object = new org.apache.commons.math3.distribution.WeibullDistributionTest();
+               object.setUp();
+               object.testDistributionClone();
+        }
+    }
+
+    @Test(timeout=1800000)
+    public void testIllegalArguments() throws Exception {
+        if (verifyNoPropertyViolation(config)) {
+               org.apache.commons.math3.distribution.WeibullDistributionTest object = new org.apache.commons.math3.distribution.WeibullDistributionTest();
+               object.setUp();
+               object.testIllegalArguments();
         }
     }
 

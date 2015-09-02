@@ -18,14 +18,6 @@ public class IntervalsSetTest extends TestJPF {
     }
 
     @Test(timeout=1800000)
-    public void testInfinite() throws Exception {
-        if (verifyNoPropertyViolation(config)) {
-               org.apache.commons.math3.geometry.euclidean.oned.IntervalsSetTest object = new org.apache.commons.math3.geometry.euclidean.oned.IntervalsSetTest();
-               object.testInfinite();
-        }
-    }
-
-    @Test(timeout=1800000)
     public void testMultiple() throws Exception {
         if (verifyNoPropertyViolation(config)) {
                org.apache.commons.math3.geometry.euclidean.oned.IntervalsSetTest object = new org.apache.commons.math3.geometry.euclidean.oned.IntervalsSetTest();
@@ -38,6 +30,14 @@ public class IntervalsSetTest extends TestJPF {
         if (verifyNoPropertyViolation(config)) {
                org.apache.commons.math3.geometry.euclidean.oned.IntervalsSetTest object = new org.apache.commons.math3.geometry.euclidean.oned.IntervalsSetTest();
                object.testSinglePoint();
+        }
+    }
+
+    @Test(timeout=1800000)
+    public void testInfinite() throws Exception {
+        if (verifyNoPropertyViolation(config)) {
+               org.apache.commons.math3.geometry.euclidean.oned.IntervalsSetTest object = new org.apache.commons.math3.geometry.euclidean.oned.IntervalsSetTest();
+               object.testInfinite();
         }
     }
 

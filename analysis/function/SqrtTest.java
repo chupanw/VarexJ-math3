@@ -10,6 +10,14 @@ public class SqrtTest extends TestJPF {
         runTestsOfThisClass(testMethods);
     }
     @Test(timeout=1800000)
+    public void testDerivativesHighOrder() throws Exception {
+        if (verifyNoPropertyViolation(config)) {
+               org.apache.commons.math3.analysis.function.SqrtTest object = new org.apache.commons.math3.analysis.function.SqrtTest();
+               object.testDerivativesHighOrder();
+        }
+    }
+
+    @Test(timeout=1800000)
     public void testComparison() throws Exception {
         if (verifyNoPropertyViolation(config)) {
                org.apache.commons.math3.analysis.function.SqrtTest object = new org.apache.commons.math3.analysis.function.SqrtTest();
@@ -22,14 +30,6 @@ public class SqrtTest extends TestJPF {
         if (verifyNoPropertyViolation(config)) {
                org.apache.commons.math3.analysis.function.SqrtTest object = new org.apache.commons.math3.analysis.function.SqrtTest();
                object.testDerivativeComparison();
-        }
-    }
-
-    @Test(timeout=1800000)
-    public void testDerivativesHighOrder() throws Exception {
-        if (verifyNoPropertyViolation(config)) {
-               org.apache.commons.math3.analysis.function.SqrtTest object = new org.apache.commons.math3.analysis.function.SqrtTest();
-               object.testDerivativesHighOrder();
         }
     }
 

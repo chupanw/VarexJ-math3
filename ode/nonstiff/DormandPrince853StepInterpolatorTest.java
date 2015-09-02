@@ -10,10 +10,10 @@ public class DormandPrince853StepInterpolatorTest extends TestJPF {
         runTestsOfThisClass(testMethods);
     }
     @Test(timeout=1800000)
-    public void serialization() throws Exception {
+    public void checklone() throws Exception {
         if (verifyNoPropertyViolation(config)) {
                org.apache.commons.math3.ode.nonstiff.DormandPrince853StepInterpolatorTest object = new org.apache.commons.math3.ode.nonstiff.DormandPrince853StepInterpolatorTest();
-               object.serialization();
+               object.checklone();
         }
     }
 
@@ -26,10 +26,10 @@ public class DormandPrince853StepInterpolatorTest extends TestJPF {
     }
 
     @Test(timeout=1800000)
-    public void checklone() throws Exception {
+    public void serialization() throws Exception {
         if (verifyNoPropertyViolation(config)) {
                org.apache.commons.math3.ode.nonstiff.DormandPrince853StepInterpolatorTest object = new org.apache.commons.math3.ode.nonstiff.DormandPrince853StepInterpolatorTest();
-               object.checklone();
+               object.serialization();
         }
     }
 

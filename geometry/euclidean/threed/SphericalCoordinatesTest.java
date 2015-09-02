@@ -10,14 +10,6 @@ public class SphericalCoordinatesTest extends TestJPF {
         runTestsOfThisClass(testMethods);
     }
     @Test(timeout=1800000)
-    public void testSerialization() throws Exception {
-        if (verifyNoPropertyViolation(config)) {
-               org.apache.commons.math3.geometry.euclidean.threed.SphericalCoordinatesTest object = new org.apache.commons.math3.geometry.euclidean.threed.SphericalCoordinatesTest();
-               object.testSerialization();
-        }
-    }
-
-    @Test(timeout=1800000)
     public void testCoordinatesStoC() throws Exception {
         if (verifyNoPropertyViolation(config)) {
                org.apache.commons.math3.geometry.euclidean.threed.SphericalCoordinatesTest object = new org.apache.commons.math3.geometry.euclidean.threed.SphericalCoordinatesTest();
@@ -46,6 +38,14 @@ public class SphericalCoordinatesTest extends TestJPF {
         if (verifyNoPropertyViolation(config)) {
                org.apache.commons.math3.geometry.euclidean.threed.SphericalCoordinatesTest object = new org.apache.commons.math3.geometry.euclidean.threed.SphericalCoordinatesTest();
                object.testHessian();
+        }
+    }
+
+    @Test(timeout=1800000)
+    public void testSerialization() throws Exception {
+        if (verifyNoPropertyViolation(config)) {
+               org.apache.commons.math3.geometry.euclidean.threed.SphericalCoordinatesTest object = new org.apache.commons.math3.geometry.euclidean.threed.SphericalCoordinatesTest();
+               object.testSerialization();
         }
     }
 

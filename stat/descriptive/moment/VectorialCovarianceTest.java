@@ -10,6 +10,14 @@ public class VectorialCovarianceTest extends TestJPF {
         runTestsOfThisClass(testMethods);
     }
     @Test(timeout=1800000)
+    public void testSerial() throws Exception {
+        if (verifyNoPropertyViolation(config)) {
+               org.apache.commons.math3.stat.descriptive.moment.VectorialCovarianceTest object = new org.apache.commons.math3.stat.descriptive.moment.VectorialCovarianceTest();
+               object.testSerial();
+        }
+    }
+
+    @Test(timeout=1800000)
     public void testMismatch() throws Exception {
         if (verifyNoPropertyViolation(config)) {
                org.apache.commons.math3.stat.descriptive.moment.VectorialCovarianceTest object = new org.apache.commons.math3.stat.descriptive.moment.VectorialCovarianceTest();
@@ -30,14 +38,6 @@ public class VectorialCovarianceTest extends TestJPF {
         if (verifyNoPropertyViolation(config)) {
                org.apache.commons.math3.stat.descriptive.moment.VectorialCovarianceTest object = new org.apache.commons.math3.stat.descriptive.moment.VectorialCovarianceTest();
                object.testBasicStats();
-        }
-    }
-
-    @Test(timeout=1800000)
-    public void testSerial() throws Exception {
-        if (verifyNoPropertyViolation(config)) {
-               org.apache.commons.math3.stat.descriptive.moment.VectorialCovarianceTest object = new org.apache.commons.math3.stat.descriptive.moment.VectorialCovarianceTest();
-               object.testSerial();
         }
     }
 

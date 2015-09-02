@@ -10,38 +10,6 @@ public class FirstMomentTest extends TestJPF {
         runTestsOfThisClass(testMethods);
     }
     @Test(timeout=1800000)
-    public void testSerialization() throws Exception {
-        if (verifyNoPropertyViolation(config)) {
-               org.apache.commons.math3.stat.descriptive.moment.FirstMomentTest object = new org.apache.commons.math3.stat.descriptive.moment.FirstMomentTest();
-               object.testSerialization();
-        }
-    }
-
-    @Test(timeout=1800000)
-    public void testEqualsAndHashCode() throws Exception {
-        if (verifyNoPropertyViolation(config)) {
-               org.apache.commons.math3.stat.descriptive.moment.FirstMomentTest object = new org.apache.commons.math3.stat.descriptive.moment.FirstMomentTest();
-               object.testEqualsAndHashCode();
-        }
-    }
-
-    @Test(timeout=1800000)
-    public void testSerial() throws Exception {
-        if (verifyNoPropertyViolation(config)) {
-               org.apache.commons.math3.stat.descriptive.moment.FirstMomentTest object = new org.apache.commons.math3.stat.descriptive.moment.FirstMomentTest();
-               object.testSerial();
-        }
-    }
-
-    @Test(timeout=1800000)
-    public void testConsistency() throws Exception {
-        if (verifyNoPropertyViolation(config)) {
-               org.apache.commons.math3.stat.descriptive.moment.FirstMomentTest object = new org.apache.commons.math3.stat.descriptive.moment.FirstMomentTest();
-               object.testConsistency();
-        }
-    }
-
-    @Test(timeout=1800000)
     public void testIncrementation() throws Exception {
         if (verifyNoPropertyViolation(config)) {
                org.apache.commons.math3.stat.descriptive.moment.FirstMomentTest object = new org.apache.commons.math3.stat.descriptive.moment.FirstMomentTest();
@@ -66,10 +34,34 @@ public class FirstMomentTest extends TestJPF {
     }
 
     @Test(timeout=1800000)
-    public void testCopy() throws Exception {
+    public void testSerialization() throws Exception {
         if (verifyNoPropertyViolation(config)) {
                org.apache.commons.math3.stat.descriptive.moment.FirstMomentTest object = new org.apache.commons.math3.stat.descriptive.moment.FirstMomentTest();
-               object.testCopy();
+               object.testSerialization();
+        }
+    }
+
+    @Test(timeout=1800000)
+    public void testSerial() throws Exception {
+        if (verifyNoPropertyViolation(config)) {
+               org.apache.commons.math3.stat.descriptive.moment.FirstMomentTest object = new org.apache.commons.math3.stat.descriptive.moment.FirstMomentTest();
+               object.testSerial();
+        }
+    }
+
+    @Test(timeout=1800000)
+    public void testEqualsAndHashCode() throws Exception {
+        if (verifyNoPropertyViolation(config)) {
+               org.apache.commons.math3.stat.descriptive.moment.FirstMomentTest object = new org.apache.commons.math3.stat.descriptive.moment.FirstMomentTest();
+               object.testEqualsAndHashCode();
+        }
+    }
+
+    @Test(timeout=1800000)
+    public void testConsistency() throws Exception {
+        if (verifyNoPropertyViolation(config)) {
+               org.apache.commons.math3.stat.descriptive.moment.FirstMomentTest object = new org.apache.commons.math3.stat.descriptive.moment.FirstMomentTest();
+               object.testConsistency();
         }
     }
 
@@ -102,6 +94,14 @@ public class FirstMomentTest extends TestJPF {
         if (verifyNoPropertyViolation(config)) {
                org.apache.commons.math3.stat.descriptive.moment.FirstMomentTest object = new org.apache.commons.math3.stat.descriptive.moment.FirstMomentTest();
                object.testWeightedConsistency();
+        }
+    }
+
+    @Test(timeout=1800000)
+    public void testCopy() throws Exception {
+        if (verifyNoPropertyViolation(config)) {
+               org.apache.commons.math3.stat.descriptive.moment.FirstMomentTest object = new org.apache.commons.math3.stat.descriptive.moment.FirstMomentTest();
+               object.testCopy();
         }
     }
 

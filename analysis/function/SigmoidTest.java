@@ -10,18 +10,18 @@ public class SigmoidTest extends TestJPF {
         runTestsOfThisClass(testMethods);
     }
     @Test(timeout=1800000)
-    public void testSomeValues() throws Exception {
+    public void testDerivative() throws Exception {
         if (verifyNoPropertyViolation(config)) {
                org.apache.commons.math3.analysis.function.SigmoidTest object = new org.apache.commons.math3.analysis.function.SigmoidTest();
-               object.testSomeValues();
+               object.testDerivative();
         }
     }
 
     @Test(timeout=1800000)
-    public void testDerivativeLargeArguments() throws Exception {
+    public void testDerivativesHighOrder() throws Exception {
         if (verifyNoPropertyViolation(config)) {
                org.apache.commons.math3.analysis.function.SigmoidTest object = new org.apache.commons.math3.analysis.function.SigmoidTest();
-               object.testDerivativeLargeArguments();
+               object.testDerivativesHighOrder();
         }
     }
 
@@ -66,18 +66,18 @@ public class SigmoidTest extends TestJPF {
     }
 
     @Test(timeout=1800000)
-    public void testDerivative() throws Exception {
+    public void testSomeValues() throws Exception {
         if (verifyNoPropertyViolation(config)) {
                org.apache.commons.math3.analysis.function.SigmoidTest object = new org.apache.commons.math3.analysis.function.SigmoidTest();
-               object.testDerivative();
+               object.testSomeValues();
         }
     }
 
     @Test(timeout=1800000)
-    public void testDerivativesHighOrder() throws Exception {
+    public void testDerivativeLargeArguments() throws Exception {
         if (verifyNoPropertyViolation(config)) {
                org.apache.commons.math3.analysis.function.SigmoidTest object = new org.apache.commons.math3.analysis.function.SigmoidTest();
-               object.testDerivativesHighOrder();
+               object.testDerivativeLargeArguments();
         }
     }
 

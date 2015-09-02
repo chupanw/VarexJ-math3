@@ -10,22 +10,6 @@ public class BracketingNthOrderBrentSolverTest extends TestJPF {
         runTestsOfThisClass(testMethods);
     }
     @Test(timeout=1800000)
-    public void testInsufficientOrder2() throws Exception {
-        if (verifyUnhandledException("org.apache.commons.math3.exception.NumberIsTooSmallException", config)) {
-               org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolverTest object = new org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolverTest();
-               object.testInsufficientOrder2();
-        }
-    }
-
-    @Test(timeout=1800000)
-    public void testConstructorsOK() throws Exception {
-        if (verifyNoPropertyViolation(config)) {
-               org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolverTest object = new org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolverTest();
-               object.testConstructorsOK();
-        }
-    }
-
-    @Test(timeout=1800000)
     public void testInsufficientOrder1() throws Exception {
         if (verifyUnhandledException("org.apache.commons.math3.exception.NumberIsTooSmallException", config)) {
                org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolverTest object = new org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolverTest();
@@ -34,10 +18,26 @@ public class BracketingNthOrderBrentSolverTest extends TestJPF {
     }
 
     @Test(timeout=1800000)
+    public void testInsufficientOrder2() throws Exception {
+        if (verifyUnhandledException("org.apache.commons.math3.exception.NumberIsTooSmallException", config)) {
+               org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolverTest object = new org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolverTest();
+               object.testInsufficientOrder2();
+        }
+    }
+
+    @Test(timeout=1800000)
     public void testInsufficientOrder3() throws Exception {
         if (verifyUnhandledException("org.apache.commons.math3.exception.NumberIsTooSmallException", config)) {
                org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolverTest object = new org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolverTest();
                object.testInsufficientOrder3();
+        }
+    }
+
+    @Test(timeout=1800000)
+    public void testConstructorsOK() throws Exception {
+        if (verifyNoPropertyViolation(config)) {
+               org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolverTest object = new org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolverTest();
+               object.testConstructorsOK();
         }
     }
 

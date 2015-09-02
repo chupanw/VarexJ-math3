@@ -10,22 +10,6 @@ public class ChiSquaredDistributionTest extends TestJPF {
         runTestsOfThisClass(testMethods);
     }
     @Test(timeout=1800000)
-    public void testSmallDf() throws Exception {
-        if (verifyNoPropertyViolation(config)) {
-               org.apache.commons.math3.distribution.ChiSquaredDistributionTest object = new org.apache.commons.math3.distribution.ChiSquaredDistributionTest();
-               object.testSmallDf();
-        }
-    }
-
-    @Test(timeout=1800000)
-    public void testDfAccessors() throws Exception {
-        if (verifyNoPropertyViolation(config)) {
-               org.apache.commons.math3.distribution.ChiSquaredDistributionTest object = new org.apache.commons.math3.distribution.ChiSquaredDistributionTest();
-               object.testDfAccessors();
-        }
-    }
-
-    @Test(timeout=1800000)
     public void testDensity() throws Exception {
         if (verifyNoPropertyViolation(config)) {
                org.apache.commons.math3.distribution.ChiSquaredDistributionTest object = new org.apache.commons.math3.distribution.ChiSquaredDistributionTest();
@@ -42,10 +26,18 @@ public class ChiSquaredDistributionTest extends TestJPF {
     }
 
     @Test(timeout=1800000)
-    public void testIllegalArguments() throws Exception {
+    public void testSmallDf() throws Exception {
         if (verifyNoPropertyViolation(config)) {
                org.apache.commons.math3.distribution.ChiSquaredDistributionTest object = new org.apache.commons.math3.distribution.ChiSquaredDistributionTest();
-               object.testIllegalArguments();
+               object.testSmallDf();
+        }
+    }
+
+    @Test(timeout=1800000)
+    public void testDfAccessors() throws Exception {
+        if (verifyNoPropertyViolation(config)) {
+               org.apache.commons.math3.distribution.ChiSquaredDistributionTest object = new org.apache.commons.math3.distribution.ChiSquaredDistributionTest();
+               object.testDfAccessors();
         }
     }
 
@@ -90,10 +82,10 @@ public class ChiSquaredDistributionTest extends TestJPF {
     }
 
     @Test(timeout=1800000)
-    public void testDistributionClone() throws Exception {
+    public void testDensityIntegrals() throws Exception {
         if (verifyNoPropertyViolation(config)) {
                org.apache.commons.math3.distribution.ChiSquaredDistributionTest object = new org.apache.commons.math3.distribution.ChiSquaredDistributionTest();
-               object.testDistributionClone();
+               object.testDensityIntegrals();
         }
     }
 
@@ -106,18 +98,26 @@ public class ChiSquaredDistributionTest extends TestJPF {
     }
 
     @Test(timeout=1800000)
-    public void testDensityIntegrals() throws Exception {
-        if (verifyNoPropertyViolation(config)) {
-               org.apache.commons.math3.distribution.ChiSquaredDistributionTest object = new org.apache.commons.math3.distribution.ChiSquaredDistributionTest();
-               object.testDensityIntegrals();
-        }
-    }
-
-    @Test(timeout=1800000)
     public void testIsSupportUpperBoundInclusive() throws Exception {
         if (verifyNoPropertyViolation(config)) {
                org.apache.commons.math3.distribution.ChiSquaredDistributionTest object = new org.apache.commons.math3.distribution.ChiSquaredDistributionTest();
                object.testIsSupportUpperBoundInclusive();
+        }
+    }
+
+    @Test(timeout=1800000)
+    public void testDistributionClone() throws Exception {
+        if (verifyNoPropertyViolation(config)) {
+               org.apache.commons.math3.distribution.ChiSquaredDistributionTest object = new org.apache.commons.math3.distribution.ChiSquaredDistributionTest();
+               object.testDistributionClone();
+        }
+    }
+
+    @Test(timeout=1800000)
+    public void testIllegalArguments() throws Exception {
+        if (verifyNoPropertyViolation(config)) {
+               org.apache.commons.math3.distribution.ChiSquaredDistributionTest object = new org.apache.commons.math3.distribution.ChiSquaredDistributionTest();
+               object.testIllegalArguments();
         }
     }
 

@@ -26,18 +26,18 @@ public class PrecisionTest extends TestJPF {
     }
 
     @Test(timeout=1800000)
-    public void testEqualsWithAllowedDelta() throws Exception {
-        if (verifyNoPropertyViolation(config)) {
-               org.apache.commons.math3.util.PrecisionTest object = new org.apache.commons.math3.util.PrecisionTest();
-               object.testEqualsWithAllowedDelta();
-        }
-    }
-
-    @Test(timeout=1800000)
     public void testMath475() throws Exception {
         if (verifyNoPropertyViolation(config)) {
                org.apache.commons.math3.util.PrecisionTest object = new org.apache.commons.math3.util.PrecisionTest();
                object.testMath475();
+        }
+    }
+
+    @Test(timeout=1800000)
+    public void testEqualsWithAllowedDelta() throws Exception {
+        if (verifyNoPropertyViolation(config)) {
+               org.apache.commons.math3.util.PrecisionTest object = new org.apache.commons.math3.util.PrecisionTest();
+               object.testEqualsWithAllowedDelta();
         }
     }
 

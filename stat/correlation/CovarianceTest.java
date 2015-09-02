@@ -18,10 +18,10 @@ public class CovarianceTest extends TestJPF {
     }
 
     @Test(timeout=1800000)
-    public void testConsistency() throws Exception {
+    public void testLongly() throws Exception {
         if (verifyNoPropertyViolation(config)) {
                org.apache.commons.math3.stat.correlation.CovarianceTest object = new org.apache.commons.math3.stat.correlation.CovarianceTest();
-               object.testConsistency();
+               object.testLongly();
         }
     }
 
@@ -50,10 +50,10 @@ public class CovarianceTest extends TestJPF {
     }
 
     @Test(timeout=1800000)
-    public void testLongly() throws Exception {
+    public void testConsistency() throws Exception {
         if (verifyNoPropertyViolation(config)) {
                org.apache.commons.math3.stat.correlation.CovarianceTest object = new org.apache.commons.math3.stat.correlation.CovarianceTest();
-               object.testLongly();
+               object.testConsistency();
         }
     }
 

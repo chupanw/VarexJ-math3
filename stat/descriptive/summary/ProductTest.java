@@ -26,38 +26,6 @@ public class ProductTest extends TestJPF {
     }
 
     @Test(timeout=1800000)
-    public void testSerialization() throws Exception {
-        if (verifyNoPropertyViolation(config)) {
-               org.apache.commons.math3.stat.descriptive.summary.ProductTest object = new org.apache.commons.math3.stat.descriptive.summary.ProductTest();
-               object.testSerialization();
-        }
-    }
-
-    @Test(timeout=1800000)
-    public void testEqualsAndHashCode() throws Exception {
-        if (verifyNoPropertyViolation(config)) {
-               org.apache.commons.math3.stat.descriptive.summary.ProductTest object = new org.apache.commons.math3.stat.descriptive.summary.ProductTest();
-               object.testEqualsAndHashCode();
-        }
-    }
-
-    @Test(timeout=1800000)
-    public void testSerial() throws Exception {
-        if (verifyNoPropertyViolation(config)) {
-               org.apache.commons.math3.stat.descriptive.summary.ProductTest object = new org.apache.commons.math3.stat.descriptive.summary.ProductTest();
-               object.testSerial();
-        }
-    }
-
-    @Test(timeout=1800000)
-    public void testConsistency() throws Exception {
-        if (verifyNoPropertyViolation(config)) {
-               org.apache.commons.math3.stat.descriptive.summary.ProductTest object = new org.apache.commons.math3.stat.descriptive.summary.ProductTest();
-               object.testConsistency();
-        }
-    }
-
-    @Test(timeout=1800000)
     public void testIncrementation() throws Exception {
         if (verifyNoPropertyViolation(config)) {
                org.apache.commons.math3.stat.descriptive.summary.ProductTest object = new org.apache.commons.math3.stat.descriptive.summary.ProductTest();
@@ -82,10 +50,34 @@ public class ProductTest extends TestJPF {
     }
 
     @Test(timeout=1800000)
-    public void testCopy() throws Exception {
+    public void testSerialization() throws Exception {
         if (verifyNoPropertyViolation(config)) {
                org.apache.commons.math3.stat.descriptive.summary.ProductTest object = new org.apache.commons.math3.stat.descriptive.summary.ProductTest();
-               object.testCopy();
+               object.testSerialization();
+        }
+    }
+
+    @Test(timeout=1800000)
+    public void testSerial() throws Exception {
+        if (verifyNoPropertyViolation(config)) {
+               org.apache.commons.math3.stat.descriptive.summary.ProductTest object = new org.apache.commons.math3.stat.descriptive.summary.ProductTest();
+               object.testSerial();
+        }
+    }
+
+    @Test(timeout=1800000)
+    public void testEqualsAndHashCode() throws Exception {
+        if (verifyNoPropertyViolation(config)) {
+               org.apache.commons.math3.stat.descriptive.summary.ProductTest object = new org.apache.commons.math3.stat.descriptive.summary.ProductTest();
+               object.testEqualsAndHashCode();
+        }
+    }
+
+    @Test(timeout=1800000)
+    public void testConsistency() throws Exception {
+        if (verifyNoPropertyViolation(config)) {
+               org.apache.commons.math3.stat.descriptive.summary.ProductTest object = new org.apache.commons.math3.stat.descriptive.summary.ProductTest();
+               object.testConsistency();
         }
     }
 
@@ -118,6 +110,14 @@ public class ProductTest extends TestJPF {
         if (verifyNoPropertyViolation(config)) {
                org.apache.commons.math3.stat.descriptive.summary.ProductTest object = new org.apache.commons.math3.stat.descriptive.summary.ProductTest();
                object.testWeightedConsistency();
+        }
+    }
+
+    @Test(timeout=1800000)
+    public void testCopy() throws Exception {
+        if (verifyNoPropertyViolation(config)) {
+               org.apache.commons.math3.stat.descriptive.summary.ProductTest object = new org.apache.commons.math3.stat.descriptive.summary.ProductTest();
+               object.testCopy();
         }
     }
 

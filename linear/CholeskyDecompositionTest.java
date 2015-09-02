@@ -26,10 +26,18 @@ public class CholeskyDecompositionTest extends TestJPF {
     }
 
     @Test(timeout=1800000)
-    public void testDimensions() throws Exception {
+    public void testAEqualLLT() throws Exception {
         if (verifyNoPropertyViolation(config)) {
                org.apache.commons.math3.linear.CholeskyDecompositionTest object = new org.apache.commons.math3.linear.CholeskyDecompositionTest();
-               object.testDimensions();
+               object.testAEqualLLT();
+        }
+    }
+
+    @Test(timeout=1800000)
+    public void testMath274() throws Exception {
+        if (verifyUnhandledException("org.apache.commons.math3.linear.NonPositiveDefiniteMatrixException", config)) {
+               org.apache.commons.math3.linear.CholeskyDecompositionTest object = new org.apache.commons.math3.linear.CholeskyDecompositionTest();
+               object.testMath274();
         }
     }
 
@@ -50,22 +58,6 @@ public class CholeskyDecompositionTest extends TestJPF {
     }
 
     @Test(timeout=1800000)
-    public void testMath274() throws Exception {
-        if (verifyUnhandledException("org.apache.commons.math3.linear.NonPositiveDefiniteMatrixException", config)) {
-               org.apache.commons.math3.linear.CholeskyDecompositionTest object = new org.apache.commons.math3.linear.CholeskyDecompositionTest();
-               object.testMath274();
-        }
-    }
-
-    @Test(timeout=1800000)
-    public void testAEqualLLT() throws Exception {
-        if (verifyNoPropertyViolation(config)) {
-               org.apache.commons.math3.linear.CholeskyDecompositionTest object = new org.apache.commons.math3.linear.CholeskyDecompositionTest();
-               object.testAEqualLLT();
-        }
-    }
-
-    @Test(timeout=1800000)
     public void testLLowerTriangular() throws Exception {
         if (verifyNoPropertyViolation(config)) {
                org.apache.commons.math3.linear.CholeskyDecompositionTest object = new org.apache.commons.math3.linear.CholeskyDecompositionTest();
@@ -78,6 +70,14 @@ public class CholeskyDecompositionTest extends TestJPF {
         if (verifyNoPropertyViolation(config)) {
                org.apache.commons.math3.linear.CholeskyDecompositionTest object = new org.apache.commons.math3.linear.CholeskyDecompositionTest();
                object.testLTTransposed();
+        }
+    }
+
+    @Test(timeout=1800000)
+    public void testDimensions() throws Exception {
+        if (verifyNoPropertyViolation(config)) {
+               org.apache.commons.math3.linear.CholeskyDecompositionTest object = new org.apache.commons.math3.linear.CholeskyDecompositionTest();
+               object.testDimensions();
         }
     }
 

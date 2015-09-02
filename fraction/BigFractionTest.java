@@ -10,6 +10,14 @@ public class BigFractionTest extends TestJPF {
         runTestsOfThisClass(testMethods);
     }
     @Test(timeout=1800000)
+    public void testDivide() throws Exception {
+        if (verifyNoPropertyViolation(config)) {
+               org.apache.commons.math3.fraction.BigFractionTest object = new org.apache.commons.math3.fraction.BigFractionTest();
+               object.testDivide();
+        }
+    }
+
+    @Test(timeout=1800000)
     public void testAdd() throws Exception {
         if (verifyNoPropertyViolation(config)) {
                org.apache.commons.math3.fraction.BigFractionTest object = new org.apache.commons.math3.fraction.BigFractionTest();
@@ -66,10 +74,18 @@ public class BigFractionTest extends TestJPF {
     }
 
     @Test(timeout=1800000)
-    public void testDivide() throws Exception {
+    public void testSerial() throws Exception {
         if (verifyNoPropertyViolation(config)) {
                org.apache.commons.math3.fraction.BigFractionTest object = new org.apache.commons.math3.fraction.BigFractionTest();
-               object.testDivide();
+               object.testSerial();
+        }
+    }
+
+    @Test(timeout=1800000)
+    public void testConstructor() throws Exception {
+        if (verifyNoPropertyViolation(config)) {
+               org.apache.commons.math3.fraction.BigFractionTest object = new org.apache.commons.math3.fraction.BigFractionTest();
+               object.testConstructor();
         }
     }
 
@@ -206,22 +222,6 @@ public class BigFractionTest extends TestJPF {
         if (verifyNoPropertyViolation(config)) {
                org.apache.commons.math3.fraction.BigFractionTest object = new org.apache.commons.math3.fraction.BigFractionTest();
                object.testMath340();
-        }
-    }
-
-    @Test(timeout=1800000)
-    public void testSerial() throws Exception {
-        if (verifyNoPropertyViolation(config)) {
-               org.apache.commons.math3.fraction.BigFractionTest object = new org.apache.commons.math3.fraction.BigFractionTest();
-               object.testSerial();
-        }
-    }
-
-    @Test(timeout=1800000)
-    public void testConstructor() throws Exception {
-        if (verifyNoPropertyViolation(config)) {
-               org.apache.commons.math3.fraction.BigFractionTest object = new org.apache.commons.math3.fraction.BigFractionTest();
-               object.testConstructor();
         }
     }
 

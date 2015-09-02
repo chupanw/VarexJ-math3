@@ -18,10 +18,10 @@ public class PolynomialFunctionLagrangeFormTest extends TestJPF {
     }
 
     @Test(timeout=1800000)
-    public void testParameters() throws Exception {
+    public void testQuadraticFunction() throws Exception {
         if (verifyNoPropertyViolation(config)) {
                org.apache.commons.math3.analysis.polynomials.PolynomialFunctionLagrangeFormTest object = new org.apache.commons.math3.analysis.polynomials.PolynomialFunctionLagrangeFormTest();
-               object.testParameters();
+               object.testQuadraticFunction();
         }
     }
 
@@ -34,10 +34,10 @@ public class PolynomialFunctionLagrangeFormTest extends TestJPF {
     }
 
     @Test(timeout=1800000)
-    public void testQuadraticFunction() throws Exception {
+    public void testParameters() throws Exception {
         if (verifyNoPropertyViolation(config)) {
                org.apache.commons.math3.analysis.polynomials.PolynomialFunctionLagrangeFormTest object = new org.apache.commons.math3.analysis.polynomials.PolynomialFunctionLagrangeFormTest();
-               object.testQuadraticFunction();
+               object.testParameters();
         }
     }
 

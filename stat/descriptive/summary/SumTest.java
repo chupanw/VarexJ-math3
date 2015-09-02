@@ -10,14 +10,6 @@ public class SumTest extends TestJPF {
         runTestsOfThisClass(testMethods);
     }
     @Test(timeout=1800000)
-    public void testWeightedSum() throws Exception {
-        if (verifyNoPropertyViolation(config)) {
-               org.apache.commons.math3.stat.descriptive.summary.SumTest object = new org.apache.commons.math3.stat.descriptive.summary.SumTest();
-               object.testWeightedSum();
-        }
-    }
-
-    @Test(timeout=1800000)
     public void testSpecialValues() throws Exception {
         if (verifyNoPropertyViolation(config)) {
                org.apache.commons.math3.stat.descriptive.summary.SumTest object = new org.apache.commons.math3.stat.descriptive.summary.SumTest();
@@ -26,34 +18,10 @@ public class SumTest extends TestJPF {
     }
 
     @Test(timeout=1800000)
-    public void testSerialization() throws Exception {
+    public void testWeightedSum() throws Exception {
         if (verifyNoPropertyViolation(config)) {
                org.apache.commons.math3.stat.descriptive.summary.SumTest object = new org.apache.commons.math3.stat.descriptive.summary.SumTest();
-               object.testSerialization();
-        }
-    }
-
-    @Test(timeout=1800000)
-    public void testEqualsAndHashCode() throws Exception {
-        if (verifyNoPropertyViolation(config)) {
-               org.apache.commons.math3.stat.descriptive.summary.SumTest object = new org.apache.commons.math3.stat.descriptive.summary.SumTest();
-               object.testEqualsAndHashCode();
-        }
-    }
-
-    @Test(timeout=1800000)
-    public void testSerial() throws Exception {
-        if (verifyNoPropertyViolation(config)) {
-               org.apache.commons.math3.stat.descriptive.summary.SumTest object = new org.apache.commons.math3.stat.descriptive.summary.SumTest();
-               object.testSerial();
-        }
-    }
-
-    @Test(timeout=1800000)
-    public void testConsistency() throws Exception {
-        if (verifyNoPropertyViolation(config)) {
-               org.apache.commons.math3.stat.descriptive.summary.SumTest object = new org.apache.commons.math3.stat.descriptive.summary.SumTest();
-               object.testConsistency();
+               object.testWeightedSum();
         }
     }
 
@@ -82,10 +50,34 @@ public class SumTest extends TestJPF {
     }
 
     @Test(timeout=1800000)
-    public void testCopy() throws Exception {
+    public void testSerialization() throws Exception {
         if (verifyNoPropertyViolation(config)) {
                org.apache.commons.math3.stat.descriptive.summary.SumTest object = new org.apache.commons.math3.stat.descriptive.summary.SumTest();
-               object.testCopy();
+               object.testSerialization();
+        }
+    }
+
+    @Test(timeout=1800000)
+    public void testSerial() throws Exception {
+        if (verifyNoPropertyViolation(config)) {
+               org.apache.commons.math3.stat.descriptive.summary.SumTest object = new org.apache.commons.math3.stat.descriptive.summary.SumTest();
+               object.testSerial();
+        }
+    }
+
+    @Test(timeout=1800000)
+    public void testEqualsAndHashCode() throws Exception {
+        if (verifyNoPropertyViolation(config)) {
+               org.apache.commons.math3.stat.descriptive.summary.SumTest object = new org.apache.commons.math3.stat.descriptive.summary.SumTest();
+               object.testEqualsAndHashCode();
+        }
+    }
+
+    @Test(timeout=1800000)
+    public void testConsistency() throws Exception {
+        if (verifyNoPropertyViolation(config)) {
+               org.apache.commons.math3.stat.descriptive.summary.SumTest object = new org.apache.commons.math3.stat.descriptive.summary.SumTest();
+               object.testConsistency();
         }
     }
 
@@ -118,6 +110,14 @@ public class SumTest extends TestJPF {
         if (verifyNoPropertyViolation(config)) {
                org.apache.commons.math3.stat.descriptive.summary.SumTest object = new org.apache.commons.math3.stat.descriptive.summary.SumTest();
                object.testWeightedConsistency();
+        }
+    }
+
+    @Test(timeout=1800000)
+    public void testCopy() throws Exception {
+        if (verifyNoPropertyViolation(config)) {
+               org.apache.commons.math3.stat.descriptive.summary.SumTest object = new org.apache.commons.math3.stat.descriptive.summary.SumTest();
+               object.testCopy();
         }
     }
 

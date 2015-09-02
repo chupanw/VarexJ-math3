@@ -10,22 +10,6 @@ public class MultivariateNormalDistributionTest extends TestJPF {
         runTestsOfThisClass(testMethods);
     }
     @Test(timeout=1800000)
-    public void testDensities() throws Exception {
-        if (verifyNoPropertyViolation(config)) {
-               org.apache.commons.math3.distribution.MultivariateNormalDistributionTest object = new org.apache.commons.math3.distribution.MultivariateNormalDistributionTest();
-               object.testDensities();
-        }
-    }
-
-    @Test(timeout=1800000)
-    public void testSampling() throws Exception {
-        if (verifyNoPropertyViolation(config)) {
-               org.apache.commons.math3.distribution.MultivariateNormalDistributionTest object = new org.apache.commons.math3.distribution.MultivariateNormalDistributionTest();
-               object.testSampling();
-        }
-    }
-
-    @Test(timeout=1800000)
     public void testGetMean() throws Exception {
         if (verifyNoPropertyViolation(config)) {
                org.apache.commons.math3.distribution.MultivariateNormalDistributionTest object = new org.apache.commons.math3.distribution.MultivariateNormalDistributionTest();
@@ -46,6 +30,22 @@ public class MultivariateNormalDistributionTest extends TestJPF {
         if (verifyNoPropertyViolation(config)) {
                org.apache.commons.math3.distribution.MultivariateNormalDistributionTest object = new org.apache.commons.math3.distribution.MultivariateNormalDistributionTest();
                object.testUnivariateDistribution();
+        }
+    }
+
+    @Test(timeout=1800000)
+    public void testDensities() throws Exception {
+        if (verifyNoPropertyViolation(config)) {
+               org.apache.commons.math3.distribution.MultivariateNormalDistributionTest object = new org.apache.commons.math3.distribution.MultivariateNormalDistributionTest();
+               object.testDensities();
+        }
+    }
+
+    @Test(timeout=1800000)
+    public void testSampling() throws Exception {
+        if (verifyNoPropertyViolation(config)) {
+               org.apache.commons.math3.distribution.MultivariateNormalDistributionTest object = new org.apache.commons.math3.distribution.MultivariateNormalDistributionTest();
+               object.testSampling();
         }
     }
 

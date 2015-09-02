@@ -10,6 +10,14 @@ public class BlockRealMatrixTest extends TestJPF {
         runTestsOfThisClass(testMethods);
     }
     @Test(timeout=1800000)
+    public void testScalarAdd() throws Exception {
+        if (verifyNoPropertyViolation(config)) {
+               org.apache.commons.math3.linear.BlockRealMatrixTest object = new org.apache.commons.math3.linear.BlockRealMatrixTest();
+               object.testScalarAdd();
+        }
+    }
+
+    @Test(timeout=1800000)
     public void testAdd() throws Exception {
         if (verifyNoPropertyViolation(config)) {
                org.apache.commons.math3.linear.BlockRealMatrixTest object = new org.apache.commons.math3.linear.BlockRealMatrixTest();
@@ -26,10 +34,10 @@ public class BlockRealMatrixTest extends TestJPF {
     }
 
     @Test(timeout=1800000)
-    public void testScalarAdd() throws Exception {
+    public void testSerial() throws Exception {
         if (verifyNoPropertyViolation(config)) {
                org.apache.commons.math3.linear.BlockRealMatrixTest object = new org.apache.commons.math3.linear.BlockRealMatrixTest();
-               object.testScalarAdd();
+               object.testSerial();
         }
     }
 
@@ -58,10 +66,82 @@ public class BlockRealMatrixTest extends TestJPF {
     }
 
     @Test(timeout=1800000)
-    public void testSerial() throws Exception {
+    public void testSeveralBlocks() throws Exception {
         if (verifyNoPropertyViolation(config)) {
                org.apache.commons.math3.linear.BlockRealMatrixTest object = new org.apache.commons.math3.linear.BlockRealMatrixTest();
-               object.testSerial();
+               object.testSeveralBlocks();
+        }
+    }
+
+    @Test(timeout=1800000)
+    public void testOperateLarge() throws Exception {
+        if (verifyNoPropertyViolation(config)) {
+               org.apache.commons.math3.linear.BlockRealMatrixTest object = new org.apache.commons.math3.linear.BlockRealMatrixTest();
+               object.testOperateLarge();
+        }
+    }
+
+    @Test(timeout=1800000)
+    public void testOperatePremultiplyLarge() throws Exception {
+        if (verifyNoPropertyViolation(config)) {
+               org.apache.commons.math3.linear.BlockRealMatrixTest object = new org.apache.commons.math3.linear.BlockRealMatrixTest();
+               object.testOperatePremultiplyLarge();
+        }
+    }
+
+    @Test(timeout=1800000)
+    public void testGetSetMatrixLarge() throws Exception {
+        if (verifyNoPropertyViolation(config)) {
+               org.apache.commons.math3.linear.BlockRealMatrixTest object = new org.apache.commons.math3.linear.BlockRealMatrixTest();
+               object.testGetSetMatrixLarge();
+        }
+    }
+
+    @Test(timeout=1800000)
+    public void testGetSetRowMatrixLarge() throws Exception {
+        if (verifyNoPropertyViolation(config)) {
+               org.apache.commons.math3.linear.BlockRealMatrixTest object = new org.apache.commons.math3.linear.BlockRealMatrixTest();
+               object.testGetSetRowMatrixLarge();
+        }
+    }
+
+    @Test(timeout=1800000)
+    public void testGetSetColumnMatrixLarge() throws Exception {
+        if (verifyNoPropertyViolation(config)) {
+               org.apache.commons.math3.linear.BlockRealMatrixTest object = new org.apache.commons.math3.linear.BlockRealMatrixTest();
+               object.testGetSetColumnMatrixLarge();
+        }
+    }
+
+    @Test(timeout=1800000)
+    public void testGetSetRowVectorLarge() throws Exception {
+        if (verifyNoPropertyViolation(config)) {
+               org.apache.commons.math3.linear.BlockRealMatrixTest object = new org.apache.commons.math3.linear.BlockRealMatrixTest();
+               object.testGetSetRowVectorLarge();
+        }
+    }
+
+    @Test(timeout=1800000)
+    public void testGetSetColumnVectorLarge() throws Exception {
+        if (verifyNoPropertyViolation(config)) {
+               org.apache.commons.math3.linear.BlockRealMatrixTest object = new org.apache.commons.math3.linear.BlockRealMatrixTest();
+               object.testGetSetColumnVectorLarge();
+        }
+    }
+
+    @Test(timeout=1800000)
+    public void testGetSetRowLarge() throws Exception {
+        if (verifyNoPropertyViolation(config)) {
+               org.apache.commons.math3.linear.BlockRealMatrixTest object = new org.apache.commons.math3.linear.BlockRealMatrixTest();
+               object.testGetSetRowLarge();
+        }
+    }
+
+    @Test(timeout=1800000)
+    public void testGetSetColumnLarge() throws Exception {
+        if (verifyNoPropertyViolation(config)) {
+               org.apache.commons.math3.linear.BlockRealMatrixTest object = new org.apache.commons.math3.linear.BlockRealMatrixTest();
+               object.testGetSetColumnLarge();
         }
     }
 
@@ -310,86 +390,6 @@ public class BlockRealMatrixTest extends TestJPF {
         if (verifyNoPropertyViolation(config)) {
                org.apache.commons.math3.linear.BlockRealMatrixTest object = new org.apache.commons.math3.linear.BlockRealMatrixTest();
                object.testWalk();
-        }
-    }
-
-    @Test(timeout=1800000)
-    public void testOperateLarge() throws Exception {
-        if (verifyNoPropertyViolation(config)) {
-               org.apache.commons.math3.linear.BlockRealMatrixTest object = new org.apache.commons.math3.linear.BlockRealMatrixTest();
-               object.testOperateLarge();
-        }
-    }
-
-    @Test(timeout=1800000)
-    public void testSeveralBlocks() throws Exception {
-        if (verifyNoPropertyViolation(config)) {
-               org.apache.commons.math3.linear.BlockRealMatrixTest object = new org.apache.commons.math3.linear.BlockRealMatrixTest();
-               object.testSeveralBlocks();
-        }
-    }
-
-    @Test(timeout=1800000)
-    public void testOperatePremultiplyLarge() throws Exception {
-        if (verifyNoPropertyViolation(config)) {
-               org.apache.commons.math3.linear.BlockRealMatrixTest object = new org.apache.commons.math3.linear.BlockRealMatrixTest();
-               object.testOperatePremultiplyLarge();
-        }
-    }
-
-    @Test(timeout=1800000)
-    public void testGetSetMatrixLarge() throws Exception {
-        if (verifyNoPropertyViolation(config)) {
-               org.apache.commons.math3.linear.BlockRealMatrixTest object = new org.apache.commons.math3.linear.BlockRealMatrixTest();
-               object.testGetSetMatrixLarge();
-        }
-    }
-
-    @Test(timeout=1800000)
-    public void testGetSetRowMatrixLarge() throws Exception {
-        if (verifyNoPropertyViolation(config)) {
-               org.apache.commons.math3.linear.BlockRealMatrixTest object = new org.apache.commons.math3.linear.BlockRealMatrixTest();
-               object.testGetSetRowMatrixLarge();
-        }
-    }
-
-    @Test(timeout=1800000)
-    public void testGetSetColumnMatrixLarge() throws Exception {
-        if (verifyNoPropertyViolation(config)) {
-               org.apache.commons.math3.linear.BlockRealMatrixTest object = new org.apache.commons.math3.linear.BlockRealMatrixTest();
-               object.testGetSetColumnMatrixLarge();
-        }
-    }
-
-    @Test(timeout=1800000)
-    public void testGetSetRowVectorLarge() throws Exception {
-        if (verifyNoPropertyViolation(config)) {
-               org.apache.commons.math3.linear.BlockRealMatrixTest object = new org.apache.commons.math3.linear.BlockRealMatrixTest();
-               object.testGetSetRowVectorLarge();
-        }
-    }
-
-    @Test(timeout=1800000)
-    public void testGetSetColumnVectorLarge() throws Exception {
-        if (verifyNoPropertyViolation(config)) {
-               org.apache.commons.math3.linear.BlockRealMatrixTest object = new org.apache.commons.math3.linear.BlockRealMatrixTest();
-               object.testGetSetColumnVectorLarge();
-        }
-    }
-
-    @Test(timeout=1800000)
-    public void testGetSetRowLarge() throws Exception {
-        if (verifyNoPropertyViolation(config)) {
-               org.apache.commons.math3.linear.BlockRealMatrixTest object = new org.apache.commons.math3.linear.BlockRealMatrixTest();
-               object.testGetSetRowLarge();
-        }
-    }
-
-    @Test(timeout=1800000)
-    public void testGetSetColumnLarge() throws Exception {
-        if (verifyNoPropertyViolation(config)) {
-               org.apache.commons.math3.linear.BlockRealMatrixTest object = new org.apache.commons.math3.linear.BlockRealMatrixTest();
-               object.testGetSetColumnLarge();
         }
     }
 

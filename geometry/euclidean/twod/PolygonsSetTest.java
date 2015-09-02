@@ -10,22 +10,6 @@ public class PolygonsSetTest extends TestJPF {
         runTestsOfThisClass(testMethods);
     }
     @Test(timeout=1800000)
-    public void testIntersection() throws Exception {
-        if (verifyNoPropertyViolation(config)) {
-               org.apache.commons.math3.geometry.euclidean.twod.PolygonsSetTest object = new org.apache.commons.math3.geometry.euclidean.twod.PolygonsSetTest();
-               object.testIntersection();
-        }
-    }
-
-    @Test(timeout=1800000)
-    public void testOppositeHyperplanes() throws Exception {
-        if (verifyNoPropertyViolation(config)) {
-               org.apache.commons.math3.geometry.euclidean.twod.PolygonsSetTest object = new org.apache.commons.math3.geometry.euclidean.twod.PolygonsSetTest();
-               object.testOppositeHyperplanes();
-        }
-    }
-
-    @Test(timeout=1800000)
     public void testSimplyConnected() throws Exception {
         if (verifyNoPropertyViolation(config)) {
                org.apache.commons.math3.geometry.euclidean.twod.PolygonsSetTest object = new org.apache.commons.math3.geometry.euclidean.twod.PolygonsSetTest();
@@ -54,6 +38,14 @@ public class PolygonsSetTest extends TestJPF {
         if (verifyNoPropertyViolation(config)) {
                org.apache.commons.math3.geometry.euclidean.twod.PolygonsSetTest object = new org.apache.commons.math3.geometry.euclidean.twod.PolygonsSetTest();
                object.testDisjointPolygons();
+        }
+    }
+
+    @Test(timeout=1800000)
+    public void testOppositeHyperplanes() throws Exception {
+        if (verifyNoPropertyViolation(config)) {
+               org.apache.commons.math3.geometry.euclidean.twod.PolygonsSetTest object = new org.apache.commons.math3.geometry.euclidean.twod.PolygonsSetTest();
+               object.testOppositeHyperplanes();
         }
     }
 
@@ -166,6 +158,14 @@ public class PolygonsSetTest extends TestJPF {
         if (verifyNoPropertyViolation(config)) {
                org.apache.commons.math3.geometry.euclidean.twod.PolygonsSetTest object = new org.apache.commons.math3.geometry.euclidean.twod.PolygonsSetTest();
                object.testIssue880Complete();
+        }
+    }
+
+    @Test(timeout=1800000)
+    public void testIntersection() throws Exception {
+        if (verifyNoPropertyViolation(config)) {
+               org.apache.commons.math3.geometry.euclidean.twod.PolygonsSetTest object = new org.apache.commons.math3.geometry.euclidean.twod.PolygonsSetTest();
+               object.testIntersection();
         }
     }
 

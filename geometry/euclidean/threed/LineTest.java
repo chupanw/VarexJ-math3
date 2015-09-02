@@ -10,6 +10,14 @@ public class LineTest extends TestJPF {
         runTestsOfThisClass(testMethods);
     }
     @Test(timeout=1800000)
+    public void testRevert() throws Exception {
+        if (verifyNoPropertyViolation(config)) {
+               org.apache.commons.math3.geometry.euclidean.threed.LineTest object = new org.apache.commons.math3.geometry.euclidean.threed.LineTest();
+               object.testRevert();
+        }
+    }
+
+    @Test(timeout=1800000)
     public void testContains() throws Exception {
         if (verifyNoPropertyViolation(config)) {
                org.apache.commons.math3.geometry.euclidean.threed.LineTest object = new org.apache.commons.math3.geometry.euclidean.threed.LineTest();
@@ -54,14 +62,6 @@ public class LineTest extends TestJPF {
         if (verifyNoPropertyViolation(config)) {
                org.apache.commons.math3.geometry.euclidean.threed.LineTest object = new org.apache.commons.math3.geometry.euclidean.threed.LineTest();
                object.testIntersection();
-        }
-    }
-
-    @Test(timeout=1800000)
-    public void testRevert() throws Exception {
-        if (verifyNoPropertyViolation(config)) {
-               org.apache.commons.math3.geometry.euclidean.threed.LineTest object = new org.apache.commons.math3.geometry.euclidean.threed.LineTest();
-               object.testRevert();
         }
     }
 

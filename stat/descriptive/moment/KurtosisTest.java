@@ -18,38 +18,6 @@ public class KurtosisTest extends TestJPF {
     }
 
     @Test(timeout=1800000)
-    public void testSerialization() throws Exception {
-        if (verifyNoPropertyViolation(config)) {
-               org.apache.commons.math3.stat.descriptive.moment.KurtosisTest object = new org.apache.commons.math3.stat.descriptive.moment.KurtosisTest();
-               object.testSerialization();
-        }
-    }
-
-    @Test(timeout=1800000)
-    public void testEqualsAndHashCode() throws Exception {
-        if (verifyNoPropertyViolation(config)) {
-               org.apache.commons.math3.stat.descriptive.moment.KurtosisTest object = new org.apache.commons.math3.stat.descriptive.moment.KurtosisTest();
-               object.testEqualsAndHashCode();
-        }
-    }
-
-    @Test(timeout=1800000)
-    public void testSerial() throws Exception {
-        if (verifyNoPropertyViolation(config)) {
-               org.apache.commons.math3.stat.descriptive.moment.KurtosisTest object = new org.apache.commons.math3.stat.descriptive.moment.KurtosisTest();
-               object.testSerial();
-        }
-    }
-
-    @Test(timeout=1800000)
-    public void testConsistency() throws Exception {
-        if (verifyNoPropertyViolation(config)) {
-               org.apache.commons.math3.stat.descriptive.moment.KurtosisTest object = new org.apache.commons.math3.stat.descriptive.moment.KurtosisTest();
-               object.testConsistency();
-        }
-    }
-
-    @Test(timeout=1800000)
     public void testIncrementation() throws Exception {
         if (verifyNoPropertyViolation(config)) {
                org.apache.commons.math3.stat.descriptive.moment.KurtosisTest object = new org.apache.commons.math3.stat.descriptive.moment.KurtosisTest();
@@ -74,10 +42,34 @@ public class KurtosisTest extends TestJPF {
     }
 
     @Test(timeout=1800000)
-    public void testCopy() throws Exception {
+    public void testSerialization() throws Exception {
         if (verifyNoPropertyViolation(config)) {
                org.apache.commons.math3.stat.descriptive.moment.KurtosisTest object = new org.apache.commons.math3.stat.descriptive.moment.KurtosisTest();
-               object.testCopy();
+               object.testSerialization();
+        }
+    }
+
+    @Test(timeout=1800000)
+    public void testSerial() throws Exception {
+        if (verifyNoPropertyViolation(config)) {
+               org.apache.commons.math3.stat.descriptive.moment.KurtosisTest object = new org.apache.commons.math3.stat.descriptive.moment.KurtosisTest();
+               object.testSerial();
+        }
+    }
+
+    @Test(timeout=1800000)
+    public void testEqualsAndHashCode() throws Exception {
+        if (verifyNoPropertyViolation(config)) {
+               org.apache.commons.math3.stat.descriptive.moment.KurtosisTest object = new org.apache.commons.math3.stat.descriptive.moment.KurtosisTest();
+               object.testEqualsAndHashCode();
+        }
+    }
+
+    @Test(timeout=1800000)
+    public void testConsistency() throws Exception {
+        if (verifyNoPropertyViolation(config)) {
+               org.apache.commons.math3.stat.descriptive.moment.KurtosisTest object = new org.apache.commons.math3.stat.descriptive.moment.KurtosisTest();
+               object.testConsistency();
         }
     }
 
@@ -110,6 +102,14 @@ public class KurtosisTest extends TestJPF {
         if (verifyNoPropertyViolation(config)) {
                org.apache.commons.math3.stat.descriptive.moment.KurtosisTest object = new org.apache.commons.math3.stat.descriptive.moment.KurtosisTest();
                object.testWeightedConsistency();
+        }
+    }
+
+    @Test(timeout=1800000)
+    public void testCopy() throws Exception {
+        if (verifyNoPropertyViolation(config)) {
+               org.apache.commons.math3.stat.descriptive.moment.KurtosisTest object = new org.apache.commons.math3.stat.descriptive.moment.KurtosisTest();
+               object.testCopy();
         }
     }
 

@@ -10,18 +10,10 @@ public class LinearInterpolatorTest extends TestJPF {
         runTestsOfThisClass(testMethods);
     }
     @Test(timeout=1800000)
-    public void testInterpolateLinearDegenerateTwoSegment() throws Exception {
+    public void testIllegalArguments() throws Exception {
         if (verifyNoPropertyViolation(config)) {
                org.apache.commons.math3.analysis.interpolation.LinearInterpolatorTest object = new org.apache.commons.math3.analysis.interpolation.LinearInterpolatorTest();
-               object.testInterpolateLinearDegenerateTwoSegment();
-        }
-    }
-
-    @Test(timeout=1800000)
-    public void testInterpolateLinearDegenerateThreeSegment() throws Exception {
-        if (verifyNoPropertyViolation(config)) {
-               org.apache.commons.math3.analysis.interpolation.LinearInterpolatorTest object = new org.apache.commons.math3.analysis.interpolation.LinearInterpolatorTest();
-               object.testInterpolateLinearDegenerateThreeSegment();
+               object.testIllegalArguments();
         }
     }
 
@@ -34,10 +26,18 @@ public class LinearInterpolatorTest extends TestJPF {
     }
 
     @Test(timeout=1800000)
-    public void testIllegalArguments() throws Exception {
+    public void testInterpolateLinearDegenerateTwoSegment() throws Exception {
         if (verifyNoPropertyViolation(config)) {
                org.apache.commons.math3.analysis.interpolation.LinearInterpolatorTest object = new org.apache.commons.math3.analysis.interpolation.LinearInterpolatorTest();
-               object.testIllegalArguments();
+               object.testInterpolateLinearDegenerateTwoSegment();
+        }
+    }
+
+    @Test(timeout=1800000)
+    public void testInterpolateLinearDegenerateThreeSegment() throws Exception {
+        if (verifyNoPropertyViolation(config)) {
+               org.apache.commons.math3.analysis.interpolation.LinearInterpolatorTest object = new org.apache.commons.math3.analysis.interpolation.LinearInterpolatorTest();
+               object.testInterpolateLinearDegenerateThreeSegment();
         }
     }
 

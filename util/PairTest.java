@@ -10,14 +10,6 @@ public class PairTest extends TestJPF {
         runTestsOfThisClass(testMethods);
     }
     @Test(timeout=1800000)
-    public void testEquals() throws Exception {
-        if (verifyNoPropertyViolation(config)) {
-               org.apache.commons.math3.util.PairTest object = new org.apache.commons.math3.util.PairTest();
-               object.testEquals();
-        }
-    }
-
-    @Test(timeout=1800000)
     public void testHashCode() throws Exception {
         if (verifyNoPropertyViolation(config)) {
                org.apache.commons.math3.util.PairTest object = new org.apache.commons.math3.util.PairTest();
@@ -26,10 +18,10 @@ public class PairTest extends TestJPF {
     }
 
     @Test(timeout=1800000)
-    public void testAccessor2() throws Exception {
+    public void testEquals() throws Exception {
         if (verifyNoPropertyViolation(config)) {
                org.apache.commons.math3.util.PairTest object = new org.apache.commons.math3.util.PairTest();
-               object.testAccessor2();
+               object.testEquals();
         }
     }
 
@@ -38,6 +30,14 @@ public class PairTest extends TestJPF {
         if (verifyNoPropertyViolation(config)) {
                org.apache.commons.math3.util.PairTest object = new org.apache.commons.math3.util.PairTest();
                object.testAccessor();
+        }
+    }
+
+    @Test(timeout=1800000)
+    public void testAccessor2() throws Exception {
+        if (verifyNoPropertyViolation(config)) {
+               org.apache.commons.math3.util.PairTest object = new org.apache.commons.math3.util.PairTest();
+               object.testAccessor2();
         }
     }
 

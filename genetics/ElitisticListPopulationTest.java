@@ -26,14 +26,6 @@ public class ElitisticListPopulationTest extends TestJPF {
     }
 
     @Test(timeout=1800000)
-    public void testConstructorTooLow() throws Exception {
-        if (verifyUnhandledException("org.apache.commons.math3.exception.OutOfRangeException", config)) {
-               org.apache.commons.math3.genetics.ElitisticListPopulationTest object = new org.apache.commons.math3.genetics.ElitisticListPopulationTest();
-               object.testConstructorTooLow();
-        }
-    }
-
-    @Test(timeout=1800000)
     public void testSetElitismRateTooLow() throws Exception {
         if (verifyUnhandledException("org.apache.commons.math3.exception.OutOfRangeException", config)) {
                org.apache.commons.math3.genetics.ElitisticListPopulationTest object = new org.apache.commons.math3.genetics.ElitisticListPopulationTest();
@@ -46,6 +38,14 @@ public class ElitisticListPopulationTest extends TestJPF {
         if (verifyUnhandledException("org.apache.commons.math3.exception.OutOfRangeException", config)) {
                org.apache.commons.math3.genetics.ElitisticListPopulationTest object = new org.apache.commons.math3.genetics.ElitisticListPopulationTest();
                object.testSetElitismRateTooHigh();
+        }
+    }
+
+    @Test(timeout=1800000)
+    public void testConstructorTooLow() throws Exception {
+        if (verifyUnhandledException("org.apache.commons.math3.exception.OutOfRangeException", config)) {
+               org.apache.commons.math3.genetics.ElitisticListPopulationTest object = new org.apache.commons.math3.genetics.ElitisticListPopulationTest();
+               object.testConstructorTooLow();
         }
     }
 

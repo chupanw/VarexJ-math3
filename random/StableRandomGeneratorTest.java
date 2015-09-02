@@ -10,10 +10,10 @@ public class StableRandomGeneratorTest extends TestJPF {
         runTestsOfThisClass(testMethods);
     }
     @Test(timeout=1800000)
-    public void testAlphaRangeBelowZero() throws Exception {
+    public void testNextDouble() throws Exception {
         if (verifyNoPropertyViolation(config)) {
                org.apache.commons.math3.random.StableRandomGeneratorTest object = new org.apache.commons.math3.random.StableRandomGeneratorTest();
-               object.testAlphaRangeBelowZero();
+               object.testNextDouble();
         }
     }
 
@@ -26,18 +26,18 @@ public class StableRandomGeneratorTest extends TestJPF {
     }
 
     @Test(timeout=1800000)
-    public void testNextDouble() throws Exception {
-        if (verifyNoPropertyViolation(config)) {
-               org.apache.commons.math3.random.StableRandomGeneratorTest object = new org.apache.commons.math3.random.StableRandomGeneratorTest();
-               object.testNextDouble();
-        }
-    }
-
-    @Test(timeout=1800000)
     public void testCauchyCase() throws Exception {
         if (verifyNoPropertyViolation(config)) {
                org.apache.commons.math3.random.StableRandomGeneratorTest object = new org.apache.commons.math3.random.StableRandomGeneratorTest();
                object.testCauchyCase();
+        }
+    }
+
+    @Test(timeout=1800000)
+    public void testAlphaRangeBelowZero() throws Exception {
+        if (verifyNoPropertyViolation(config)) {
+               org.apache.commons.math3.random.StableRandomGeneratorTest object = new org.apache.commons.math3.random.StableRandomGeneratorTest();
+               object.testAlphaRangeBelowZero();
         }
     }
 

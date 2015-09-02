@@ -10,18 +10,18 @@ public class IntervalTest extends TestJPF {
         runTestsOfThisClass(testMethods);
     }
     @Test(timeout=1800000)
-    public void testTolerance() throws Exception {
-        if (verifyNoPropertyViolation(config)) {
-               org.apache.commons.math3.geometry.euclidean.oned.IntervalTest object = new org.apache.commons.math3.geometry.euclidean.oned.IntervalTest();
-               object.testTolerance();
-        }
-    }
-
-    @Test(timeout=1800000)
     public void testInterval() throws Exception {
         if (verifyNoPropertyViolation(config)) {
                org.apache.commons.math3.geometry.euclidean.oned.IntervalTest object = new org.apache.commons.math3.geometry.euclidean.oned.IntervalTest();
                object.testInterval();
+        }
+    }
+
+    @Test(timeout=1800000)
+    public void testSinglePoint() throws Exception {
+        if (verifyNoPropertyViolation(config)) {
+               org.apache.commons.math3.geometry.euclidean.oned.IntervalTest object = new org.apache.commons.math3.geometry.euclidean.oned.IntervalTest();
+               object.testSinglePoint();
         }
     }
 
@@ -34,10 +34,10 @@ public class IntervalTest extends TestJPF {
     }
 
     @Test(timeout=1800000)
-    public void testSinglePoint() throws Exception {
+    public void testTolerance() throws Exception {
         if (verifyNoPropertyViolation(config)) {
                org.apache.commons.math3.geometry.euclidean.oned.IntervalTest object = new org.apache.commons.math3.geometry.euclidean.oned.IntervalTest();
-               object.testSinglePoint();
+               object.testTolerance();
         }
     }
 

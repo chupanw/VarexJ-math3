@@ -10,11 +10,20 @@ public class HypergeometricDistributionTest extends TestJPF {
         runTestsOfThisClass(testMethods);
     }
     @Test(timeout=1800000)
-    public void testLargeValues() throws Exception {
+    public void testPreconditions() throws Exception {
         if (verifyNoPropertyViolation(config)) {
                org.apache.commons.math3.distribution.HypergeometricDistributionTest object = new org.apache.commons.math3.distribution.HypergeometricDistributionTest();
                object.setUp();
-               object.testLargeValues();
+               object.testPreconditions();
+        }
+    }
+
+    @Test(timeout=1800000)
+    public void testMoments() throws Exception {
+        if (verifyNoPropertyViolation(config)) {
+               org.apache.commons.math3.distribution.HypergeometricDistributionTest object = new org.apache.commons.math3.distribution.HypergeometricDistributionTest();
+               object.setUp();
+               object.testMoments();
         }
     }
 
@@ -24,6 +33,15 @@ public class HypergeometricDistributionTest extends TestJPF {
                org.apache.commons.math3.distribution.HypergeometricDistributionTest object = new org.apache.commons.math3.distribution.HypergeometricDistributionTest();
                object.setUp();
                object.testDegenerateNoFailures();
+        }
+    }
+
+    @Test(timeout=1800000)
+    public void testLargeValues() throws Exception {
+        if (verifyNoPropertyViolation(config)) {
+               org.apache.commons.math3.distribution.HypergeometricDistributionTest object = new org.apache.commons.math3.distribution.HypergeometricDistributionTest();
+               object.setUp();
+               object.testLargeValues();
         }
     }
 
@@ -73,33 +91,6 @@ public class HypergeometricDistributionTest extends TestJPF {
     }
 
     @Test(timeout=1800000)
-    public void testPreconditions() throws Exception {
-        if (verifyNoPropertyViolation(config)) {
-               org.apache.commons.math3.distribution.HypergeometricDistributionTest object = new org.apache.commons.math3.distribution.HypergeometricDistributionTest();
-               object.setUp();
-               object.testPreconditions();
-        }
-    }
-
-    @Test(timeout=1800000)
-    public void testMoments() throws Exception {
-        if (verifyNoPropertyViolation(config)) {
-               org.apache.commons.math3.distribution.HypergeometricDistributionTest object = new org.apache.commons.math3.distribution.HypergeometricDistributionTest();
-               object.setUp();
-               object.testMoments();
-        }
-    }
-
-    @Test(timeout=1800000)
-    public void testIllegalArguments() throws Exception {
-        if (verifyNoPropertyViolation(config)) {
-               org.apache.commons.math3.distribution.HypergeometricDistributionTest object = new org.apache.commons.math3.distribution.HypergeometricDistributionTest();
-               object.setUp();
-               object.testIllegalArguments();
-        }
-    }
-
-    @Test(timeout=1800000)
     public void testDensities() throws Exception {
         if (verifyNoPropertyViolation(config)) {
                org.apache.commons.math3.distribution.HypergeometricDistributionTest object = new org.apache.commons.math3.distribution.HypergeometricDistributionTest();
@@ -141,6 +132,15 @@ public class HypergeometricDistributionTest extends TestJPF {
                org.apache.commons.math3.distribution.HypergeometricDistributionTest object = new org.apache.commons.math3.distribution.HypergeometricDistributionTest();
                object.setUp();
                object.testSampling();
+        }
+    }
+
+    @Test(timeout=1800000)
+    public void testIllegalArguments() throws Exception {
+        if (verifyNoPropertyViolation(config)) {
+               org.apache.commons.math3.distribution.HypergeometricDistributionTest object = new org.apache.commons.math3.distribution.HypergeometricDistributionTest();
+               object.setUp();
+               object.testIllegalArguments();
         }
     }
 

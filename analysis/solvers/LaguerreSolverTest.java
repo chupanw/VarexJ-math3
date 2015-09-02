@@ -18,18 +18,10 @@ public class LaguerreSolverTest extends TestJPF {
     }
 
     @Test(timeout=1800000)
-    public void testQuinticFunction2() throws Exception {
+    public void testQuadraticFunction() throws Exception {
         if (verifyNoPropertyViolation(config)) {
                org.apache.commons.math3.analysis.solvers.LaguerreSolverTest object = new org.apache.commons.math3.analysis.solvers.LaguerreSolverTest();
-               object.testQuinticFunction2();
-        }
-    }
-
-    @Test(timeout=1800000)
-    public void testParameters() throws Exception {
-        if (verifyNoPropertyViolation(config)) {
-               org.apache.commons.math3.analysis.solvers.LaguerreSolverTest object = new org.apache.commons.math3.analysis.solvers.LaguerreSolverTest();
-               object.testParameters();
+               object.testQuadraticFunction();
         }
     }
 
@@ -42,10 +34,18 @@ public class LaguerreSolverTest extends TestJPF {
     }
 
     @Test(timeout=1800000)
-    public void testQuadraticFunction() throws Exception {
+    public void testQuinticFunction2() throws Exception {
         if (verifyNoPropertyViolation(config)) {
                org.apache.commons.math3.analysis.solvers.LaguerreSolverTest object = new org.apache.commons.math3.analysis.solvers.LaguerreSolverTest();
-               object.testQuadraticFunction();
+               object.testQuinticFunction2();
+        }
+    }
+
+    @Test(timeout=1800000)
+    public void testParameters() throws Exception {
+        if (verifyNoPropertyViolation(config)) {
+               org.apache.commons.math3.analysis.solvers.LaguerreSolverTest object = new org.apache.commons.math3.analysis.solvers.LaguerreSolverTest();
+               object.testParameters();
         }
     }
 

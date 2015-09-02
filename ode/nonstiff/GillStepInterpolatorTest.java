@@ -10,18 +10,18 @@ public class GillStepInterpolatorTest extends TestJPF {
         runTestsOfThisClass(testMethods);
     }
     @Test(timeout=1800000)
-    public void serialization() throws Exception {
-        if (verifyNoPropertyViolation(config)) {
-               org.apache.commons.math3.ode.nonstiff.GillStepInterpolatorTest object = new org.apache.commons.math3.ode.nonstiff.GillStepInterpolatorTest();
-               object.serialization();
-        }
-    }
-
-    @Test(timeout=1800000)
     public void testDerivativesConsistency() throws Exception {
         if (verifyNoPropertyViolation(config)) {
                org.apache.commons.math3.ode.nonstiff.GillStepInterpolatorTest object = new org.apache.commons.math3.ode.nonstiff.GillStepInterpolatorTest();
                object.testDerivativesConsistency();
+        }
+    }
+
+    @Test(timeout=1800000)
+    public void serialization() throws Exception {
+        if (verifyNoPropertyViolation(config)) {
+               org.apache.commons.math3.ode.nonstiff.GillStepInterpolatorTest object = new org.apache.commons.math3.ode.nonstiff.GillStepInterpolatorTest();
+               object.serialization();
         }
     }
 

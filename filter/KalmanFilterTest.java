@@ -10,10 +10,10 @@ public class KalmanFilterTest extends TestJPF {
         runTestsOfThisClass(testMethods);
     }
     @Test(timeout=1800000)
-    public void testConstant() throws Exception {
-        if (verifyNoPropertyViolation(config)) {
+    public void testTransitionMeasurementMatrixMismatch() throws Exception {
+        if (verifyUnhandledException("org.apache.commons.math3.linear.MatrixDimensionMismatchException", config)) {
                org.apache.commons.math3.filter.KalmanFilterTest object = new org.apache.commons.math3.filter.KalmanFilterTest();
-               object.testConstant();
+               object.testTransitionMeasurementMatrixMismatch();
         }
     }
 
@@ -26,18 +26,18 @@ public class KalmanFilterTest extends TestJPF {
     }
 
     @Test(timeout=1800000)
-    public void testTransitionMeasurementMatrixMismatch() throws Exception {
-        if (verifyUnhandledException("org.apache.commons.math3.linear.MatrixDimensionMismatchException", config)) {
-               org.apache.commons.math3.filter.KalmanFilterTest object = new org.apache.commons.math3.filter.KalmanFilterTest();
-               object.testTransitionMeasurementMatrixMismatch();
-        }
-    }
-
-    @Test(timeout=1800000)
     public void testConstantAcceleration() throws Exception {
         if (verifyNoPropertyViolation(config)) {
                org.apache.commons.math3.filter.KalmanFilterTest object = new org.apache.commons.math3.filter.KalmanFilterTest();
                object.testConstantAcceleration();
+        }
+    }
+
+    @Test(timeout=1800000)
+    public void testConstant() throws Exception {
+        if (verifyNoPropertyViolation(config)) {
+               org.apache.commons.math3.filter.KalmanFilterTest object = new org.apache.commons.math3.filter.KalmanFilterTest();
+               object.testConstant();
         }
     }
 

@@ -10,6 +10,14 @@ public class PowellOptimizerTest extends TestJPF {
         runTestsOfThisClass(testMethods);
     }
     @Test(timeout=1800000)
+    public void testQuadratic() throws Exception {
+        if (verifyNoPropertyViolation(config)) {
+               org.apache.commons.math3.optimization.direct.PowellOptimizerTest object = new org.apache.commons.math3.optimization.direct.PowellOptimizerTest();
+               object.testQuadratic();
+        }
+    }
+
+    @Test(timeout=1800000)
     public void testSumSinc() throws Exception {
         if (verifyNoPropertyViolation(config)) {
                org.apache.commons.math3.optimization.direct.PowellOptimizerTest object = new org.apache.commons.math3.optimization.direct.PowellOptimizerTest();
@@ -30,14 +38,6 @@ public class PowellOptimizerTest extends TestJPF {
         if (verifyNoPropertyViolation(config)) {
                org.apache.commons.math3.optimization.direct.PowellOptimizerTest object = new org.apache.commons.math3.optimization.direct.PowellOptimizerTest();
                object.testRelativeToleranceOnScaledValues();
-        }
-    }
-
-    @Test(timeout=1800000)
-    public void testQuadratic() throws Exception {
-        if (verifyNoPropertyViolation(config)) {
-               org.apache.commons.math3.optimization.direct.PowellOptimizerTest object = new org.apache.commons.math3.optimization.direct.PowellOptimizerTest();
-               object.testQuadratic();
         }
     }
 

@@ -10,15 +10,6 @@ public class LevyDistributionTest extends TestJPF {
         runTestsOfThisClass(testMethods);
     }
     @Test(timeout=1800000)
-    public void testSupport() throws Exception {
-        if (verifyNoPropertyViolation(config)) {
-               org.apache.commons.math3.distribution.LevyDistributionTest object = new org.apache.commons.math3.distribution.LevyDistributionTest();
-               object.setUp();
-               object.testSupport();
-        }
-    }
-
-    @Test(timeout=1800000)
     public void testParameters() throws Exception {
         if (verifyNoPropertyViolation(config)) {
                org.apache.commons.math3.distribution.LevyDistributionTest object = new org.apache.commons.math3.distribution.LevyDistributionTest();
@@ -28,11 +19,11 @@ public class LevyDistributionTest extends TestJPF {
     }
 
     @Test(timeout=1800000)
-    public void testIllegalArguments() throws Exception {
+    public void testSupport() throws Exception {
         if (verifyNoPropertyViolation(config)) {
                org.apache.commons.math3.distribution.LevyDistributionTest object = new org.apache.commons.math3.distribution.LevyDistributionTest();
                object.setUp();
-               object.testIllegalArguments();
+               object.testSupport();
         }
     }
 
@@ -82,11 +73,11 @@ public class LevyDistributionTest extends TestJPF {
     }
 
     @Test(timeout=1800000)
-    public void testDistributionClone() throws Exception {
+    public void testDensityIntegrals() throws Exception {
         if (verifyNoPropertyViolation(config)) {
                org.apache.commons.math3.distribution.LevyDistributionTest object = new org.apache.commons.math3.distribution.LevyDistributionTest();
                object.setUp();
-               object.testDistributionClone();
+               object.testDensityIntegrals();
         }
     }
 
@@ -100,20 +91,29 @@ public class LevyDistributionTest extends TestJPF {
     }
 
     @Test(timeout=1800000)
-    public void testDensityIntegrals() throws Exception {
-        if (verifyNoPropertyViolation(config)) {
-               org.apache.commons.math3.distribution.LevyDistributionTest object = new org.apache.commons.math3.distribution.LevyDistributionTest();
-               object.setUp();
-               object.testDensityIntegrals();
-        }
-    }
-
-    @Test(timeout=1800000)
     public void testIsSupportUpperBoundInclusive() throws Exception {
         if (verifyNoPropertyViolation(config)) {
                org.apache.commons.math3.distribution.LevyDistributionTest object = new org.apache.commons.math3.distribution.LevyDistributionTest();
                object.setUp();
                object.testIsSupportUpperBoundInclusive();
+        }
+    }
+
+    @Test(timeout=1800000)
+    public void testDistributionClone() throws Exception {
+        if (verifyNoPropertyViolation(config)) {
+               org.apache.commons.math3.distribution.LevyDistributionTest object = new org.apache.commons.math3.distribution.LevyDistributionTest();
+               object.setUp();
+               object.testDistributionClone();
+        }
+    }
+
+    @Test(timeout=1800000)
+    public void testIllegalArguments() throws Exception {
+        if (verifyNoPropertyViolation(config)) {
+               org.apache.commons.math3.distribution.LevyDistributionTest object = new org.apache.commons.math3.distribution.LevyDistributionTest();
+               object.setUp();
+               object.testIllegalArguments();
         }
     }
 

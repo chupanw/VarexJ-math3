@@ -10,14 +10,6 @@ public class SplineInterpolatorTest extends TestJPF {
         runTestsOfThisClass(testMethods);
     }
     @Test(timeout=1800000)
-    public void testInterpolateLinearDegenerateTwoSegment() throws Exception {
-        if (verifyNoPropertyViolation(config)) {
-               org.apache.commons.math3.analysis.interpolation.SplineInterpolatorTest object = new org.apache.commons.math3.analysis.interpolation.SplineInterpolatorTest();
-               object.testInterpolateLinearDegenerateTwoSegment();
-        }
-    }
-
-    @Test(timeout=1800000)
     public void testInterpolateSin() throws Exception {
         if (verifyNoPropertyViolation(config)) {
                org.apache.commons.math3.analysis.interpolation.SplineInterpolatorTest object = new org.apache.commons.math3.analysis.interpolation.SplineInterpolatorTest();
@@ -26,10 +18,10 @@ public class SplineInterpolatorTest extends TestJPF {
     }
 
     @Test(timeout=1800000)
-    public void testInterpolateLinearDegenerateThreeSegment() throws Exception {
+    public void testIllegalArguments() throws Exception {
         if (verifyNoPropertyViolation(config)) {
                org.apache.commons.math3.analysis.interpolation.SplineInterpolatorTest object = new org.apache.commons.math3.analysis.interpolation.SplineInterpolatorTest();
-               object.testInterpolateLinearDegenerateThreeSegment();
+               object.testIllegalArguments();
         }
     }
 
@@ -42,10 +34,18 @@ public class SplineInterpolatorTest extends TestJPF {
     }
 
     @Test(timeout=1800000)
-    public void testIllegalArguments() throws Exception {
+    public void testInterpolateLinearDegenerateTwoSegment() throws Exception {
         if (verifyNoPropertyViolation(config)) {
                org.apache.commons.math3.analysis.interpolation.SplineInterpolatorTest object = new org.apache.commons.math3.analysis.interpolation.SplineInterpolatorTest();
-               object.testIllegalArguments();
+               object.testInterpolateLinearDegenerateTwoSegment();
+        }
+    }
+
+    @Test(timeout=1800000)
+    public void testInterpolateLinearDegenerateThreeSegment() throws Exception {
+        if (verifyNoPropertyViolation(config)) {
+               org.apache.commons.math3.analysis.interpolation.SplineInterpolatorTest object = new org.apache.commons.math3.analysis.interpolation.SplineInterpolatorTest();
+               object.testInterpolateLinearDegenerateThreeSegment();
         }
     }
 

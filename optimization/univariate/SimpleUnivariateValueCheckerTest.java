@@ -10,6 +10,14 @@ public class SimpleUnivariateValueCheckerTest extends TestJPF {
         runTestsOfThisClass(testMethods);
     }
     @Test(timeout=1800000)
+    public void testIterationCheck() throws Exception {
+        if (verifyNoPropertyViolation(config)) {
+               org.apache.commons.math3.optimization.univariate.SimpleUnivariateValueCheckerTest object = new org.apache.commons.math3.optimization.univariate.SimpleUnivariateValueCheckerTest();
+               object.testIterationCheck();
+        }
+    }
+
+    @Test(timeout=1800000)
     public void testIterationCheckPrecondition() throws Exception {
         if (verifyUnhandledException("org.apache.commons.math3.exception.NotStrictlyPositiveException", config)) {
                org.apache.commons.math3.optimization.univariate.SimpleUnivariateValueCheckerTest object = new org.apache.commons.math3.optimization.univariate.SimpleUnivariateValueCheckerTest();
@@ -22,14 +30,6 @@ public class SimpleUnivariateValueCheckerTest extends TestJPF {
         if (verifyNoPropertyViolation(config)) {
                org.apache.commons.math3.optimization.univariate.SimpleUnivariateValueCheckerTest object = new org.apache.commons.math3.optimization.univariate.SimpleUnivariateValueCheckerTest();
                object.testIterationCheckDisabled();
-        }
-    }
-
-    @Test(timeout=1800000)
-    public void testIterationCheck() throws Exception {
-        if (verifyNoPropertyViolation(config)) {
-               org.apache.commons.math3.optimization.univariate.SimpleUnivariateValueCheckerTest object = new org.apache.commons.math3.optimization.univariate.SimpleUnivariateValueCheckerTest();
-               object.testIterationCheck();
         }
     }
 

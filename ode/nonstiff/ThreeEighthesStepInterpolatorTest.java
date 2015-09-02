@@ -10,18 +10,18 @@ public class ThreeEighthesStepInterpolatorTest extends TestJPF {
         runTestsOfThisClass(testMethods);
     }
     @Test(timeout=1800000)
-    public void serialization() throws Exception {
-        if (verifyNoPropertyViolation(config)) {
-               org.apache.commons.math3.ode.nonstiff.ThreeEighthesStepInterpolatorTest object = new org.apache.commons.math3.ode.nonstiff.ThreeEighthesStepInterpolatorTest();
-               object.serialization();
-        }
-    }
-
-    @Test(timeout=1800000)
     public void derivativesConsistency() throws Exception {
         if (verifyNoPropertyViolation(config)) {
                org.apache.commons.math3.ode.nonstiff.ThreeEighthesStepInterpolatorTest object = new org.apache.commons.math3.ode.nonstiff.ThreeEighthesStepInterpolatorTest();
                object.derivativesConsistency();
+        }
+    }
+
+    @Test(timeout=1800000)
+    public void serialization() throws Exception {
+        if (verifyNoPropertyViolation(config)) {
+               org.apache.commons.math3.ode.nonstiff.ThreeEighthesStepInterpolatorTest object = new org.apache.commons.math3.ode.nonstiff.ThreeEighthesStepInterpolatorTest();
+               object.serialization();
         }
     }
 

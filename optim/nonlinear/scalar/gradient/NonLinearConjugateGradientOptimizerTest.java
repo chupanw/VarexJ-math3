@@ -10,22 +10,6 @@ public class NonLinearConjugateGradientOptimizerTest extends TestJPF {
         runTestsOfThisClass(testMethods);
     }
     @Test(timeout=1800000)
-    public void testColumnsPermutation() throws Exception {
-        if (verifyNoPropertyViolation(config)) {
-               org.apache.commons.math3.optim.nonlinear.scalar.gradient.NonLinearConjugateGradientOptimizerTest object = new org.apache.commons.math3.optim.nonlinear.scalar.gradient.NonLinearConjugateGradientOptimizerTest();
-               object.testColumnsPermutation();
-        }
-    }
-
-    @Test(timeout=1800000)
-    public void testNoDependency() throws Exception {
-        if (verifyNoPropertyViolation(config)) {
-               org.apache.commons.math3.optim.nonlinear.scalar.gradient.NonLinearConjugateGradientOptimizerTest object = new org.apache.commons.math3.optim.nonlinear.scalar.gradient.NonLinearConjugateGradientOptimizerTest();
-               object.testNoDependency();
-        }
-    }
-
-    @Test(timeout=1800000)
     public void testTrivial() throws Exception {
         if (verifyNoPropertyViolation(config)) {
                org.apache.commons.math3.optim.nonlinear.scalar.gradient.NonLinearConjugateGradientOptimizerTest object = new org.apache.commons.math3.optim.nonlinear.scalar.gradient.NonLinearConjugateGradientOptimizerTest();
@@ -38,6 +22,22 @@ public class NonLinearConjugateGradientOptimizerTest extends TestJPF {
         if (verifyUnhandledException("org.apache.commons.math3.exception.MathUnsupportedOperationException", config)) {
                org.apache.commons.math3.optim.nonlinear.scalar.gradient.NonLinearConjugateGradientOptimizerTest object = new org.apache.commons.math3.optim.nonlinear.scalar.gradient.NonLinearConjugateGradientOptimizerTest();
                object.testBoundsUnsupported();
+        }
+    }
+
+    @Test(timeout=1800000)
+    public void testColumnsPermutation() throws Exception {
+        if (verifyNoPropertyViolation(config)) {
+               org.apache.commons.math3.optim.nonlinear.scalar.gradient.NonLinearConjugateGradientOptimizerTest object = new org.apache.commons.math3.optim.nonlinear.scalar.gradient.NonLinearConjugateGradientOptimizerTest();
+               object.testColumnsPermutation();
+        }
+    }
+
+    @Test(timeout=1800000)
+    public void testNoDependency() throws Exception {
+        if (verifyNoPropertyViolation(config)) {
+               org.apache.commons.math3.optim.nonlinear.scalar.gradient.NonLinearConjugateGradientOptimizerTest object = new org.apache.commons.math3.optim.nonlinear.scalar.gradient.NonLinearConjugateGradientOptimizerTest();
+               object.testNoDependency();
         }
     }
 

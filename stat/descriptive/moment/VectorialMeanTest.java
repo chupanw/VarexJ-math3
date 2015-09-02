@@ -10,6 +10,14 @@ public class VectorialMeanTest extends TestJPF {
         runTestsOfThisClass(testMethods);
     }
     @Test(timeout=1800000)
+    public void testSerial() throws Exception {
+        if (verifyNoPropertyViolation(config)) {
+               org.apache.commons.math3.stat.descriptive.moment.VectorialMeanTest object = new org.apache.commons.math3.stat.descriptive.moment.VectorialMeanTest();
+               object.testSerial();
+        }
+    }
+
+    @Test(timeout=1800000)
     public void testMismatch() throws Exception {
         if (verifyNoPropertyViolation(config)) {
                org.apache.commons.math3.stat.descriptive.moment.VectorialMeanTest object = new org.apache.commons.math3.stat.descriptive.moment.VectorialMeanTest();
@@ -30,14 +38,6 @@ public class VectorialMeanTest extends TestJPF {
         if (verifyNoPropertyViolation(config)) {
                org.apache.commons.math3.stat.descriptive.moment.VectorialMeanTest object = new org.apache.commons.math3.stat.descriptive.moment.VectorialMeanTest();
                object.testBasicStats();
-        }
-    }
-
-    @Test(timeout=1800000)
-    public void testSerial() throws Exception {
-        if (verifyNoPropertyViolation(config)) {
-               org.apache.commons.math3.stat.descriptive.moment.VectorialMeanTest object = new org.apache.commons.math3.stat.descriptive.moment.VectorialMeanTest();
-               object.testSerial();
         }
     }
 

@@ -10,14 +10,6 @@ public class MedianTest extends TestJPF {
         runTestsOfThisClass(testMethods);
     }
     @Test(timeout=1800000)
-    public void testCopy() throws Exception {
-        if (verifyNoPropertyViolation(config)) {
-               org.apache.commons.math3.stat.descriptive.rank.MedianTest object = new org.apache.commons.math3.stat.descriptive.rank.MedianTest();
-               object.testCopy();
-        }
-    }
-
-    @Test(timeout=1800000)
     public void testEvaluation() throws Exception {
         if (verifyNoPropertyViolation(config)) {
                org.apache.commons.math3.stat.descriptive.rank.MedianTest object = new org.apache.commons.math3.stat.descriptive.rank.MedianTest();
@@ -46,6 +38,14 @@ public class MedianTest extends TestJPF {
         if (verifyNoPropertyViolation(config)) {
                org.apache.commons.math3.stat.descriptive.rank.MedianTest object = new org.apache.commons.math3.stat.descriptive.rank.MedianTest();
                object.testWeightedConsistency();
+        }
+    }
+
+    @Test(timeout=1800000)
+    public void testCopy() throws Exception {
+        if (verifyNoPropertyViolation(config)) {
+               org.apache.commons.math3.stat.descriptive.rank.MedianTest object = new org.apache.commons.math3.stat.descriptive.rank.MedianTest();
+               object.testCopy();
         }
     }
 

@@ -10,6 +10,15 @@ public class DfpTest extends TestJPF {
         runTestsOfThisClass(testMethods);
     }
     @Test(timeout=1800000)
+    public void testDivide() throws Exception {
+        if (verifyNoPropertyViolation(config)) {
+               org.apache.commons.math3.dfp.DfpTest object = new org.apache.commons.math3.dfp.DfpTest();
+               object.setUp();
+               object.testDivide();
+        }
+    }
+
+    @Test(timeout=1800000)
     public void testAdd() throws Exception {
         if (verifyNoPropertyViolation(config)) {
                org.apache.commons.math3.dfp.DfpTest object = new org.apache.commons.math3.dfp.DfpTest();
@@ -100,15 +109,6 @@ public class DfpTest extends TestJPF {
     }
 
     @Test(timeout=1800000)
-    public void testDivide() throws Exception {
-        if (verifyNoPropertyViolation(config)) {
-               org.apache.commons.math3.dfp.DfpTest object = new org.apache.commons.math3.dfp.DfpTest();
-               object.setUp();
-               object.testDivide();
-        }
-    }
-
-    @Test(timeout=1800000)
     public void testToString() throws Exception {
         if (verifyNoPropertyViolation(config)) {
                org.apache.commons.math3.dfp.DfpTest object = new org.apache.commons.math3.dfp.DfpTest();
@@ -118,11 +118,11 @@ public class DfpTest extends TestJPF {
     }
 
     @Test(timeout=1800000)
-    public void testByteConstructor() throws Exception {
+    public void testNextAfter() throws Exception {
         if (verifyNoPropertyViolation(config)) {
                org.apache.commons.math3.dfp.DfpTest object = new org.apache.commons.math3.dfp.DfpTest();
                object.setUp();
-               object.testByteConstructor();
+               object.testNextAfter();
         }
     }
 
@@ -132,6 +132,15 @@ public class DfpTest extends TestJPF {
                org.apache.commons.math3.dfp.DfpTest object = new org.apache.commons.math3.dfp.DfpTest();
                object.setUp();
                object.testIntConstructor();
+        }
+    }
+
+    @Test(timeout=1800000)
+    public void testByteConstructor() throws Exception {
+        if (verifyNoPropertyViolation(config)) {
+               org.apache.commons.math3.dfp.DfpTest object = new org.apache.commons.math3.dfp.DfpTest();
+               object.setUp();
+               object.testByteConstructor();
         }
     }
 
@@ -244,15 +253,6 @@ public class DfpTest extends TestJPF {
     }
 
     @Test(timeout=1800000)
-    public void testNextAfter() throws Exception {
-        if (verifyNoPropertyViolation(config)) {
-               org.apache.commons.math3.dfp.DfpTest object = new org.apache.commons.math3.dfp.DfpTest();
-               object.setUp();
-               object.testNextAfter();
-        }
-    }
-
-    @Test(timeout=1800000)
     public void testExp() throws Exception {
         if (verifyNoPropertyViolation(config)) {
                org.apache.commons.math3.dfp.DfpTest object = new org.apache.commons.math3.dfp.DfpTest();
@@ -294,6 +294,15 @@ public class DfpTest extends TestJPF {
                org.apache.commons.math3.dfp.DfpTest object = new org.apache.commons.math3.dfp.DfpTest();
                object.setUp();
                object.testSignum();
+        }
+    }
+
+    @Test(timeout=1800000)
+    public void testLinearCombinationFaFa() throws Exception {
+        if (verifyNoPropertyViolation(config)) {
+               org.apache.commons.math3.dfp.DfpTest object = new org.apache.commons.math3.dfp.DfpTest();
+               object.setUp();
+               object.testLinearCombinationFaFa();
         }
     }
 
@@ -600,15 +609,6 @@ public class DfpTest extends TestJPF {
                org.apache.commons.math3.dfp.DfpTest object = new org.apache.commons.math3.dfp.DfpTest();
                object.setUp();
                object.testScalb();
-        }
-    }
-
-    @Test(timeout=1800000)
-    public void testLinearCombinationFaFa() throws Exception {
-        if (verifyNoPropertyViolation(config)) {
-               org.apache.commons.math3.dfp.DfpTest object = new org.apache.commons.math3.dfp.DfpTest();
-               object.setUp();
-               object.testLinearCombinationFaFa();
         }
     }
 

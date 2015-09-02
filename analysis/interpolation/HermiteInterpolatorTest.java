@@ -10,22 +10,6 @@ public class HermiteInterpolatorTest extends TestJPF {
         runTestsOfThisClass(testMethods);
     }
     @Test(timeout=1800000)
-    public void testZero() throws Exception {
-        if (verifyNoPropertyViolation(config)) {
-               org.apache.commons.math3.analysis.interpolation.HermiteInterpolatorTest object = new org.apache.commons.math3.analysis.interpolation.HermiteInterpolatorTest();
-               object.testZero();
-        }
-    }
-
-    @Test(timeout=1800000)
-    public void testEmptySample() throws Exception {
-        if (verifyUnhandledException("org.apache.commons.math3.exception.NoDataException", config)) {
-               org.apache.commons.math3.analysis.interpolation.HermiteInterpolatorTest object = new org.apache.commons.math3.analysis.interpolation.HermiteInterpolatorTest();
-               object.testEmptySample();
-        }
-    }
-
-    @Test(timeout=1800000)
     public void testQuadratic() throws Exception {
         if (verifyNoPropertyViolation(config)) {
                org.apache.commons.math3.analysis.interpolation.HermiteInterpolatorTest object = new org.apache.commons.math3.analysis.interpolation.HermiteInterpolatorTest();
@@ -94,6 +78,22 @@ public class HermiteInterpolatorTest extends TestJPF {
         if (verifyUnhandledException("java.lang.IllegalArgumentException", config)) {
                org.apache.commons.math3.analysis.interpolation.HermiteInterpolatorTest object = new org.apache.commons.math3.analysis.interpolation.HermiteInterpolatorTest();
                object.testDuplicatedAbscissa();
+        }
+    }
+
+    @Test(timeout=1800000)
+    public void testEmptySample() throws Exception {
+        if (verifyUnhandledException("org.apache.commons.math3.exception.NoDataException", config)) {
+               org.apache.commons.math3.analysis.interpolation.HermiteInterpolatorTest object = new org.apache.commons.math3.analysis.interpolation.HermiteInterpolatorTest();
+               object.testEmptySample();
+        }
+    }
+
+    @Test(timeout=1800000)
+    public void testZero() throws Exception {
+        if (verifyNoPropertyViolation(config)) {
+               org.apache.commons.math3.analysis.interpolation.HermiteInterpolatorTest object = new org.apache.commons.math3.analysis.interpolation.HermiteInterpolatorTest();
+               object.testZero();
         }
     }
 

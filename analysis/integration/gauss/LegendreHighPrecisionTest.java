@@ -10,18 +10,18 @@ public class LegendreHighPrecisionTest extends TestJPF {
         runTestsOfThisClass(testMethods);
     }
     @Test(timeout=1800000)
-    public void testCos() throws Exception {
-        if (verifyNoPropertyViolation(config)) {
-               org.apache.commons.math3.analysis.integration.gauss.LegendreHighPrecisionTest object = new org.apache.commons.math3.analysis.integration.gauss.LegendreHighPrecisionTest();
-               object.testCos();
-        }
-    }
-
-    @Test(timeout=1800000)
     public void testInverse() throws Exception {
         if (verifyNoPropertyViolation(config)) {
                org.apache.commons.math3.analysis.integration.gauss.LegendreHighPrecisionTest object = new org.apache.commons.math3.analysis.integration.gauss.LegendreHighPrecisionTest();
                object.testInverse();
+        }
+    }
+
+    @Test(timeout=1800000)
+    public void testCos() throws Exception {
+        if (verifyNoPropertyViolation(config)) {
+               org.apache.commons.math3.analysis.integration.gauss.LegendreHighPrecisionTest object = new org.apache.commons.math3.analysis.integration.gauss.LegendreHighPrecisionTest();
+               object.testCos();
         }
     }
 

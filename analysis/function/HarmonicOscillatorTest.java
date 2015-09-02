@@ -10,10 +10,10 @@ public class HarmonicOscillatorTest extends TestJPF {
         runTestsOfThisClass(testMethods);
     }
     @Test(timeout=1800000)
-    public void testSomeValues() throws Exception {
+    public void testDerivative() throws Exception {
         if (verifyNoPropertyViolation(config)) {
                org.apache.commons.math3.analysis.function.HarmonicOscillatorTest object = new org.apache.commons.math3.analysis.function.HarmonicOscillatorTest();
-               object.testSomeValues();
+               object.testDerivative();
         }
     }
 
@@ -66,10 +66,10 @@ public class HarmonicOscillatorTest extends TestJPF {
     }
 
     @Test(timeout=1800000)
-    public void testDerivative() throws Exception {
+    public void testSomeValues() throws Exception {
         if (verifyNoPropertyViolation(config)) {
                org.apache.commons.math3.analysis.function.HarmonicOscillatorTest object = new org.apache.commons.math3.analysis.function.HarmonicOscillatorTest();
-               object.testDerivative();
+               object.testSomeValues();
         }
     }
 

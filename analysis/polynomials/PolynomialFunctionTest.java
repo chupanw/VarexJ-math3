@@ -10,6 +10,22 @@ public class PolynomialFunctionTest extends TestJPF {
         runTestsOfThisClass(testMethods);
     }
     @Test(timeout=1800000)
+    public void testLinear() throws Exception {
+        if (verifyNoPropertyViolation(config)) {
+               org.apache.commons.math3.analysis.polynomials.PolynomialFunctionTest object = new org.apache.commons.math3.analysis.polynomials.PolynomialFunctionTest();
+               object.testLinear();
+        }
+    }
+
+    @Test(timeout=1800000)
+    public void testQuadratic() throws Exception {
+        if (verifyNoPropertyViolation(config)) {
+               org.apache.commons.math3.analysis.polynomials.PolynomialFunctionTest object = new org.apache.commons.math3.analysis.polynomials.PolynomialFunctionTest();
+               object.testQuadratic();
+        }
+    }
+
+    @Test(timeout=1800000)
     public void testConstants() throws Exception {
         if (verifyNoPropertyViolation(config)) {
                org.apache.commons.math3.analysis.polynomials.PolynomialFunctionTest object = new org.apache.commons.math3.analysis.polynomials.PolynomialFunctionTest();
@@ -78,22 +94,6 @@ public class PolynomialFunctionTest extends TestJPF {
         if (verifyNoPropertyViolation(config)) {
                org.apache.commons.math3.analysis.polynomials.PolynomialFunctionTest object = new org.apache.commons.math3.analysis.polynomials.PolynomialFunctionTest();
                object.testMath341();
-        }
-    }
-
-    @Test(timeout=1800000)
-    public void testLinear() throws Exception {
-        if (verifyNoPropertyViolation(config)) {
-               org.apache.commons.math3.analysis.polynomials.PolynomialFunctionTest object = new org.apache.commons.math3.analysis.polynomials.PolynomialFunctionTest();
-               object.testLinear();
-        }
-    }
-
-    @Test(timeout=1800000)
-    public void testQuadratic() throws Exception {
-        if (verifyNoPropertyViolation(config)) {
-               org.apache.commons.math3.analysis.polynomials.PolynomialFunctionTest object = new org.apache.commons.math3.analysis.polynomials.PolynomialFunctionTest();
-               object.testQuadratic();
         }
     }
 

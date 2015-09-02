@@ -10,6 +10,22 @@ public class TriangularDistributionTest extends TestJPF {
         runTestsOfThisClass(testMethods);
     }
     @Test(timeout=1800000)
+    public void testGetLowerBound() throws Exception {
+        if (verifyNoPropertyViolation(config)) {
+               org.apache.commons.math3.distribution.TriangularDistributionTest object = new org.apache.commons.math3.distribution.TriangularDistributionTest();
+               object.testGetLowerBound();
+        }
+    }
+
+    @Test(timeout=1800000)
+    public void testGetUpperBound() throws Exception {
+        if (verifyNoPropertyViolation(config)) {
+               org.apache.commons.math3.distribution.TriangularDistributionTest object = new org.apache.commons.math3.distribution.TriangularDistributionTest();
+               object.testGetUpperBound();
+        }
+    }
+
+    @Test(timeout=1800000)
     public void testPreconditions1() throws Exception {
         if (verifyUnhandledException("org.apache.commons.math3.exception.NumberIsTooLargeException", config)) {
                org.apache.commons.math3.distribution.TriangularDistributionTest object = new org.apache.commons.math3.distribution.TriangularDistributionTest();
@@ -46,30 +62,6 @@ public class TriangularDistributionTest extends TestJPF {
         if (verifyNoPropertyViolation(config)) {
                org.apache.commons.math3.distribution.TriangularDistributionTest object = new org.apache.commons.math3.distribution.TriangularDistributionTest();
                object.testMeanVariance();
-        }
-    }
-
-    @Test(timeout=1800000)
-    public void testGetUpperBound() throws Exception {
-        if (verifyNoPropertyViolation(config)) {
-               org.apache.commons.math3.distribution.TriangularDistributionTest object = new org.apache.commons.math3.distribution.TriangularDistributionTest();
-               object.testGetUpperBound();
-        }
-    }
-
-    @Test(timeout=1800000)
-    public void testGetLowerBound() throws Exception {
-        if (verifyNoPropertyViolation(config)) {
-               org.apache.commons.math3.distribution.TriangularDistributionTest object = new org.apache.commons.math3.distribution.TriangularDistributionTest();
-               object.testGetLowerBound();
-        }
-    }
-
-    @Test(timeout=1800000)
-    public void testIllegalArguments() throws Exception {
-        if (verifyNoPropertyViolation(config)) {
-               org.apache.commons.math3.distribution.TriangularDistributionTest object = new org.apache.commons.math3.distribution.TriangularDistributionTest();
-               object.testIllegalArguments();
         }
     }
 
@@ -114,10 +106,10 @@ public class TriangularDistributionTest extends TestJPF {
     }
 
     @Test(timeout=1800000)
-    public void testDistributionClone() throws Exception {
+    public void testDensityIntegrals() throws Exception {
         if (verifyNoPropertyViolation(config)) {
                org.apache.commons.math3.distribution.TriangularDistributionTest object = new org.apache.commons.math3.distribution.TriangularDistributionTest();
-               object.testDistributionClone();
+               object.testDensityIntegrals();
         }
     }
 
@@ -130,18 +122,26 @@ public class TriangularDistributionTest extends TestJPF {
     }
 
     @Test(timeout=1800000)
-    public void testDensityIntegrals() throws Exception {
-        if (verifyNoPropertyViolation(config)) {
-               org.apache.commons.math3.distribution.TriangularDistributionTest object = new org.apache.commons.math3.distribution.TriangularDistributionTest();
-               object.testDensityIntegrals();
-        }
-    }
-
-    @Test(timeout=1800000)
     public void testIsSupportUpperBoundInclusive() throws Exception {
         if (verifyNoPropertyViolation(config)) {
                org.apache.commons.math3.distribution.TriangularDistributionTest object = new org.apache.commons.math3.distribution.TriangularDistributionTest();
                object.testIsSupportUpperBoundInclusive();
+        }
+    }
+
+    @Test(timeout=1800000)
+    public void testDistributionClone() throws Exception {
+        if (verifyNoPropertyViolation(config)) {
+               org.apache.commons.math3.distribution.TriangularDistributionTest object = new org.apache.commons.math3.distribution.TriangularDistributionTest();
+               object.testDistributionClone();
+        }
+    }
+
+    @Test(timeout=1800000)
+    public void testIllegalArguments() throws Exception {
+        if (verifyNoPropertyViolation(config)) {
+               org.apache.commons.math3.distribution.TriangularDistributionTest object = new org.apache.commons.math3.distribution.TriangularDistributionTest();
+               object.testIllegalArguments();
         }
     }
 

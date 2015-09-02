@@ -10,10 +10,18 @@ public class StorelessCovarianceTest extends TestJPF {
         runTestsOfThisClass(testMethods);
     }
     @Test(timeout=1800000)
-    public void testSymmetry() throws Exception {
+    public void testLonglyByRow() throws Exception {
         if (verifyNoPropertyViolation(config)) {
                org.apache.commons.math3.stat.correlation.StorelessCovarianceTest object = new org.apache.commons.math3.stat.correlation.StorelessCovarianceTest();
-               object.testSymmetry();
+               object.testLonglyByRow();
+        }
+    }
+
+    @Test(timeout=1800000)
+    public void testSwissFertilityByRow() throws Exception {
+        if (verifyNoPropertyViolation(config)) {
+               org.apache.commons.math3.stat.correlation.StorelessCovarianceTest object = new org.apache.commons.math3.stat.correlation.StorelessCovarianceTest();
+               object.testSwissFertilityByRow();
         }
     }
 
@@ -26,14 +34,6 @@ public class StorelessCovarianceTest extends TestJPF {
     }
 
     @Test(timeout=1800000)
-    public void testLonglyByRow() throws Exception {
-        if (verifyNoPropertyViolation(config)) {
-               org.apache.commons.math3.stat.correlation.StorelessCovarianceTest object = new org.apache.commons.math3.stat.correlation.StorelessCovarianceTest();
-               object.testLonglyByRow();
-        }
-    }
-
-    @Test(timeout=1800000)
     public void testLonglySimpleCov() throws Exception {
         if (verifyNoPropertyViolation(config)) {
                org.apache.commons.math3.stat.correlation.StorelessCovarianceTest object = new org.apache.commons.math3.stat.correlation.StorelessCovarianceTest();
@@ -42,10 +42,10 @@ public class StorelessCovarianceTest extends TestJPF {
     }
 
     @Test(timeout=1800000)
-    public void testSwissFertilityByRow() throws Exception {
+    public void testSymmetry() throws Exception {
         if (verifyNoPropertyViolation(config)) {
                org.apache.commons.math3.stat.correlation.StorelessCovarianceTest object = new org.apache.commons.math3.stat.correlation.StorelessCovarianceTest();
-               object.testSwissFertilityByRow();
+               object.testSymmetry();
         }
     }
 

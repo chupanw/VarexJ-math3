@@ -10,6 +10,14 @@ public class DefaultTransformerTest extends TestJPF {
         runTestsOfThisClass(testMethods);
     }
     @Test(timeout=1800000)
+    public void testSerial() throws Exception {
+        if (verifyNoPropertyViolation(config)) {
+               org.apache.commons.math3.util.DefaultTransformerTest object = new org.apache.commons.math3.util.DefaultTransformerTest();
+               object.testSerial();
+        }
+    }
+
+    @Test(timeout=1800000)
     public void testTransformDouble() throws Exception {
         if (verifyNoPropertyViolation(config)) {
                org.apache.commons.math3.util.DefaultTransformerTest object = new org.apache.commons.math3.util.DefaultTransformerTest();
@@ -54,14 +62,6 @@ public class DefaultTransformerTest extends TestJPF {
         if (verifyUnhandledException("org.apache.commons.math3.exception.MathIllegalArgumentException", config)) {
                org.apache.commons.math3.util.DefaultTransformerTest object = new org.apache.commons.math3.util.DefaultTransformerTest();
                object.testTransformObject();
-        }
-    }
-
-    @Test(timeout=1800000)
-    public void testSerial() throws Exception {
-        if (verifyNoPropertyViolation(config)) {
-               org.apache.commons.math3.util.DefaultTransformerTest object = new org.apache.commons.math3.util.DefaultTransformerTest();
-               object.testSerial();
         }
     }
 

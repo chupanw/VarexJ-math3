@@ -18,10 +18,10 @@ public class ArrayFieldVectorTest extends TestJPF {
     }
 
     @Test(timeout=1800000)
-    public void testSerial() throws Exception {
+    public void testConstructors() throws Exception {
         if (verifyNoPropertyViolation(config)) {
                org.apache.commons.math3.linear.ArrayFieldVectorTest object = new org.apache.commons.math3.linear.ArrayFieldVectorTest();
-               object.testSerial();
+               object.testConstructors();
         }
     }
 
@@ -66,10 +66,10 @@ public class ArrayFieldVectorTest extends TestJPF {
     }
 
     @Test(timeout=1800000)
-    public void testConstructors() throws Exception {
+    public void testSerial() throws Exception {
         if (verifyNoPropertyViolation(config)) {
                org.apache.commons.math3.linear.ArrayFieldVectorTest object = new org.apache.commons.math3.linear.ArrayFieldVectorTest();
-               object.testConstructors();
+               object.testSerial();
         }
     }
 

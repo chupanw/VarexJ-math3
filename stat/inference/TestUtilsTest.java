@@ -10,10 +10,50 @@ public class TestUtilsTest extends TestJPF {
         runTestsOfThisClass(testMethods);
     }
     @Test(timeout=1800000)
+    public void testRootLogLikelihood() throws Exception {
+        if (verifyNoPropertyViolation(config)) {
+               org.apache.commons.math3.stat.inference.TestUtilsTest object = new org.apache.commons.math3.stat.inference.TestUtilsTest();
+               object.testRootLogLikelihood();
+        }
+    }
+
+    @Test(timeout=1800000)
+    public void testChiSquare() throws Exception {
+        if (verifyNoPropertyViolation(config)) {
+               org.apache.commons.math3.stat.inference.TestUtilsTest object = new org.apache.commons.math3.stat.inference.TestUtilsTest();
+               object.testChiSquare();
+        }
+    }
+
+    @Test(timeout=1800000)
     public void testSmallSamples() throws Exception {
         if (verifyNoPropertyViolation(config)) {
                org.apache.commons.math3.stat.inference.TestUtilsTest object = new org.apache.commons.math3.stat.inference.TestUtilsTest();
                object.testSmallSamples();
+        }
+    }
+
+    @Test(timeout=1800000)
+    public void testChiSquareIndependence() throws Exception {
+        if (verifyNoPropertyViolation(config)) {
+               org.apache.commons.math3.stat.inference.TestUtilsTest object = new org.apache.commons.math3.stat.inference.TestUtilsTest();
+               object.testChiSquareIndependence();
+        }
+    }
+
+    @Test(timeout=1800000)
+    public void testChiSquareLargeTestStatistic() throws Exception {
+        if (verifyNoPropertyViolation(config)) {
+               org.apache.commons.math3.stat.inference.TestUtilsTest object = new org.apache.commons.math3.stat.inference.TestUtilsTest();
+               object.testChiSquareLargeTestStatistic();
+        }
+    }
+
+    @Test(timeout=1800000)
+    public void testChiSquareZeroCount() throws Exception {
+        if (verifyNoPropertyViolation(config)) {
+               org.apache.commons.math3.stat.inference.TestUtilsTest object = new org.apache.commons.math3.stat.inference.TestUtilsTest();
+               object.testChiSquareZeroCount();
         }
     }
 
@@ -78,46 +118,6 @@ public class TestUtilsTest extends TestJPF {
         if (verifyNoPropertyViolation(config)) {
                org.apache.commons.math3.stat.inference.TestUtilsTest object = new org.apache.commons.math3.stat.inference.TestUtilsTest();
                object.testGTestIndependance();
-        }
-    }
-
-    @Test(timeout=1800000)
-    public void testChiSquare() throws Exception {
-        if (verifyNoPropertyViolation(config)) {
-               org.apache.commons.math3.stat.inference.TestUtilsTest object = new org.apache.commons.math3.stat.inference.TestUtilsTest();
-               object.testChiSquare();
-        }
-    }
-
-    @Test(timeout=1800000)
-    public void testChiSquareIndependence() throws Exception {
-        if (verifyNoPropertyViolation(config)) {
-               org.apache.commons.math3.stat.inference.TestUtilsTest object = new org.apache.commons.math3.stat.inference.TestUtilsTest();
-               object.testChiSquareIndependence();
-        }
-    }
-
-    @Test(timeout=1800000)
-    public void testChiSquareLargeTestStatistic() throws Exception {
-        if (verifyNoPropertyViolation(config)) {
-               org.apache.commons.math3.stat.inference.TestUtilsTest object = new org.apache.commons.math3.stat.inference.TestUtilsTest();
-               object.testChiSquareLargeTestStatistic();
-        }
-    }
-
-    @Test(timeout=1800000)
-    public void testChiSquareZeroCount() throws Exception {
-        if (verifyNoPropertyViolation(config)) {
-               org.apache.commons.math3.stat.inference.TestUtilsTest object = new org.apache.commons.math3.stat.inference.TestUtilsTest();
-               object.testChiSquareZeroCount();
-        }
-    }
-
-    @Test(timeout=1800000)
-    public void testRootLogLikelihood() throws Exception {
-        if (verifyNoPropertyViolation(config)) {
-               org.apache.commons.math3.stat.inference.TestUtilsTest object = new org.apache.commons.math3.stat.inference.TestUtilsTest();
-               object.testRootLogLikelihood();
         }
     }
 

@@ -10,6 +10,15 @@ public class GLSMultipleLinearRegressionTest extends TestJPF {
         runTestsOfThisClass(testMethods);
     }
     @Test(timeout=1800000)
+    public void cannotAddXSampleData() throws Exception {
+        if (verifyUnhandledException("java.lang.IllegalArgumentException", config)) {
+               org.apache.commons.math3.stat.regression.GLSMultipleLinearRegressionTest object = new org.apache.commons.math3.stat.regression.GLSMultipleLinearRegressionTest();
+               object.setUp();
+               object.cannotAddXSampleData();
+        }
+    }
+
+    @Test(timeout=1800000)
     public void cannotAddNullYSampleData() throws Exception {
         if (verifyUnhandledException("java.lang.IllegalArgumentException", config)) {
                org.apache.commons.math3.stat.regression.GLSMultipleLinearRegressionTest object = new org.apache.commons.math3.stat.regression.GLSMultipleLinearRegressionTest();
@@ -19,11 +28,11 @@ public class GLSMultipleLinearRegressionTest extends TestJPF {
     }
 
     @Test(timeout=1800000)
-    public void cannotAddXSampleData() throws Exception {
+    public void notEnoughData() throws Exception {
         if (verifyUnhandledException("java.lang.IllegalArgumentException", config)) {
                org.apache.commons.math3.stat.regression.GLSMultipleLinearRegressionTest object = new org.apache.commons.math3.stat.regression.GLSMultipleLinearRegressionTest();
                object.setUp();
-               object.cannotAddXSampleData();
+               object.notEnoughData();
         }
     }
 
@@ -42,15 +51,6 @@ public class GLSMultipleLinearRegressionTest extends TestJPF {
                org.apache.commons.math3.stat.regression.GLSMultipleLinearRegressionTest object = new org.apache.commons.math3.stat.regression.GLSMultipleLinearRegressionTest();
                object.setUp();
                object.cannotAddNullCovarianceData();
-        }
-    }
-
-    @Test(timeout=1800000)
-    public void notEnoughData() throws Exception {
-        if (verifyUnhandledException("java.lang.IllegalArgumentException", config)) {
-               org.apache.commons.math3.stat.regression.GLSMultipleLinearRegressionTest object = new org.apache.commons.math3.stat.regression.GLSMultipleLinearRegressionTest();
-               object.setUp();
-               object.notEnoughData();
         }
     }
 
@@ -109,20 +109,11 @@ public class GLSMultipleLinearRegressionTest extends TestJPF {
     }
 
     @Test(timeout=1800000)
-    public void canEstimateResiduals() throws Exception {
+    public void canEstimateRegressionParametersVariance() throws Exception {
         if (verifyNoPropertyViolation(config)) {
                org.apache.commons.math3.stat.regression.GLSMultipleLinearRegressionTest object = new org.apache.commons.math3.stat.regression.GLSMultipleLinearRegressionTest();
                object.setUp();
-               object.canEstimateResiduals();
-        }
-    }
-
-    @Test(timeout=1800000)
-    public void testNewSample() throws Exception {
-        if (verifyNoPropertyViolation(config)) {
-               org.apache.commons.math3.stat.regression.GLSMultipleLinearRegressionTest object = new org.apache.commons.math3.stat.regression.GLSMultipleLinearRegressionTest();
-               object.setUp();
-               object.testNewSample();
+               object.canEstimateRegressionParametersVariance();
         }
     }
 
@@ -136,11 +127,11 @@ public class GLSMultipleLinearRegressionTest extends TestJPF {
     }
 
     @Test(timeout=1800000)
-    public void canEstimateRegressionParametersVariance() throws Exception {
+    public void canEstimateResiduals() throws Exception {
         if (verifyNoPropertyViolation(config)) {
                org.apache.commons.math3.stat.regression.GLSMultipleLinearRegressionTest object = new org.apache.commons.math3.stat.regression.GLSMultipleLinearRegressionTest();
                object.setUp();
-               object.canEstimateRegressionParametersVariance();
+               object.canEstimateResiduals();
         }
     }
 
@@ -150,6 +141,15 @@ public class GLSMultipleLinearRegressionTest extends TestJPF {
                org.apache.commons.math3.stat.regression.GLSMultipleLinearRegressionTest object = new org.apache.commons.math3.stat.regression.GLSMultipleLinearRegressionTest();
                object.setUp();
                object.canEstimateRegressandVariance();
+        }
+    }
+
+    @Test(timeout=1800000)
+    public void testNewSample() throws Exception {
+        if (verifyNoPropertyViolation(config)) {
+               org.apache.commons.math3.stat.regression.GLSMultipleLinearRegressionTest object = new org.apache.commons.math3.stat.regression.GLSMultipleLinearRegressionTest();
+               object.setUp();
+               object.testNewSample();
         }
     }
 

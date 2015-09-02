@@ -10,6 +10,14 @@ public class MathArraysTest extends TestJPF {
         runTestsOfThisClass(testMethods);
     }
     @Test(timeout=1800000)
+    public void testScaleInPlace() throws Exception {
+        if (verifyNoPropertyViolation(config)) {
+               org.apache.commons.math3.util.MathArraysTest object = new org.apache.commons.math3.util.MathArraysTest();
+               object.testScaleInPlace();
+        }
+    }
+
+    @Test(timeout=1800000)
     public void testEbeAddPrecondition() throws Exception {
         if (verifyUnhandledException("org.apache.commons.math3.exception.DimensionMismatchException", config)) {
                org.apache.commons.math3.util.MathArraysTest object = new org.apache.commons.math3.util.MathArraysTest();
@@ -34,10 +42,10 @@ public class MathArraysTest extends TestJPF {
     }
 
     @Test(timeout=1800000)
-    public void testScaleInPlace() throws Exception {
-        if (verifyNoPropertyViolation(config)) {
+    public void testEbeDividePrecondition() throws Exception {
+        if (verifyUnhandledException("org.apache.commons.math3.exception.DimensionMismatchException", config)) {
                org.apache.commons.math3.util.MathArraysTest object = new org.apache.commons.math3.util.MathArraysTest();
-               object.testScaleInPlace();
+               object.testEbeDividePrecondition();
         }
     }
 
@@ -46,14 +54,6 @@ public class MathArraysTest extends TestJPF {
         if (verifyNoPropertyViolation(config)) {
                org.apache.commons.math3.util.MathArraysTest object = new org.apache.commons.math3.util.MathArraysTest();
                object.testEbeAdd();
-        }
-    }
-
-    @Test(timeout=1800000)
-    public void testEbeDividePrecondition() throws Exception {
-        if (verifyUnhandledException("org.apache.commons.math3.exception.DimensionMismatchException", config)) {
-               org.apache.commons.math3.util.MathArraysTest object = new org.apache.commons.math3.util.MathArraysTest();
-               object.testEbeDividePrecondition();
         }
     }
 

@@ -10,14 +10,6 @@ public class RRQRDecompositionTest extends TestJPF {
         runTestsOfThisClass(testMethods);
     }
     @Test(timeout=1800000)
-    public void testNonInvertible() throws Exception {
-        if (verifyUnhandledException("org.apache.commons.math3.linear.SingularMatrixException", config)) {
-               org.apache.commons.math3.linear.RRQRDecompositionTest object = new org.apache.commons.math3.linear.RRQRDecompositionTest();
-               object.testNonInvertible();
-        }
-    }
-
-    @Test(timeout=1800000)
     public void testQOrthogonal() throws Exception {
         if (verifyNoPropertyViolation(config)) {
                org.apache.commons.math3.linear.RRQRDecompositionTest object = new org.apache.commons.math3.linear.RRQRDecompositionTest();
@@ -42,14 +34,6 @@ public class RRQRDecompositionTest extends TestJPF {
     }
 
     @Test(timeout=1800000)
-    public void testDimensions() throws Exception {
-        if (verifyNoPropertyViolation(config)) {
-               org.apache.commons.math3.linear.RRQRDecompositionTest object = new org.apache.commons.math3.linear.RRQRDecompositionTest();
-               object.testDimensions();
-        }
-    }
-
-    @Test(timeout=1800000)
     public void testAPEqualQR() throws Exception {
         if (verifyNoPropertyViolation(config)) {
                org.apache.commons.math3.linear.RRQRDecompositionTest object = new org.apache.commons.math3.linear.RRQRDecompositionTest();
@@ -58,10 +42,26 @@ public class RRQRDecompositionTest extends TestJPF {
     }
 
     @Test(timeout=1800000)
+    public void testNonInvertible() throws Exception {
+        if (verifyUnhandledException("org.apache.commons.math3.linear.SingularMatrixException", config)) {
+               org.apache.commons.math3.linear.RRQRDecompositionTest object = new org.apache.commons.math3.linear.RRQRDecompositionTest();
+               object.testNonInvertible();
+        }
+    }
+
+    @Test(timeout=1800000)
     public void testRank() throws Exception {
         if (verifyNoPropertyViolation(config)) {
                org.apache.commons.math3.linear.RRQRDecompositionTest object = new org.apache.commons.math3.linear.RRQRDecompositionTest();
                object.testRank();
+        }
+    }
+
+    @Test(timeout=1800000)
+    public void testDimensions() throws Exception {
+        if (verifyNoPropertyViolation(config)) {
+               org.apache.commons.math3.linear.RRQRDecompositionTest object = new org.apache.commons.math3.linear.RRQRDecompositionTest();
+               object.testDimensions();
         }
     }
 

@@ -10,24 +10,6 @@ public class PoissonDistributionTest extends TestJPF {
         runTestsOfThisClass(testMethods);
     }
     @Test(timeout=1800000)
-    public void testMoments() throws Exception {
-        if (verifyNoPropertyViolation(config)) {
-               org.apache.commons.math3.distribution.PoissonDistributionTest object = new org.apache.commons.math3.distribution.PoissonDistributionTest();
-               object.setUp();
-               object.testMoments();
-        }
-    }
-
-    @Test(timeout=1800000)
-    public void testNegativeMean() throws Exception {
-        if (verifyUnhandledException("org.apache.commons.math3.exception.NotStrictlyPositiveException", config)) {
-               org.apache.commons.math3.distribution.PoissonDistributionTest object = new org.apache.commons.math3.distribution.PoissonDistributionTest();
-               object.setUp();
-               object.testNegativeMean();
-        }
-    }
-
-    @Test(timeout=1800000)
     public void testNormalApproximateProbability() throws Exception {
         if (verifyNoPropertyViolation(config)) {
                org.apache.commons.math3.distribution.PoissonDistributionTest object = new org.apache.commons.math3.distribution.PoissonDistributionTest();
@@ -42,6 +24,15 @@ public class PoissonDistributionTest extends TestJPF {
                org.apache.commons.math3.distribution.PoissonDistributionTest object = new org.apache.commons.math3.distribution.PoissonDistributionTest();
                object.setUp();
                object.testDegenerateInverseCumulativeProbability();
+        }
+    }
+
+    @Test(timeout=1800000)
+    public void testNegativeMean() throws Exception {
+        if (verifyUnhandledException("org.apache.commons.math3.exception.NotStrictlyPositiveException", config)) {
+               org.apache.commons.math3.distribution.PoissonDistributionTest object = new org.apache.commons.math3.distribution.PoissonDistributionTest();
+               object.setUp();
+               object.testNegativeMean();
         }
     }
 
@@ -82,11 +73,11 @@ public class PoissonDistributionTest extends TestJPF {
     }
 
     @Test(timeout=1800000)
-    public void testIllegalArguments() throws Exception {
+    public void testMoments() throws Exception {
         if (verifyNoPropertyViolation(config)) {
                org.apache.commons.math3.distribution.PoissonDistributionTest object = new org.apache.commons.math3.distribution.PoissonDistributionTest();
                object.setUp();
-               object.testIllegalArguments();
+               object.testMoments();
         }
     }
 
@@ -132,6 +123,15 @@ public class PoissonDistributionTest extends TestJPF {
                org.apache.commons.math3.distribution.PoissonDistributionTest object = new org.apache.commons.math3.distribution.PoissonDistributionTest();
                object.setUp();
                object.testSampling();
+        }
+    }
+
+    @Test(timeout=1800000)
+    public void testIllegalArguments() throws Exception {
+        if (verifyNoPropertyViolation(config)) {
+               org.apache.commons.math3.distribution.PoissonDistributionTest object = new org.apache.commons.math3.distribution.PoissonDistributionTest();
+               object.setUp();
+               object.testIllegalArguments();
         }
     }
 

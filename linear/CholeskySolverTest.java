@@ -10,14 +10,6 @@ public class CholeskySolverTest extends TestJPF {
         runTestsOfThisClass(testMethods);
     }
     @Test(timeout=1800000)
-    public void testSolveDimensionErrors() throws Exception {
-        if (verifyNoPropertyViolation(config)) {
-               org.apache.commons.math3.linear.CholeskySolverTest object = new org.apache.commons.math3.linear.CholeskySolverTest();
-               object.testSolveDimensionErrors();
-        }
-    }
-
-    @Test(timeout=1800000)
     public void testSolve() throws Exception {
         if (verifyNoPropertyViolation(config)) {
                org.apache.commons.math3.linear.CholeskySolverTest object = new org.apache.commons.math3.linear.CholeskySolverTest();
@@ -30,6 +22,14 @@ public class CholeskySolverTest extends TestJPF {
         if (verifyNoPropertyViolation(config)) {
                org.apache.commons.math3.linear.CholeskySolverTest object = new org.apache.commons.math3.linear.CholeskySolverTest();
                object.testDeterminant();
+        }
+    }
+
+    @Test(timeout=1800000)
+    public void testSolveDimensionErrors() throws Exception {
+        if (verifyNoPropertyViolation(config)) {
+               org.apache.commons.math3.linear.CholeskySolverTest object = new org.apache.commons.math3.linear.CholeskySolverTest();
+               object.testSolveDimensionErrors();
         }
     }
 

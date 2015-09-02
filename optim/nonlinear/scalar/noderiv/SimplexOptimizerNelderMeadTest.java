@@ -10,6 +10,30 @@ public class SimplexOptimizerNelderMeadTest extends TestJPF {
         runTestsOfThisClass(testMethods);
     }
     @Test(timeout=1800000)
+    public void testLeastSquares1() throws Exception {
+        if (verifyNoPropertyViolation(config)) {
+               org.apache.commons.math3.optim.nonlinear.scalar.noderiv.SimplexOptimizerNelderMeadTest object = new org.apache.commons.math3.optim.nonlinear.scalar.noderiv.SimplexOptimizerNelderMeadTest();
+               object.testLeastSquares1();
+        }
+    }
+
+    @Test(timeout=1800000)
+    public void testBoundsUnsupported() throws Exception {
+        if (verifyUnhandledException("org.apache.commons.math3.exception.MathUnsupportedOperationException", config)) {
+               org.apache.commons.math3.optim.nonlinear.scalar.noderiv.SimplexOptimizerNelderMeadTest object = new org.apache.commons.math3.optim.nonlinear.scalar.noderiv.SimplexOptimizerNelderMeadTest();
+               object.testBoundsUnsupported();
+        }
+    }
+
+    @Test(timeout=1800000)
+    public void testRosenbrock() throws Exception {
+        if (verifyNoPropertyViolation(config)) {
+               org.apache.commons.math3.optim.nonlinear.scalar.noderiv.SimplexOptimizerNelderMeadTest object = new org.apache.commons.math3.optim.nonlinear.scalar.noderiv.SimplexOptimizerNelderMeadTest();
+               object.testRosenbrock();
+        }
+    }
+
+    @Test(timeout=1800000)
     public void testMinimize1() throws Exception {
         if (verifyNoPropertyViolation(config)) {
                org.apache.commons.math3.optim.nonlinear.scalar.noderiv.SimplexOptimizerNelderMeadTest object = new org.apache.commons.math3.optim.nonlinear.scalar.noderiv.SimplexOptimizerNelderMeadTest();
@@ -50,22 +74,6 @@ public class SimplexOptimizerNelderMeadTest extends TestJPF {
     }
 
     @Test(timeout=1800000)
-    public void testLeastSquares1() throws Exception {
-        if (verifyNoPropertyViolation(config)) {
-               org.apache.commons.math3.optim.nonlinear.scalar.noderiv.SimplexOptimizerNelderMeadTest object = new org.apache.commons.math3.optim.nonlinear.scalar.noderiv.SimplexOptimizerNelderMeadTest();
-               object.testLeastSquares1();
-        }
-    }
-
-    @Test(timeout=1800000)
-    public void testLeastSquares2() throws Exception {
-        if (verifyNoPropertyViolation(config)) {
-               org.apache.commons.math3.optim.nonlinear.scalar.noderiv.SimplexOptimizerNelderMeadTest object = new org.apache.commons.math3.optim.nonlinear.scalar.noderiv.SimplexOptimizerNelderMeadTest();
-               object.testLeastSquares2();
-        }
-    }
-
-    @Test(timeout=1800000)
     public void testLeastSquares3() throws Exception {
         if (verifyNoPropertyViolation(config)) {
                org.apache.commons.math3.optim.nonlinear.scalar.noderiv.SimplexOptimizerNelderMeadTest object = new org.apache.commons.math3.optim.nonlinear.scalar.noderiv.SimplexOptimizerNelderMeadTest();
@@ -82,18 +90,10 @@ public class SimplexOptimizerNelderMeadTest extends TestJPF {
     }
 
     @Test(timeout=1800000)
-    public void testBoundsUnsupported() throws Exception {
-        if (verifyUnhandledException("org.apache.commons.math3.exception.MathUnsupportedOperationException", config)) {
-               org.apache.commons.math3.optim.nonlinear.scalar.noderiv.SimplexOptimizerNelderMeadTest object = new org.apache.commons.math3.optim.nonlinear.scalar.noderiv.SimplexOptimizerNelderMeadTest();
-               object.testBoundsUnsupported();
-        }
-    }
-
-    @Test(timeout=1800000)
-    public void testRosenbrock() throws Exception {
+    public void testLeastSquares2() throws Exception {
         if (verifyNoPropertyViolation(config)) {
                org.apache.commons.math3.optim.nonlinear.scalar.noderiv.SimplexOptimizerNelderMeadTest object = new org.apache.commons.math3.optim.nonlinear.scalar.noderiv.SimplexOptimizerNelderMeadTest();
-               object.testRosenbrock();
+               object.testLeastSquares2();
         }
     }
 

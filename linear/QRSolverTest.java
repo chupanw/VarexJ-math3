@@ -10,18 +10,18 @@ public class QRSolverTest extends TestJPF {
         runTestsOfThisClass(testMethods);
     }
     @Test(timeout=1800000)
-    public void testSolveDimensionErrors() throws Exception {
-        if (verifyNoPropertyViolation(config)) {
-               org.apache.commons.math3.linear.QRSolverTest object = new org.apache.commons.math3.linear.QRSolverTest();
-               object.testSolveDimensionErrors();
-        }
-    }
-
-    @Test(timeout=1800000)
     public void testSolve() throws Exception {
         if (verifyNoPropertyViolation(config)) {
                org.apache.commons.math3.linear.QRSolverTest object = new org.apache.commons.math3.linear.QRSolverTest();
                object.testSolve();
+        }
+    }
+
+    @Test(timeout=1800000)
+    public void testSolveDimensionErrors() throws Exception {
+        if (verifyNoPropertyViolation(config)) {
+               org.apache.commons.math3.linear.QRSolverTest object = new org.apache.commons.math3.linear.QRSolverTest();
+               object.testSolveDimensionErrors();
         }
     }
 

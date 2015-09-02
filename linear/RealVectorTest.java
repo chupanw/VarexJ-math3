@@ -18,6 +18,22 @@ public class RealVectorTest extends TestJPF {
     }
 
     @Test(timeout=1800000)
+    public void testSerial() throws Exception {
+        if (verifyNoPropertyViolation(config)) {
+               org.apache.commons.math3.linear.RealVectorTest object = new org.apache.commons.math3.linear.RealVectorTest();
+               object.testSerial();
+        }
+    }
+
+    @Test(timeout=1800000)
+    public void testSparseIterator() throws Exception {
+        if (verifyNoPropertyViolation(config)) {
+               org.apache.commons.math3.linear.RealVectorTest object = new org.apache.commons.math3.linear.RealVectorTest();
+               object.testSparseIterator();
+        }
+    }
+
+    @Test(timeout=1800000)
     public void testAppendVector() throws Exception {
         if (verifyNoPropertyViolation(config)) {
                org.apache.commons.math3.linear.RealVectorTest object = new org.apache.commons.math3.linear.RealVectorTest();
@@ -194,18 +210,330 @@ public class RealVectorTest extends TestJPF {
     }
 
     @Test(timeout=1800000)
-    public void testSerial() throws Exception {
+    public void testSet() throws Exception {
         if (verifyNoPropertyViolation(config)) {
                org.apache.commons.math3.linear.RealVectorTest object = new org.apache.commons.math3.linear.RealVectorTest();
-               object.testSerial();
+               object.testSet();
         }
     }
 
     @Test(timeout=1800000)
-    public void testSparseIterator() throws Exception {
+    public void testProjectionNullVector() throws Exception {
+        if (verifyUnhandledException("org.apache.commons.math3.exception.MathArithmeticException", config)) {
+               org.apache.commons.math3.linear.RealVectorTest object = new org.apache.commons.math3.linear.RealVectorTest();
+               object.testProjectionNullVector();
+        }
+    }
+
+    @Test(timeout=1800000)
+    public void testToArray() throws Exception {
         if (verifyNoPropertyViolation(config)) {
                org.apache.commons.math3.linear.RealVectorTest object = new org.apache.commons.math3.linear.RealVectorTest();
-               object.testSparseIterator();
+               object.testToArray();
+        }
+    }
+
+    @Test(timeout=1800000)
+    public void testProjectionDimensionMismatch() throws Exception {
+        if (verifyUnhandledException("org.apache.commons.math3.exception.DimensionMismatchException", config)) {
+               org.apache.commons.math3.linear.RealVectorTest object = new org.apache.commons.math3.linear.RealVectorTest();
+               object.testProjectionDimensionMismatch();
+        }
+    }
+
+    @Test(timeout=1800000)
+    public void testUnitVector() throws Exception {
+        if (verifyNoPropertyViolation(config)) {
+               org.apache.commons.math3.linear.RealVectorTest object = new org.apache.commons.math3.linear.RealVectorTest();
+               object.testUnitVector();
+        }
+    }
+
+    @Test(timeout=1800000)
+    public void testUnitize() throws Exception {
+        if (verifyNoPropertyViolation(config)) {
+               org.apache.commons.math3.linear.RealVectorTest object = new org.apache.commons.math3.linear.RealVectorTest();
+               object.testUnitize();
+        }
+    }
+
+    @Test(timeout=1800000)
+    public void testUnitVectorNullVector() throws Exception {
+        if (verifyUnhandledException("java.lang.ArithmeticException", config)) {
+               org.apache.commons.math3.linear.RealVectorTest object = new org.apache.commons.math3.linear.RealVectorTest();
+               object.testUnitVectorNullVector();
+        }
+    }
+
+    @Test(timeout=1800000)
+    public void testUnitizeNullVector() throws Exception {
+        if (verifyUnhandledException("java.lang.ArithmeticException", config)) {
+               org.apache.commons.math3.linear.RealVectorTest object = new org.apache.commons.math3.linear.RealVectorTest();
+               object.testUnitizeNullVector();
+        }
+    }
+
+    @Test(timeout=1800000)
+    public void testCombineSameType() throws Exception {
+        if (verifyNoPropertyViolation(config)) {
+               org.apache.commons.math3.linear.RealVectorTest object = new org.apache.commons.math3.linear.RealVectorTest();
+               object.testCombineSameType();
+        }
+    }
+
+    @Test(timeout=1800000)
+    public void testCombineMixedTypes() throws Exception {
+        if (verifyNoPropertyViolation(config)) {
+               org.apache.commons.math3.linear.RealVectorTest object = new org.apache.commons.math3.linear.RealVectorTest();
+               object.testCombineMixedTypes();
+        }
+    }
+
+    @Test(timeout=1800000)
+    public void testCombineDimensionMismatchSameType() throws Exception {
+        if (verifyUnhandledException("org.apache.commons.math3.exception.DimensionMismatchException", config)) {
+               org.apache.commons.math3.linear.RealVectorTest object = new org.apache.commons.math3.linear.RealVectorTest();
+               object.testCombineDimensionMismatchSameType();
+        }
+    }
+
+    @Test(timeout=1800000)
+    public void testCombineDimensionMismatchMixedTypes() throws Exception {
+        if (verifyUnhandledException("org.apache.commons.math3.exception.DimensionMismatchException", config)) {
+               org.apache.commons.math3.linear.RealVectorTest object = new org.apache.commons.math3.linear.RealVectorTest();
+               object.testCombineDimensionMismatchMixedTypes();
+        }
+    }
+
+    @Test(timeout=1800000)
+    public void testCombineToSelfSameType() throws Exception {
+        if (verifyNoPropertyViolation(config)) {
+               org.apache.commons.math3.linear.RealVectorTest object = new org.apache.commons.math3.linear.RealVectorTest();
+               object.testCombineToSelfSameType();
+        }
+    }
+
+    @Test(timeout=1800000)
+    public void testCombineToSelfMixedTypes() throws Exception {
+        if (verifyNoPropertyViolation(config)) {
+               org.apache.commons.math3.linear.RealVectorTest object = new org.apache.commons.math3.linear.RealVectorTest();
+               object.testCombineToSelfMixedTypes();
+        }
+    }
+
+    @Test(timeout=1800000)
+    public void testCombineToSelfDimensionMismatchSameType() throws Exception {
+        if (verifyUnhandledException("org.apache.commons.math3.exception.DimensionMismatchException", config)) {
+               org.apache.commons.math3.linear.RealVectorTest object = new org.apache.commons.math3.linear.RealVectorTest();
+               object.testCombineToSelfDimensionMismatchSameType();
+        }
+    }
+
+    @Test(timeout=1800000)
+    public void testCombineToSelfDimensionMismatchMixedTypes() throws Exception {
+        if (verifyUnhandledException("org.apache.commons.math3.exception.DimensionMismatchException", config)) {
+               org.apache.commons.math3.linear.RealVectorTest object = new org.apache.commons.math3.linear.RealVectorTest();
+               object.testCombineToSelfDimensionMismatchMixedTypes();
+        }
+    }
+
+    @Test(timeout=1800000)
+    public void testCopy() throws Exception {
+        if (verifyNoPropertyViolation(config)) {
+               org.apache.commons.math3.linear.RealVectorTest object = new org.apache.commons.math3.linear.RealVectorTest();
+               object.testCopy();
+        }
+    }
+
+    @Test(timeout=1800000)
+    public void testDotProductSameType() throws Exception {
+        if (verifyNoPropertyViolation(config)) {
+               org.apache.commons.math3.linear.RealVectorTest object = new org.apache.commons.math3.linear.RealVectorTest();
+               object.testDotProductSameType();
+        }
+    }
+
+    @Test(timeout=1800000)
+    public void testDotProductDimensionMismatchSameType() throws Exception {
+        if (verifyUnhandledException("org.apache.commons.math3.exception.DimensionMismatchException", config)) {
+               org.apache.commons.math3.linear.RealVectorTest object = new org.apache.commons.math3.linear.RealVectorTest();
+               object.testDotProductDimensionMismatchSameType();
+        }
+    }
+
+    @Test(timeout=1800000)
+    public void testDotProductMixedTypes() throws Exception {
+        if (verifyNoPropertyViolation(config)) {
+               org.apache.commons.math3.linear.RealVectorTest object = new org.apache.commons.math3.linear.RealVectorTest();
+               object.testDotProductMixedTypes();
+        }
+    }
+
+    @Test(timeout=1800000)
+    public void testDotProductDimensionMismatchMixedTypes() throws Exception {
+        if (verifyUnhandledException("org.apache.commons.math3.exception.DimensionMismatchException", config)) {
+               org.apache.commons.math3.linear.RealVectorTest object = new org.apache.commons.math3.linear.RealVectorTest();
+               object.testDotProductDimensionMismatchMixedTypes();
+        }
+    }
+
+    @Test(timeout=1800000)
+    public void testCosineSameType() throws Exception {
+        if (verifyNoPropertyViolation(config)) {
+               org.apache.commons.math3.linear.RealVectorTest object = new org.apache.commons.math3.linear.RealVectorTest();
+               object.testCosineSameType();
+        }
+    }
+
+    @Test(timeout=1800000)
+    public void testCosineMixedTypes() throws Exception {
+        if (verifyNoPropertyViolation(config)) {
+               org.apache.commons.math3.linear.RealVectorTest object = new org.apache.commons.math3.linear.RealVectorTest();
+               object.testCosineMixedTypes();
+        }
+    }
+
+    @Test(timeout=1800000)
+    public void testCosineLeftNullVector() throws Exception {
+        if (verifyUnhandledException("org.apache.commons.math3.exception.MathArithmeticException", config)) {
+               org.apache.commons.math3.linear.RealVectorTest object = new org.apache.commons.math3.linear.RealVectorTest();
+               object.testCosineLeftNullVector();
+        }
+    }
+
+    @Test(timeout=1800000)
+    public void testCosineRightNullVector() throws Exception {
+        if (verifyUnhandledException("org.apache.commons.math3.exception.MathArithmeticException", config)) {
+               org.apache.commons.math3.linear.RealVectorTest object = new org.apache.commons.math3.linear.RealVectorTest();
+               object.testCosineRightNullVector();
+        }
+    }
+
+    @Test(timeout=1800000)
+    public void testCosineDimensionMismatch() throws Exception {
+        if (verifyUnhandledException("org.apache.commons.math3.exception.DimensionMismatchException", config)) {
+               org.apache.commons.math3.linear.RealVectorTest object = new org.apache.commons.math3.linear.RealVectorTest();
+               object.testCosineDimensionMismatch();
+        }
+    }
+
+    @Test(timeout=1800000)
+    public void testMinMax() throws Exception {
+        if (verifyNoPropertyViolation(config)) {
+               org.apache.commons.math3.linear.RealVectorTest object = new org.apache.commons.math3.linear.RealVectorTest();
+               object.testMinMax();
+        }
+    }
+
+    @Test(timeout=1800000)
+    public void testWalkInDefaultOrderPreservingVisitor1() throws Exception {
+        if (verifyNoPropertyViolation(config)) {
+               org.apache.commons.math3.linear.RealVectorTest object = new org.apache.commons.math3.linear.RealVectorTest();
+               object.testWalkInDefaultOrderPreservingVisitor1();
+        }
+    }
+
+    @Test(timeout=1800000)
+    public void testWalkInDefaultOrderPreservingVisitor2() throws Exception {
+        if (verifyNoPropertyViolation(config)) {
+               org.apache.commons.math3.linear.RealVectorTest object = new org.apache.commons.math3.linear.RealVectorTest();
+               object.testWalkInDefaultOrderPreservingVisitor2();
+        }
+    }
+
+    @Test(timeout=1800000)
+    public void testWalkInDefaultOrderPreservingVisitor3() throws Exception {
+        if (verifyNoPropertyViolation(config)) {
+               org.apache.commons.math3.linear.RealVectorTest object = new org.apache.commons.math3.linear.RealVectorTest();
+               object.testWalkInDefaultOrderPreservingVisitor3();
+        }
+    }
+
+    @Test(timeout=1800000)
+    public void testWalkInOptimizedOrderPreservingVisitor1() throws Exception {
+        if (verifyNoPropertyViolation(config)) {
+               org.apache.commons.math3.linear.RealVectorTest object = new org.apache.commons.math3.linear.RealVectorTest();
+               object.testWalkInOptimizedOrderPreservingVisitor1();
+        }
+    }
+
+    @Test(timeout=1800000)
+    public void testWalkInOptimizedOrderPreservingVisitor2() throws Exception {
+        if (verifyNoPropertyViolation(config)) {
+               org.apache.commons.math3.linear.RealVectorTest object = new org.apache.commons.math3.linear.RealVectorTest();
+               object.testWalkInOptimizedOrderPreservingVisitor2();
+        }
+    }
+
+    @Test(timeout=1800000)
+    public void testWalkInOptimizedOrderPreservingVisitor3() throws Exception {
+        if (verifyNoPropertyViolation(config)) {
+               org.apache.commons.math3.linear.RealVectorTest object = new org.apache.commons.math3.linear.RealVectorTest();
+               object.testWalkInOptimizedOrderPreservingVisitor3();
+        }
+    }
+
+    @Test(timeout=1800000)
+    public void testWalkInDefaultOrderChangingVisitor1() throws Exception {
+        if (verifyNoPropertyViolation(config)) {
+               org.apache.commons.math3.linear.RealVectorTest object = new org.apache.commons.math3.linear.RealVectorTest();
+               object.testWalkInDefaultOrderChangingVisitor1();
+        }
+    }
+
+    @Test(timeout=1800000)
+    public void testWalkInDefaultOrderChangingVisitor2() throws Exception {
+        if (verifyNoPropertyViolation(config)) {
+               org.apache.commons.math3.linear.RealVectorTest object = new org.apache.commons.math3.linear.RealVectorTest();
+               object.testWalkInDefaultOrderChangingVisitor2();
+        }
+    }
+
+    @Test(timeout=1800000)
+    public void testWalkInDefaultOrderChangingVisitor3() throws Exception {
+        if (verifyNoPropertyViolation(config)) {
+               org.apache.commons.math3.linear.RealVectorTest object = new org.apache.commons.math3.linear.RealVectorTest();
+               object.testWalkInDefaultOrderChangingVisitor3();
+        }
+    }
+
+    @Test(timeout=1800000)
+    public void testWalkInOptimizedOrderChangingVisitor1() throws Exception {
+        if (verifyNoPropertyViolation(config)) {
+               org.apache.commons.math3.linear.RealVectorTest object = new org.apache.commons.math3.linear.RealVectorTest();
+               object.testWalkInOptimizedOrderChangingVisitor1();
+        }
+    }
+
+    @Test(timeout=1800000)
+    public void testWalkInOptimizedOrderChangingVisitor2() throws Exception {
+        if (verifyNoPropertyViolation(config)) {
+               org.apache.commons.math3.linear.RealVectorTest object = new org.apache.commons.math3.linear.RealVectorTest();
+               object.testWalkInOptimizedOrderChangingVisitor2();
+        }
+    }
+
+    @Test(timeout=1800000)
+    public void testWalkInOptimizedOrderChangingVisitor3() throws Exception {
+        if (verifyNoPropertyViolation(config)) {
+               org.apache.commons.math3.linear.RealVectorTest object = new org.apache.commons.math3.linear.RealVectorTest();
+               object.testWalkInOptimizedOrderChangingVisitor3();
+        }
+    }
+
+    @Test(timeout=1800000)
+    public void testIterator() throws Exception {
+        if (verifyNoPropertyViolation(config)) {
+               org.apache.commons.math3.linear.RealVectorTest object = new org.apache.commons.math3.linear.RealVectorTest();
+               object.testIterator();
+        }
+    }
+
+    @Test(timeout=1800000)
+    public void testGetEntry() throws Exception {
+        if (verifyNoPropertyViolation(config)) {
+               org.apache.commons.math3.linear.RealVectorTest object = new org.apache.commons.math3.linear.RealVectorTest();
+               object.testGetEntry();
         }
     }
 
@@ -518,334 +846,6 @@ public class RealVectorTest extends TestJPF {
         if (verifyNoPropertyViolation(config)) {
                org.apache.commons.math3.linear.RealVectorTest object = new org.apache.commons.math3.linear.RealVectorTest();
                object.testProjectionMixedTypes();
-        }
-    }
-
-    @Test(timeout=1800000)
-    public void testProjectionNullVector() throws Exception {
-        if (verifyUnhandledException("org.apache.commons.math3.exception.MathArithmeticException", config)) {
-               org.apache.commons.math3.linear.RealVectorTest object = new org.apache.commons.math3.linear.RealVectorTest();
-               object.testProjectionNullVector();
-        }
-    }
-
-    @Test(timeout=1800000)
-    public void testProjectionDimensionMismatch() throws Exception {
-        if (verifyUnhandledException("org.apache.commons.math3.exception.DimensionMismatchException", config)) {
-               org.apache.commons.math3.linear.RealVectorTest object = new org.apache.commons.math3.linear.RealVectorTest();
-               object.testProjectionDimensionMismatch();
-        }
-    }
-
-    @Test(timeout=1800000)
-    public void testSet() throws Exception {
-        if (verifyNoPropertyViolation(config)) {
-               org.apache.commons.math3.linear.RealVectorTest object = new org.apache.commons.math3.linear.RealVectorTest();
-               object.testSet();
-        }
-    }
-
-    @Test(timeout=1800000)
-    public void testToArray() throws Exception {
-        if (verifyNoPropertyViolation(config)) {
-               org.apache.commons.math3.linear.RealVectorTest object = new org.apache.commons.math3.linear.RealVectorTest();
-               object.testToArray();
-        }
-    }
-
-    @Test(timeout=1800000)
-    public void testUnitVector() throws Exception {
-        if (verifyNoPropertyViolation(config)) {
-               org.apache.commons.math3.linear.RealVectorTest object = new org.apache.commons.math3.linear.RealVectorTest();
-               object.testUnitVector();
-        }
-    }
-
-    @Test(timeout=1800000)
-    public void testUnitize() throws Exception {
-        if (verifyNoPropertyViolation(config)) {
-               org.apache.commons.math3.linear.RealVectorTest object = new org.apache.commons.math3.linear.RealVectorTest();
-               object.testUnitize();
-        }
-    }
-
-    @Test(timeout=1800000)
-    public void testUnitVectorNullVector() throws Exception {
-        if (verifyUnhandledException("java.lang.ArithmeticException", config)) {
-               org.apache.commons.math3.linear.RealVectorTest object = new org.apache.commons.math3.linear.RealVectorTest();
-               object.testUnitVectorNullVector();
-        }
-    }
-
-    @Test(timeout=1800000)
-    public void testUnitizeNullVector() throws Exception {
-        if (verifyUnhandledException("java.lang.ArithmeticException", config)) {
-               org.apache.commons.math3.linear.RealVectorTest object = new org.apache.commons.math3.linear.RealVectorTest();
-               object.testUnitizeNullVector();
-        }
-    }
-
-    @Test(timeout=1800000)
-    public void testCombineSameType() throws Exception {
-        if (verifyNoPropertyViolation(config)) {
-               org.apache.commons.math3.linear.RealVectorTest object = new org.apache.commons.math3.linear.RealVectorTest();
-               object.testCombineSameType();
-        }
-    }
-
-    @Test(timeout=1800000)
-    public void testCombineMixedTypes() throws Exception {
-        if (verifyNoPropertyViolation(config)) {
-               org.apache.commons.math3.linear.RealVectorTest object = new org.apache.commons.math3.linear.RealVectorTest();
-               object.testCombineMixedTypes();
-        }
-    }
-
-    @Test(timeout=1800000)
-    public void testCombineDimensionMismatchSameType() throws Exception {
-        if (verifyUnhandledException("org.apache.commons.math3.exception.DimensionMismatchException", config)) {
-               org.apache.commons.math3.linear.RealVectorTest object = new org.apache.commons.math3.linear.RealVectorTest();
-               object.testCombineDimensionMismatchSameType();
-        }
-    }
-
-    @Test(timeout=1800000)
-    public void testCombineDimensionMismatchMixedTypes() throws Exception {
-        if (verifyUnhandledException("org.apache.commons.math3.exception.DimensionMismatchException", config)) {
-               org.apache.commons.math3.linear.RealVectorTest object = new org.apache.commons.math3.linear.RealVectorTest();
-               object.testCombineDimensionMismatchMixedTypes();
-        }
-    }
-
-    @Test(timeout=1800000)
-    public void testCombineToSelfSameType() throws Exception {
-        if (verifyNoPropertyViolation(config)) {
-               org.apache.commons.math3.linear.RealVectorTest object = new org.apache.commons.math3.linear.RealVectorTest();
-               object.testCombineToSelfSameType();
-        }
-    }
-
-    @Test(timeout=1800000)
-    public void testCombineToSelfMixedTypes() throws Exception {
-        if (verifyNoPropertyViolation(config)) {
-               org.apache.commons.math3.linear.RealVectorTest object = new org.apache.commons.math3.linear.RealVectorTest();
-               object.testCombineToSelfMixedTypes();
-        }
-    }
-
-    @Test(timeout=1800000)
-    public void testCombineToSelfDimensionMismatchSameType() throws Exception {
-        if (verifyUnhandledException("org.apache.commons.math3.exception.DimensionMismatchException", config)) {
-               org.apache.commons.math3.linear.RealVectorTest object = new org.apache.commons.math3.linear.RealVectorTest();
-               object.testCombineToSelfDimensionMismatchSameType();
-        }
-    }
-
-    @Test(timeout=1800000)
-    public void testCombineToSelfDimensionMismatchMixedTypes() throws Exception {
-        if (verifyUnhandledException("org.apache.commons.math3.exception.DimensionMismatchException", config)) {
-               org.apache.commons.math3.linear.RealVectorTest object = new org.apache.commons.math3.linear.RealVectorTest();
-               object.testCombineToSelfDimensionMismatchMixedTypes();
-        }
-    }
-
-    @Test(timeout=1800000)
-    public void testCopy() throws Exception {
-        if (verifyNoPropertyViolation(config)) {
-               org.apache.commons.math3.linear.RealVectorTest object = new org.apache.commons.math3.linear.RealVectorTest();
-               object.testCopy();
-        }
-    }
-
-    @Test(timeout=1800000)
-    public void testDotProductSameType() throws Exception {
-        if (verifyNoPropertyViolation(config)) {
-               org.apache.commons.math3.linear.RealVectorTest object = new org.apache.commons.math3.linear.RealVectorTest();
-               object.testDotProductSameType();
-        }
-    }
-
-    @Test(timeout=1800000)
-    public void testDotProductDimensionMismatchSameType() throws Exception {
-        if (verifyUnhandledException("org.apache.commons.math3.exception.DimensionMismatchException", config)) {
-               org.apache.commons.math3.linear.RealVectorTest object = new org.apache.commons.math3.linear.RealVectorTest();
-               object.testDotProductDimensionMismatchSameType();
-        }
-    }
-
-    @Test(timeout=1800000)
-    public void testDotProductMixedTypes() throws Exception {
-        if (verifyNoPropertyViolation(config)) {
-               org.apache.commons.math3.linear.RealVectorTest object = new org.apache.commons.math3.linear.RealVectorTest();
-               object.testDotProductMixedTypes();
-        }
-    }
-
-    @Test(timeout=1800000)
-    public void testDotProductDimensionMismatchMixedTypes() throws Exception {
-        if (verifyUnhandledException("org.apache.commons.math3.exception.DimensionMismatchException", config)) {
-               org.apache.commons.math3.linear.RealVectorTest object = new org.apache.commons.math3.linear.RealVectorTest();
-               object.testDotProductDimensionMismatchMixedTypes();
-        }
-    }
-
-    @Test(timeout=1800000)
-    public void testCosineSameType() throws Exception {
-        if (verifyNoPropertyViolation(config)) {
-               org.apache.commons.math3.linear.RealVectorTest object = new org.apache.commons.math3.linear.RealVectorTest();
-               object.testCosineSameType();
-        }
-    }
-
-    @Test(timeout=1800000)
-    public void testCosineMixedTypes() throws Exception {
-        if (verifyNoPropertyViolation(config)) {
-               org.apache.commons.math3.linear.RealVectorTest object = new org.apache.commons.math3.linear.RealVectorTest();
-               object.testCosineMixedTypes();
-        }
-    }
-
-    @Test(timeout=1800000)
-    public void testCosineLeftNullVector() throws Exception {
-        if (verifyUnhandledException("org.apache.commons.math3.exception.MathArithmeticException", config)) {
-               org.apache.commons.math3.linear.RealVectorTest object = new org.apache.commons.math3.linear.RealVectorTest();
-               object.testCosineLeftNullVector();
-        }
-    }
-
-    @Test(timeout=1800000)
-    public void testCosineRightNullVector() throws Exception {
-        if (verifyUnhandledException("org.apache.commons.math3.exception.MathArithmeticException", config)) {
-               org.apache.commons.math3.linear.RealVectorTest object = new org.apache.commons.math3.linear.RealVectorTest();
-               object.testCosineRightNullVector();
-        }
-    }
-
-    @Test(timeout=1800000)
-    public void testCosineDimensionMismatch() throws Exception {
-        if (verifyUnhandledException("org.apache.commons.math3.exception.DimensionMismatchException", config)) {
-               org.apache.commons.math3.linear.RealVectorTest object = new org.apache.commons.math3.linear.RealVectorTest();
-               object.testCosineDimensionMismatch();
-        }
-    }
-
-    @Test(timeout=1800000)
-    public void testMinMax() throws Exception {
-        if (verifyNoPropertyViolation(config)) {
-               org.apache.commons.math3.linear.RealVectorTest object = new org.apache.commons.math3.linear.RealVectorTest();
-               object.testMinMax();
-        }
-    }
-
-    @Test(timeout=1800000)
-    public void testWalkInDefaultOrderPreservingVisitor1() throws Exception {
-        if (verifyNoPropertyViolation(config)) {
-               org.apache.commons.math3.linear.RealVectorTest object = new org.apache.commons.math3.linear.RealVectorTest();
-               object.testWalkInDefaultOrderPreservingVisitor1();
-        }
-    }
-
-    @Test(timeout=1800000)
-    public void testWalkInDefaultOrderPreservingVisitor2() throws Exception {
-        if (verifyNoPropertyViolation(config)) {
-               org.apache.commons.math3.linear.RealVectorTest object = new org.apache.commons.math3.linear.RealVectorTest();
-               object.testWalkInDefaultOrderPreservingVisitor2();
-        }
-    }
-
-    @Test(timeout=1800000)
-    public void testWalkInDefaultOrderPreservingVisitor3() throws Exception {
-        if (verifyNoPropertyViolation(config)) {
-               org.apache.commons.math3.linear.RealVectorTest object = new org.apache.commons.math3.linear.RealVectorTest();
-               object.testWalkInDefaultOrderPreservingVisitor3();
-        }
-    }
-
-    @Test(timeout=1800000)
-    public void testWalkInOptimizedOrderPreservingVisitor1() throws Exception {
-        if (verifyNoPropertyViolation(config)) {
-               org.apache.commons.math3.linear.RealVectorTest object = new org.apache.commons.math3.linear.RealVectorTest();
-               object.testWalkInOptimizedOrderPreservingVisitor1();
-        }
-    }
-
-    @Test(timeout=1800000)
-    public void testWalkInOptimizedOrderPreservingVisitor2() throws Exception {
-        if (verifyNoPropertyViolation(config)) {
-               org.apache.commons.math3.linear.RealVectorTest object = new org.apache.commons.math3.linear.RealVectorTest();
-               object.testWalkInOptimizedOrderPreservingVisitor2();
-        }
-    }
-
-    @Test(timeout=1800000)
-    public void testWalkInOptimizedOrderPreservingVisitor3() throws Exception {
-        if (verifyNoPropertyViolation(config)) {
-               org.apache.commons.math3.linear.RealVectorTest object = new org.apache.commons.math3.linear.RealVectorTest();
-               object.testWalkInOptimizedOrderPreservingVisitor3();
-        }
-    }
-
-    @Test(timeout=1800000)
-    public void testWalkInDefaultOrderChangingVisitor1() throws Exception {
-        if (verifyNoPropertyViolation(config)) {
-               org.apache.commons.math3.linear.RealVectorTest object = new org.apache.commons.math3.linear.RealVectorTest();
-               object.testWalkInDefaultOrderChangingVisitor1();
-        }
-    }
-
-    @Test(timeout=1800000)
-    public void testWalkInDefaultOrderChangingVisitor2() throws Exception {
-        if (verifyNoPropertyViolation(config)) {
-               org.apache.commons.math3.linear.RealVectorTest object = new org.apache.commons.math3.linear.RealVectorTest();
-               object.testWalkInDefaultOrderChangingVisitor2();
-        }
-    }
-
-    @Test(timeout=1800000)
-    public void testWalkInDefaultOrderChangingVisitor3() throws Exception {
-        if (verifyNoPropertyViolation(config)) {
-               org.apache.commons.math3.linear.RealVectorTest object = new org.apache.commons.math3.linear.RealVectorTest();
-               object.testWalkInDefaultOrderChangingVisitor3();
-        }
-    }
-
-    @Test(timeout=1800000)
-    public void testWalkInOptimizedOrderChangingVisitor1() throws Exception {
-        if (verifyNoPropertyViolation(config)) {
-               org.apache.commons.math3.linear.RealVectorTest object = new org.apache.commons.math3.linear.RealVectorTest();
-               object.testWalkInOptimizedOrderChangingVisitor1();
-        }
-    }
-
-    @Test(timeout=1800000)
-    public void testWalkInOptimizedOrderChangingVisitor2() throws Exception {
-        if (verifyNoPropertyViolation(config)) {
-               org.apache.commons.math3.linear.RealVectorTest object = new org.apache.commons.math3.linear.RealVectorTest();
-               object.testWalkInOptimizedOrderChangingVisitor2();
-        }
-    }
-
-    @Test(timeout=1800000)
-    public void testWalkInOptimizedOrderChangingVisitor3() throws Exception {
-        if (verifyNoPropertyViolation(config)) {
-               org.apache.commons.math3.linear.RealVectorTest object = new org.apache.commons.math3.linear.RealVectorTest();
-               object.testWalkInOptimizedOrderChangingVisitor3();
-        }
-    }
-
-    @Test(timeout=1800000)
-    public void testIterator() throws Exception {
-        if (verifyNoPropertyViolation(config)) {
-               org.apache.commons.math3.linear.RealVectorTest object = new org.apache.commons.math3.linear.RealVectorTest();
-               object.testIterator();
-        }
-    }
-
-    @Test(timeout=1800000)
-    public void testGetEntry() throws Exception {
-        if (verifyNoPropertyViolation(config)) {
-               org.apache.commons.math3.linear.RealVectorTest object = new org.apache.commons.math3.linear.RealVectorTest();
-               object.testGetEntry();
         }
     }
 

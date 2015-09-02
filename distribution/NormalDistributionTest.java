@@ -10,30 +10,6 @@ public class NormalDistributionTest extends TestJPF {
         runTestsOfThisClass(testMethods);
     }
     @Test(timeout=1800000)
-    public void testQuantiles() throws Exception {
-        if (verifyNoPropertyViolation(config)) {
-               org.apache.commons.math3.distribution.NormalDistributionTest object = new org.apache.commons.math3.distribution.NormalDistributionTest();
-               object.testQuantiles();
-        }
-    }
-
-    @Test(timeout=1800000)
-    public void testExtremeValues() throws Exception {
-        if (verifyNoPropertyViolation(config)) {
-               org.apache.commons.math3.distribution.NormalDistributionTest object = new org.apache.commons.math3.distribution.NormalDistributionTest();
-               object.testExtremeValues();
-        }
-    }
-
-    @Test(timeout=1800000)
-    public void testInverseCumulativeProbabilityExtremes() throws Exception {
-        if (verifyNoPropertyViolation(config)) {
-               org.apache.commons.math3.distribution.NormalDistributionTest object = new org.apache.commons.math3.distribution.NormalDistributionTest();
-               object.testInverseCumulativeProbabilityExtremes();
-        }
-    }
-
-    @Test(timeout=1800000)
     public void testGetStandardDeviation() throws Exception {
         if (verifyNoPropertyViolation(config)) {
                org.apache.commons.math3.distribution.NormalDistributionTest object = new org.apache.commons.math3.distribution.NormalDistributionTest();
@@ -58,14 +34,6 @@ public class NormalDistributionTest extends TestJPF {
     }
 
     @Test(timeout=1800000)
-    public void testGetMean() throws Exception {
-        if (verifyNoPropertyViolation(config)) {
-               org.apache.commons.math3.distribution.NormalDistributionTest object = new org.apache.commons.math3.distribution.NormalDistributionTest();
-               object.testGetMean();
-        }
-    }
-
-    @Test(timeout=1800000)
     public void testDensity() throws Exception {
         if (verifyNoPropertyViolation(config)) {
                org.apache.commons.math3.distribution.NormalDistributionTest object = new org.apache.commons.math3.distribution.NormalDistributionTest();
@@ -82,10 +50,34 @@ public class NormalDistributionTest extends TestJPF {
     }
 
     @Test(timeout=1800000)
-    public void testIllegalArguments() throws Exception {
+    public void testQuantiles() throws Exception {
         if (verifyNoPropertyViolation(config)) {
                org.apache.commons.math3.distribution.NormalDistributionTest object = new org.apache.commons.math3.distribution.NormalDistributionTest();
-               object.testIllegalArguments();
+               object.testQuantiles();
+        }
+    }
+
+    @Test(timeout=1800000)
+    public void testExtremeValues() throws Exception {
+        if (verifyNoPropertyViolation(config)) {
+               org.apache.commons.math3.distribution.NormalDistributionTest object = new org.apache.commons.math3.distribution.NormalDistributionTest();
+               object.testExtremeValues();
+        }
+    }
+
+    @Test(timeout=1800000)
+    public void testGetMean() throws Exception {
+        if (verifyNoPropertyViolation(config)) {
+               org.apache.commons.math3.distribution.NormalDistributionTest object = new org.apache.commons.math3.distribution.NormalDistributionTest();
+               object.testGetMean();
+        }
+    }
+
+    @Test(timeout=1800000)
+    public void testInverseCumulativeProbabilityExtremes() throws Exception {
+        if (verifyNoPropertyViolation(config)) {
+               org.apache.commons.math3.distribution.NormalDistributionTest object = new org.apache.commons.math3.distribution.NormalDistributionTest();
+               object.testInverseCumulativeProbabilityExtremes();
         }
     }
 
@@ -130,10 +122,10 @@ public class NormalDistributionTest extends TestJPF {
     }
 
     @Test(timeout=1800000)
-    public void testDistributionClone() throws Exception {
+    public void testDensityIntegrals() throws Exception {
         if (verifyNoPropertyViolation(config)) {
                org.apache.commons.math3.distribution.NormalDistributionTest object = new org.apache.commons.math3.distribution.NormalDistributionTest();
-               object.testDistributionClone();
+               object.testDensityIntegrals();
         }
     }
 
@@ -146,18 +138,26 @@ public class NormalDistributionTest extends TestJPF {
     }
 
     @Test(timeout=1800000)
-    public void testDensityIntegrals() throws Exception {
-        if (verifyNoPropertyViolation(config)) {
-               org.apache.commons.math3.distribution.NormalDistributionTest object = new org.apache.commons.math3.distribution.NormalDistributionTest();
-               object.testDensityIntegrals();
-        }
-    }
-
-    @Test(timeout=1800000)
     public void testIsSupportUpperBoundInclusive() throws Exception {
         if (verifyNoPropertyViolation(config)) {
                org.apache.commons.math3.distribution.NormalDistributionTest object = new org.apache.commons.math3.distribution.NormalDistributionTest();
                object.testIsSupportUpperBoundInclusive();
+        }
+    }
+
+    @Test(timeout=1800000)
+    public void testDistributionClone() throws Exception {
+        if (verifyNoPropertyViolation(config)) {
+               org.apache.commons.math3.distribution.NormalDistributionTest object = new org.apache.commons.math3.distribution.NormalDistributionTest();
+               object.testDistributionClone();
+        }
+    }
+
+    @Test(timeout=1800000)
+    public void testIllegalArguments() throws Exception {
+        if (verifyNoPropertyViolation(config)) {
+               org.apache.commons.math3.distribution.NormalDistributionTest object = new org.apache.commons.math3.distribution.NormalDistributionTest();
+               object.testIllegalArguments();
         }
     }
 

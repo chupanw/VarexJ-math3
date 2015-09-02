@@ -18,10 +18,26 @@ public class PearsonsCorrelationTest extends TestJPF {
     }
 
     @Test(timeout=1800000)
-    public void testConsistency() throws Exception {
+    public void testLongly() throws Exception {
         if (verifyNoPropertyViolation(config)) {
                org.apache.commons.math3.stat.correlation.PearsonsCorrelationTest object = new org.apache.commons.math3.stat.correlation.PearsonsCorrelationTest();
-               object.testConsistency();
+               object.testLongly();
+        }
+    }
+
+    @Test(timeout=1800000)
+    public void testSwissFertility() throws Exception {
+        if (verifyNoPropertyViolation(config)) {
+               org.apache.commons.math3.stat.correlation.PearsonsCorrelationTest object = new org.apache.commons.math3.stat.correlation.PearsonsCorrelationTest();
+               object.testSwissFertility();
+        }
+    }
+
+    @Test(timeout=1800000)
+    public void testInsufficientData() throws Exception {
+        if (verifyNoPropertyViolation(config)) {
+               org.apache.commons.math3.stat.correlation.PearsonsCorrelationTest object = new org.apache.commons.math3.stat.correlation.PearsonsCorrelationTest();
+               object.testInsufficientData();
         }
     }
 
@@ -50,26 +66,10 @@ public class PearsonsCorrelationTest extends TestJPF {
     }
 
     @Test(timeout=1800000)
-    public void testSwissFertility() throws Exception {
+    public void testConsistency() throws Exception {
         if (verifyNoPropertyViolation(config)) {
                org.apache.commons.math3.stat.correlation.PearsonsCorrelationTest object = new org.apache.commons.math3.stat.correlation.PearsonsCorrelationTest();
-               object.testSwissFertility();
-        }
-    }
-
-    @Test(timeout=1800000)
-    public void testInsufficientData() throws Exception {
-        if (verifyNoPropertyViolation(config)) {
-               org.apache.commons.math3.stat.correlation.PearsonsCorrelationTest object = new org.apache.commons.math3.stat.correlation.PearsonsCorrelationTest();
-               object.testInsufficientData();
-        }
-    }
-
-    @Test(timeout=1800000)
-    public void testLongly() throws Exception {
-        if (verifyNoPropertyViolation(config)) {
-               org.apache.commons.math3.stat.correlation.PearsonsCorrelationTest object = new org.apache.commons.math3.stat.correlation.PearsonsCorrelationTest();
-               object.testLongly();
+               object.testConsistency();
         }
     }
 

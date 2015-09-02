@@ -10,18 +10,18 @@ public class NordsieckStepInterpolatorTest extends TestJPF {
         runTestsOfThisClass(testMethods);
     }
     @Test(timeout=1800000)
-    public void serialization() throws Exception {
-        if (verifyNoPropertyViolation(config)) {
-               org.apache.commons.math3.ode.sampling.NordsieckStepInterpolatorTest object = new org.apache.commons.math3.ode.sampling.NordsieckStepInterpolatorTest();
-               object.serialization();
-        }
-    }
-
-    @Test(timeout=1800000)
     public void derivativesConsistency() throws Exception {
         if (verifyNoPropertyViolation(config)) {
                org.apache.commons.math3.ode.sampling.NordsieckStepInterpolatorTest object = new org.apache.commons.math3.ode.sampling.NordsieckStepInterpolatorTest();
                object.derivativesConsistency();
+        }
+    }
+
+    @Test(timeout=1800000)
+    public void serialization() throws Exception {
+        if (verifyNoPropertyViolation(config)) {
+               org.apache.commons.math3.ode.sampling.NordsieckStepInterpolatorTest object = new org.apache.commons.math3.ode.sampling.NordsieckStepInterpolatorTest();
+               object.serialization();
         }
     }
 

@@ -10,22 +10,6 @@ public class ErfTest extends TestJPF {
         runTestsOfThisClass(testMethods);
     }
     @Test(timeout=1800000)
-    public void testLargeValues() throws Exception {
-        if (verifyNoPropertyViolation(config)) {
-               org.apache.commons.math3.special.ErfTest object = new org.apache.commons.math3.special.ErfTest();
-               object.testLargeValues();
-        }
-    }
-
-    @Test(timeout=1800000)
-    public void testErf0() throws Exception {
-        if (verifyNoPropertyViolation(config)) {
-               org.apache.commons.math3.special.ErfTest object = new org.apache.commons.math3.special.ErfTest();
-               object.testErf0();
-        }
-    }
-
-    @Test(timeout=1800000)
     public void testErf1960() throws Exception {
         if (verifyNoPropertyViolation(config)) {
                org.apache.commons.math3.special.ErfTest object = new org.apache.commons.math3.special.ErfTest();
@@ -46,6 +30,14 @@ public class ErfTest extends TestJPF {
         if (verifyNoPropertyViolation(config)) {
                org.apache.commons.math3.special.ErfTest object = new org.apache.commons.math3.special.ErfTest();
                object.testErf2807();
+        }
+    }
+
+    @Test(timeout=1800000)
+    public void testErf0() throws Exception {
+        if (verifyNoPropertyViolation(config)) {
+               org.apache.commons.math3.special.ErfTest object = new org.apache.commons.math3.special.ErfTest();
+               object.testErf0();
         }
     }
 
@@ -134,6 +126,14 @@ public class ErfTest extends TestJPF {
         if (verifyNoPropertyViolation(config)) {
                org.apache.commons.math3.special.ErfTest object = new org.apache.commons.math3.special.ErfTest();
                object.testErfcInv();
+        }
+    }
+
+    @Test(timeout=1800000)
+    public void testLargeValues() throws Exception {
+        if (verifyNoPropertyViolation(config)) {
+               org.apache.commons.math3.special.ErfTest object = new org.apache.commons.math3.special.ErfTest();
+               object.testLargeValues();
         }
     }
 

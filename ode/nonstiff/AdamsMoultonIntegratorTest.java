@@ -18,6 +18,14 @@ public class AdamsMoultonIntegratorTest extends TestJPF {
     }
 
     @Test(timeout=1800000)
+    public void testMinStep() throws Exception {
+        if (verifyUnhandledException("org.apache.commons.math3.exception.NumberIsTooSmallException", config)) {
+               org.apache.commons.math3.ode.nonstiff.AdamsMoultonIntegratorTest object = new org.apache.commons.math3.ode.nonstiff.AdamsMoultonIntegratorTest();
+               object.testMinStep();
+        }
+    }
+
+    @Test(timeout=1800000)
     public void testIncreasingTolerance() throws Exception {
         if (verifyNoPropertyViolation(config)) {
                org.apache.commons.math3.ode.nonstiff.AdamsMoultonIntegratorTest object = new org.apache.commons.math3.ode.nonstiff.AdamsMoultonIntegratorTest();
@@ -30,14 +38,6 @@ public class AdamsMoultonIntegratorTest extends TestJPF {
         if (verifyUnhandledException("org.apache.commons.math3.exception.MaxCountExceededException", config)) {
                org.apache.commons.math3.ode.nonstiff.AdamsMoultonIntegratorTest object = new org.apache.commons.math3.ode.nonstiff.AdamsMoultonIntegratorTest();
                object.exceedMaxEvaluations();
-        }
-    }
-
-    @Test(timeout=1800000)
-    public void testMinStep() throws Exception {
-        if (verifyUnhandledException("org.apache.commons.math3.exception.NumberIsTooSmallException", config)) {
-               org.apache.commons.math3.ode.nonstiff.AdamsMoultonIntegratorTest object = new org.apache.commons.math3.ode.nonstiff.AdamsMoultonIntegratorTest();
-               object.testMinStep();
         }
     }
 

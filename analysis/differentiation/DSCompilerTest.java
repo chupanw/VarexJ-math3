@@ -18,6 +18,14 @@ public class DSCompilerTest extends TestJPF {
     }
 
     @Test(timeout=1800000)
+    public void testIndices() throws Exception {
+        if (verifyNoPropertyViolation(config)) {
+               org.apache.commons.math3.analysis.differentiation.DSCompilerTest object = new org.apache.commons.math3.analysis.differentiation.DSCompilerTest();
+               object.testIndices();
+        }
+    }
+
+    @Test(timeout=1800000)
     public void testIncompatibleParams() throws Exception {
         if (verifyUnhandledException("org.apache.commons.math3.exception.DimensionMismatchException", config)) {
                org.apache.commons.math3.analysis.differentiation.DSCompilerTest object = new org.apache.commons.math3.analysis.differentiation.DSCompilerTest();
@@ -54,14 +62,6 @@ public class DSCompilerTest extends TestJPF {
         if (verifyNoPropertyViolation(config)) {
                org.apache.commons.math3.analysis.differentiation.DSCompilerTest object = new org.apache.commons.math3.analysis.differentiation.DSCompilerTest();
                object.testCompositionRules();
-        }
-    }
-
-    @Test(timeout=1800000)
-    public void testIndices() throws Exception {
-        if (verifyNoPropertyViolation(config)) {
-               org.apache.commons.math3.analysis.differentiation.DSCompilerTest object = new org.apache.commons.math3.analysis.differentiation.DSCompilerTest();
-               object.testIndices();
         }
     }
 

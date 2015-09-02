@@ -50,58 +50,10 @@ public class LevenbergMarquardtOptimizerTest extends TestJPF {
     }
 
     @Test(timeout=1800000)
-    public void testQRColumnsPermutation() throws Exception {
+    public void testTrivial() throws Exception {
         if (verifyNoPropertyViolation(config)) {
                org.apache.commons.math3.optimization.general.LevenbergMarquardtOptimizerTest object = new org.apache.commons.math3.optimization.general.LevenbergMarquardtOptimizerTest();
-               object.testQRColumnsPermutation();
-        }
-    }
-
-    @Test(timeout=1800000)
-    public void testInconsistentSizes1() throws Exception {
-        if (verifyUnhandledException("org.apache.commons.math3.exception.DimensionMismatchException", config)) {
-               org.apache.commons.math3.optimization.general.LevenbergMarquardtOptimizerTest object = new org.apache.commons.math3.optimization.general.LevenbergMarquardtOptimizerTest();
-               object.testInconsistentSizes1();
-        }
-    }
-
-    @Test(timeout=1800000)
-    public void testInconsistentSizes2() throws Exception {
-        if (verifyUnhandledException("org.apache.commons.math3.exception.DimensionMismatchException", config)) {
-               org.apache.commons.math3.optimization.general.LevenbergMarquardtOptimizerTest object = new org.apache.commons.math3.optimization.general.LevenbergMarquardtOptimizerTest();
-               object.testInconsistentSizes2();
-        }
-    }
-
-    @Test(timeout=1800000)
-    public void testCircleFittingBadInit() throws Exception {
-        if (verifyNoPropertyViolation(config)) {
-               org.apache.commons.math3.optimization.general.LevenbergMarquardtOptimizerTest object = new org.apache.commons.math3.optimization.general.LevenbergMarquardtOptimizerTest();
-               object.testCircleFittingBadInit();
-        }
-    }
-
-    @Test(timeout=1800000)
-    public void testCircleFittingGoodInit() throws Exception {
-        if (verifyNoPropertyViolation(config)) {
-               org.apache.commons.math3.optimization.general.LevenbergMarquardtOptimizerTest object = new org.apache.commons.math3.optimization.general.LevenbergMarquardtOptimizerTest();
-               object.testCircleFittingGoodInit();
-        }
-    }
-
-    @Test(timeout=1800000)
-    public void testKirby2() throws Exception {
-        if (verifyNoPropertyViolation(config)) {
-               org.apache.commons.math3.optimization.general.LevenbergMarquardtOptimizerTest object = new org.apache.commons.math3.optimization.general.LevenbergMarquardtOptimizerTest();
-               object.testKirby2();
-        }
-    }
-
-    @Test(timeout=1800000)
-    public void testHahn1() throws Exception {
-        if (verifyNoPropertyViolation(config)) {
-               org.apache.commons.math3.optimization.general.LevenbergMarquardtOptimizerTest object = new org.apache.commons.math3.optimization.general.LevenbergMarquardtOptimizerTest();
-               object.testHahn1();
+               object.testTrivial();
         }
     }
 
@@ -110,14 +62,6 @@ public class LevenbergMarquardtOptimizerTest extends TestJPF {
         if (verifyNoPropertyViolation(config)) {
                org.apache.commons.math3.optimization.general.LevenbergMarquardtOptimizerTest object = new org.apache.commons.math3.optimization.general.LevenbergMarquardtOptimizerTest();
                object.testNoDependency();
-        }
-    }
-
-    @Test(timeout=1800000)
-    public void testTrivial() throws Exception {
-        if (verifyNoPropertyViolation(config)) {
-               org.apache.commons.math3.optimization.general.LevenbergMarquardtOptimizerTest object = new org.apache.commons.math3.optimization.general.LevenbergMarquardtOptimizerTest();
-               object.testTrivial();
         }
     }
 
@@ -182,6 +126,62 @@ public class LevenbergMarquardtOptimizerTest extends TestJPF {
         if (verifyNoPropertyViolation(config)) {
                org.apache.commons.math3.optimization.general.LevenbergMarquardtOptimizerTest object = new org.apache.commons.math3.optimization.general.LevenbergMarquardtOptimizerTest();
                object.testCircleFitting();
+        }
+    }
+
+    @Test(timeout=1800000)
+    public void testQRColumnsPermutation() throws Exception {
+        if (verifyNoPropertyViolation(config)) {
+               org.apache.commons.math3.optimization.general.LevenbergMarquardtOptimizerTest object = new org.apache.commons.math3.optimization.general.LevenbergMarquardtOptimizerTest();
+               object.testQRColumnsPermutation();
+        }
+    }
+
+    @Test(timeout=1800000)
+    public void testInconsistentSizes1() throws Exception {
+        if (verifyUnhandledException("org.apache.commons.math3.exception.DimensionMismatchException", config)) {
+               org.apache.commons.math3.optimization.general.LevenbergMarquardtOptimizerTest object = new org.apache.commons.math3.optimization.general.LevenbergMarquardtOptimizerTest();
+               object.testInconsistentSizes1();
+        }
+    }
+
+    @Test(timeout=1800000)
+    public void testInconsistentSizes2() throws Exception {
+        if (verifyUnhandledException("org.apache.commons.math3.exception.DimensionMismatchException", config)) {
+               org.apache.commons.math3.optimization.general.LevenbergMarquardtOptimizerTest object = new org.apache.commons.math3.optimization.general.LevenbergMarquardtOptimizerTest();
+               object.testInconsistentSizes2();
+        }
+    }
+
+    @Test(timeout=1800000)
+    public void testCircleFittingBadInit() throws Exception {
+        if (verifyNoPropertyViolation(config)) {
+               org.apache.commons.math3.optimization.general.LevenbergMarquardtOptimizerTest object = new org.apache.commons.math3.optimization.general.LevenbergMarquardtOptimizerTest();
+               object.testCircleFittingBadInit();
+        }
+    }
+
+    @Test(timeout=1800000)
+    public void testCircleFittingGoodInit() throws Exception {
+        if (verifyNoPropertyViolation(config)) {
+               org.apache.commons.math3.optimization.general.LevenbergMarquardtOptimizerTest object = new org.apache.commons.math3.optimization.general.LevenbergMarquardtOptimizerTest();
+               object.testCircleFittingGoodInit();
+        }
+    }
+
+    @Test(timeout=1800000)
+    public void testKirby2() throws Exception {
+        if (verifyNoPropertyViolation(config)) {
+               org.apache.commons.math3.optimization.general.LevenbergMarquardtOptimizerTest object = new org.apache.commons.math3.optimization.general.LevenbergMarquardtOptimizerTest();
+               object.testKirby2();
+        }
+    }
+
+    @Test(timeout=1800000)
+    public void testHahn1() throws Exception {
+        if (verifyNoPropertyViolation(config)) {
+               org.apache.commons.math3.optimization.general.LevenbergMarquardtOptimizerTest object = new org.apache.commons.math3.optimization.general.LevenbergMarquardtOptimizerTest();
+               object.testHahn1();
         }
     }
 

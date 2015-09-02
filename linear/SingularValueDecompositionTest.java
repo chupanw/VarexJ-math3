@@ -10,6 +10,38 @@ public class SingularValueDecompositionTest extends TestJPF {
         runTestsOfThisClass(testMethods);
     }
     @Test(timeout=1800000)
+    public void testStability2() throws Exception {
+        if (verifyNoPropertyViolation(config)) {
+               org.apache.commons.math3.linear.SingularValueDecompositionTest object = new org.apache.commons.math3.linear.SingularValueDecompositionTest();
+               object.testStability2();
+        }
+    }
+
+    @Test(timeout=1800000)
+    public void testConditionNumber() throws Exception {
+        if (verifyNoPropertyViolation(config)) {
+               org.apache.commons.math3.linear.SingularValueDecompositionTest object = new org.apache.commons.math3.linear.SingularValueDecompositionTest();
+               object.testConditionNumber();
+        }
+    }
+
+    @Test(timeout=1800000)
+    public void testInverseConditionNumber() throws Exception {
+        if (verifyNoPropertyViolation(config)) {
+               org.apache.commons.math3.linear.SingularValueDecompositionTest object = new org.apache.commons.math3.linear.SingularValueDecompositionTest();
+               object.testInverseConditionNumber();
+        }
+    }
+
+    @Test(timeout=1800000)
+    public void testIssue947() throws Exception {
+        if (verifyNoPropertyViolation(config)) {
+               org.apache.commons.math3.linear.SingularValueDecompositionTest object = new org.apache.commons.math3.linear.SingularValueDecompositionTest();
+               object.testIssue947();
+        }
+    }
+
+    @Test(timeout=1800000)
     public void testAEqualUSVt() throws Exception {
         if (verifyNoPropertyViolation(config)) {
                org.apache.commons.math3.linear.SingularValueDecompositionTest object = new org.apache.commons.math3.linear.SingularValueDecompositionTest();
@@ -66,34 +98,10 @@ public class SingularValueDecompositionTest extends TestJPF {
     }
 
     @Test(timeout=1800000)
-    public void testStability2() throws Exception {
+    public void testRank() throws Exception {
         if (verifyNoPropertyViolation(config)) {
                org.apache.commons.math3.linear.SingularValueDecompositionTest object = new org.apache.commons.math3.linear.SingularValueDecompositionTest();
-               object.testStability2();
-        }
-    }
-
-    @Test(timeout=1800000)
-    public void testConditionNumber() throws Exception {
-        if (verifyNoPropertyViolation(config)) {
-               org.apache.commons.math3.linear.SingularValueDecompositionTest object = new org.apache.commons.math3.linear.SingularValueDecompositionTest();
-               object.testConditionNumber();
-        }
-    }
-
-    @Test(timeout=1800000)
-    public void testInverseConditionNumber() throws Exception {
-        if (verifyNoPropertyViolation(config)) {
-               org.apache.commons.math3.linear.SingularValueDecompositionTest object = new org.apache.commons.math3.linear.SingularValueDecompositionTest();
-               object.testInverseConditionNumber();
-        }
-    }
-
-    @Test(timeout=1800000)
-    public void testIssue947() throws Exception {
-        if (verifyNoPropertyViolation(config)) {
-               org.apache.commons.math3.linear.SingularValueDecompositionTest object = new org.apache.commons.math3.linear.SingularValueDecompositionTest();
-               object.testIssue947();
+               object.testRank();
         }
     }
 
@@ -102,14 +110,6 @@ public class SingularValueDecompositionTest extends TestJPF {
         if (verifyNoPropertyViolation(config)) {
                org.apache.commons.math3.linear.SingularValueDecompositionTest object = new org.apache.commons.math3.linear.SingularValueDecompositionTest();
                object.testDimensions();
-        }
-    }
-
-    @Test(timeout=1800000)
-    public void testRank() throws Exception {
-        if (verifyNoPropertyViolation(config)) {
-               org.apache.commons.math3.linear.SingularValueDecompositionTest object = new org.apache.commons.math3.linear.SingularValueDecompositionTest();
-               object.testRank();
         }
     }
 

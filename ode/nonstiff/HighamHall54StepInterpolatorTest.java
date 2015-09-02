@@ -10,18 +10,18 @@ public class HighamHall54StepInterpolatorTest extends TestJPF {
         runTestsOfThisClass(testMethods);
     }
     @Test(timeout=1800000)
-    public void serialization() throws Exception {
-        if (verifyNoPropertyViolation(config)) {
-               org.apache.commons.math3.ode.nonstiff.HighamHall54StepInterpolatorTest object = new org.apache.commons.math3.ode.nonstiff.HighamHall54StepInterpolatorTest();
-               object.serialization();
-        }
-    }
-
-    @Test(timeout=1800000)
     public void derivativesConsistency() throws Exception {
         if (verifyNoPropertyViolation(config)) {
                org.apache.commons.math3.ode.nonstiff.HighamHall54StepInterpolatorTest object = new org.apache.commons.math3.ode.nonstiff.HighamHall54StepInterpolatorTest();
                object.derivativesConsistency();
+        }
+    }
+
+    @Test(timeout=1800000)
+    public void serialization() throws Exception {
+        if (verifyNoPropertyViolation(config)) {
+               org.apache.commons.math3.ode.nonstiff.HighamHall54StepInterpolatorTest object = new org.apache.commons.math3.ode.nonstiff.HighamHall54StepInterpolatorTest();
+               object.serialization();
         }
     }
 

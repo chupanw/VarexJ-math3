@@ -10,26 +10,26 @@ public class UnmodifiableArrayRealVectorTest extends TestJPF {
         runTestsOfThisClass(testMethods);
     }
     @Test(timeout=1800000)
-    public void testSetEntry() throws Exception {
-        if (verifyUnhandledException("org.apache.commons.math3.exception.MathUnsupportedOperationException", config)) {
-               org.apache.commons.math3.linear.UnmodifiableArrayRealVectorTest object = new org.apache.commons.math3.linear.UnmodifiableArrayRealVectorTest();
-               object.testSetEntry();
-        }
-    }
-
-    @Test(timeout=1800000)
-    public void testAddToEntry() throws Exception {
-        if (verifyUnhandledException("org.apache.commons.math3.exception.MathUnsupportedOperationException", config)) {
-               org.apache.commons.math3.linear.UnmodifiableArrayRealVectorTest object = new org.apache.commons.math3.linear.UnmodifiableArrayRealVectorTest();
-               object.testAddToEntry();
-        }
-    }
-
-    @Test(timeout=1800000)
-    public void testGetSubVector() throws Exception {
+    public void testAllButExcluded() throws Exception {
         if (verifyNoPropertyViolation(config)) {
                org.apache.commons.math3.linear.UnmodifiableArrayRealVectorTest object = new org.apache.commons.math3.linear.UnmodifiableArrayRealVectorTest();
-               object.testGetSubVector();
+               object.testAllButExcluded();
+        }
+    }
+
+    @Test(timeout=1800000)
+    public void testSetSubVector() throws Exception {
+        if (verifyUnhandledException("org.apache.commons.math3.exception.MathUnsupportedOperationException", config)) {
+               org.apache.commons.math3.linear.UnmodifiableArrayRealVectorTest object = new org.apache.commons.math3.linear.UnmodifiableArrayRealVectorTest();
+               object.testSetSubVector();
+        }
+    }
+
+    @Test(timeout=1800000)
+    public void testSparseIterator() throws Exception {
+        if (verifyNoPropertyViolation(config)) {
+               org.apache.commons.math3.linear.UnmodifiableArrayRealVectorTest object = new org.apache.commons.math3.linear.UnmodifiableArrayRealVectorTest();
+               object.testSparseIterator();
         }
     }
 
@@ -50,26 +50,26 @@ public class UnmodifiableArrayRealVectorTest extends TestJPF {
     }
 
     @Test(timeout=1800000)
-    public void testSparseIterator() throws Exception {
-        if (verifyNoPropertyViolation(config)) {
-               org.apache.commons.math3.linear.UnmodifiableArrayRealVectorTest object = new org.apache.commons.math3.linear.UnmodifiableArrayRealVectorTest();
-               object.testSparseIterator();
-        }
-    }
-
-    @Test(timeout=1800000)
-    public void testAllButExcluded() throws Exception {
-        if (verifyNoPropertyViolation(config)) {
-               org.apache.commons.math3.linear.UnmodifiableArrayRealVectorTest object = new org.apache.commons.math3.linear.UnmodifiableArrayRealVectorTest();
-               object.testAllButExcluded();
-        }
-    }
-
-    @Test(timeout=1800000)
-    public void testSetSubVector() throws Exception {
+    public void testSetEntry() throws Exception {
         if (verifyUnhandledException("org.apache.commons.math3.exception.MathUnsupportedOperationException", config)) {
                org.apache.commons.math3.linear.UnmodifiableArrayRealVectorTest object = new org.apache.commons.math3.linear.UnmodifiableArrayRealVectorTest();
-               object.testSetSubVector();
+               object.testSetEntry();
+        }
+    }
+
+    @Test(timeout=1800000)
+    public void testAddToEntry() throws Exception {
+        if (verifyUnhandledException("org.apache.commons.math3.exception.MathUnsupportedOperationException", config)) {
+               org.apache.commons.math3.linear.UnmodifiableArrayRealVectorTest object = new org.apache.commons.math3.linear.UnmodifiableArrayRealVectorTest();
+               object.testAddToEntry();
+        }
+    }
+
+    @Test(timeout=1800000)
+    public void testGetSubVector() throws Exception {
+        if (verifyNoPropertyViolation(config)) {
+               org.apache.commons.math3.linear.UnmodifiableArrayRealVectorTest object = new org.apache.commons.math3.linear.UnmodifiableArrayRealVectorTest();
+               object.testGetSubVector();
         }
     }
 

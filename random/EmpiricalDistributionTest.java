@@ -19,6 +19,15 @@ public class EmpiricalDistributionTest extends TestJPF {
     }
 
     @Test(timeout=1800000)
+    public void testDensityIntegrals() throws Exception {
+        if (verifyNoPropertyViolation(config)) {
+               org.apache.commons.math3.random.EmpiricalDistributionTest object = new org.apache.commons.math3.random.EmpiricalDistributionTest();
+               object.setUp();
+               object.testDensityIntegrals();
+        }
+    }
+
+    @Test(timeout=1800000)
     public void testLoad() throws Exception {
         if (verifyNoPropertyViolation(config)) {
                org.apache.commons.math3.random.EmpiricalDistributionTest object = new org.apache.commons.math3.random.EmpiricalDistributionTest();
@@ -82,20 +91,20 @@ public class EmpiricalDistributionTest extends TestJPF {
     }
 
     @Test(timeout=1800000)
-    public void testLoadNullURL() throws Exception {
-        if (verifyUnhandledException("org.apache.commons.math3.exception.NullArgumentException", config)) {
-               org.apache.commons.math3.random.EmpiricalDistributionTest object = new org.apache.commons.math3.random.EmpiricalDistributionTest();
-               object.setUp();
-               object.testLoadNullURL();
-        }
-    }
-
-    @Test(timeout=1800000)
     public void testLoadNullDoubleArray() throws Exception {
         if (verifyUnhandledException("org.apache.commons.math3.exception.NullArgumentException", config)) {
                org.apache.commons.math3.random.EmpiricalDistributionTest object = new org.apache.commons.math3.random.EmpiricalDistributionTest();
                object.setUp();
                object.testLoadNullDoubleArray();
+        }
+    }
+
+    @Test(timeout=1800000)
+    public void testLoadNullURL() throws Exception {
+        if (verifyUnhandledException("org.apache.commons.math3.exception.NullArgumentException", config)) {
+               org.apache.commons.math3.random.EmpiricalDistributionTest object = new org.apache.commons.math3.random.EmpiricalDistributionTest();
+               object.setUp();
+               object.testLoadNullURL();
         }
     }
 
@@ -154,24 +163,6 @@ public class EmpiricalDistributionTest extends TestJPF {
     }
 
     @Test(timeout=1800000)
-    public void testDensityIntegrals() throws Exception {
-        if (verifyNoPropertyViolation(config)) {
-               org.apache.commons.math3.random.EmpiricalDistributionTest object = new org.apache.commons.math3.random.EmpiricalDistributionTest();
-               object.setUp();
-               object.testDensityIntegrals();
-        }
-    }
-
-    @Test(timeout=1800000)
-    public void testIllegalArguments() throws Exception {
-        if (verifyNoPropertyViolation(config)) {
-               org.apache.commons.math3.random.EmpiricalDistributionTest object = new org.apache.commons.math3.random.EmpiricalDistributionTest();
-               object.setUp();
-               object.testIllegalArguments();
-        }
-    }
-
-    @Test(timeout=1800000)
     public void testDensities() throws Exception {
         if (verifyNoPropertyViolation(config)) {
                org.apache.commons.math3.random.EmpiricalDistributionTest object = new org.apache.commons.math3.random.EmpiricalDistributionTest();
@@ -217,15 +208,6 @@ public class EmpiricalDistributionTest extends TestJPF {
     }
 
     @Test(timeout=1800000)
-    public void testDistributionClone() throws Exception {
-        if (verifyNoPropertyViolation(config)) {
-               org.apache.commons.math3.random.EmpiricalDistributionTest object = new org.apache.commons.math3.random.EmpiricalDistributionTest();
-               object.setUp();
-               object.testDistributionClone();
-        }
-    }
-
-    @Test(timeout=1800000)
     public void testIsSupportLowerBoundInclusive() throws Exception {
         if (verifyNoPropertyViolation(config)) {
                org.apache.commons.math3.random.EmpiricalDistributionTest object = new org.apache.commons.math3.random.EmpiricalDistributionTest();
@@ -240,6 +222,24 @@ public class EmpiricalDistributionTest extends TestJPF {
                org.apache.commons.math3.random.EmpiricalDistributionTest object = new org.apache.commons.math3.random.EmpiricalDistributionTest();
                object.setUp();
                object.testIsSupportUpperBoundInclusive();
+        }
+    }
+
+    @Test(timeout=1800000)
+    public void testDistributionClone() throws Exception {
+        if (verifyNoPropertyViolation(config)) {
+               org.apache.commons.math3.random.EmpiricalDistributionTest object = new org.apache.commons.math3.random.EmpiricalDistributionTest();
+               object.setUp();
+               object.testDistributionClone();
+        }
+    }
+
+    @Test(timeout=1800000)
+    public void testIllegalArguments() throws Exception {
+        if (verifyNoPropertyViolation(config)) {
+               org.apache.commons.math3.random.EmpiricalDistributionTest object = new org.apache.commons.math3.random.EmpiricalDistributionTest();
+               object.setUp();
+               object.testIllegalArguments();
         }
     }
 

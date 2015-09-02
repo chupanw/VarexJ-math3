@@ -10,6 +10,22 @@ public class SingularValueSolverTest extends TestJPF {
         runTestsOfThisClass(testMethods);
     }
     @Test(timeout=1800000)
+    public void testSolve() throws Exception {
+        if (verifyNoPropertyViolation(config)) {
+               org.apache.commons.math3.linear.SingularValueSolverTest object = new org.apache.commons.math3.linear.SingularValueSolverTest();
+               object.testSolve();
+        }
+    }
+
+    @Test(timeout=1800000)
+    public void testSolveDimensionErrors() throws Exception {
+        if (verifyNoPropertyViolation(config)) {
+               org.apache.commons.math3.linear.SingularValueSolverTest object = new org.apache.commons.math3.linear.SingularValueSolverTest();
+               object.testSolveDimensionErrors();
+        }
+    }
+
+    @Test(timeout=1800000)
     public void testConditionNumber() throws Exception {
         if (verifyNoPropertyViolation(config)) {
                org.apache.commons.math3.linear.SingularValueSolverTest object = new org.apache.commons.math3.linear.SingularValueSolverTest();
@@ -30,22 +46,6 @@ public class SingularValueSolverTest extends TestJPF {
         if (verifyNoPropertyViolation(config)) {
                org.apache.commons.math3.linear.SingularValueSolverTest object = new org.apache.commons.math3.linear.SingularValueSolverTest();
                object.testMath320B();
-        }
-    }
-
-    @Test(timeout=1800000)
-    public void testSolveDimensionErrors() throws Exception {
-        if (verifyNoPropertyViolation(config)) {
-               org.apache.commons.math3.linear.SingularValueSolverTest object = new org.apache.commons.math3.linear.SingularValueSolverTest();
-               object.testSolveDimensionErrors();
-        }
-    }
-
-    @Test(timeout=1800000)
-    public void testSolve() throws Exception {
-        if (verifyNoPropertyViolation(config)) {
-               org.apache.commons.math3.linear.SingularValueSolverTest object = new org.apache.commons.math3.linear.SingularValueSolverTest();
-               object.testSolve();
         }
     }
 

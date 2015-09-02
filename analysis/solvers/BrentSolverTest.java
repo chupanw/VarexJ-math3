@@ -10,6 +10,22 @@ public class BrentSolverTest extends TestJPF {
         runTestsOfThisClass(testMethods);
     }
     @Test(timeout=1800000)
+    public void testInitialGuess() throws Exception {
+        if (verifyNoPropertyViolation(config)) {
+               org.apache.commons.math3.analysis.solvers.BrentSolverTest object = new org.apache.commons.math3.analysis.solvers.BrentSolverTest();
+               object.testInitialGuess();
+        }
+    }
+
+    @Test(timeout=1800000)
+    public void testMath832() throws Exception {
+        if (verifyNoPropertyViolation(config)) {
+               org.apache.commons.math3.analysis.solvers.BrentSolverTest object = new org.apache.commons.math3.analysis.solvers.BrentSolverTest();
+               object.testMath832();
+        }
+    }
+
+    @Test(timeout=1800000)
     public void testSinZero() throws Exception {
         if (verifyNoPropertyViolation(config)) {
                org.apache.commons.math3.analysis.solvers.BrentSolverTest object = new org.apache.commons.math3.analysis.solvers.BrentSolverTest();
@@ -38,22 +54,6 @@ public class BrentSolverTest extends TestJPF {
         if (verifyNoPropertyViolation(config)) {
                org.apache.commons.math3.analysis.solvers.BrentSolverTest object = new org.apache.commons.math3.analysis.solvers.BrentSolverTest();
                object.testBadEndpoints();
-        }
-    }
-
-    @Test(timeout=1800000)
-    public void testInitialGuess() throws Exception {
-        if (verifyNoPropertyViolation(config)) {
-               org.apache.commons.math3.analysis.solvers.BrentSolverTest object = new org.apache.commons.math3.analysis.solvers.BrentSolverTest();
-               object.testInitialGuess();
-        }
-    }
-
-    @Test(timeout=1800000)
-    public void testMath832() throws Exception {
-        if (verifyNoPropertyViolation(config)) {
-               org.apache.commons.math3.analysis.solvers.BrentSolverTest object = new org.apache.commons.math3.analysis.solvers.BrentSolverTest();
-               object.testMath832();
         }
     }
 

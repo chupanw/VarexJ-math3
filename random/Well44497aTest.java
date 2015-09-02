@@ -235,6 +235,42 @@ public class Well44497aTest extends TestJPF {
     }
 
     @Test(timeout=1800000)
+    public void testNextLongPositiveRange() throws Exception {
+        if (verifyNoPropertyViolation(config)) {
+               org.apache.commons.math3.random.Well44497aTest object = new org.apache.commons.math3.random.Well44497aTest();
+               object.setUp();
+               object.testNextLongPositiveRange();
+        }
+    }
+
+    @Test(timeout=1800000)
+    public void testNextLongWideRange() throws Exception {
+        if (verifyNoPropertyViolation(config)) {
+               org.apache.commons.math3.random.Well44497aTest object = new org.apache.commons.math3.random.Well44497aTest();
+               object.setUp();
+               object.testNextLongWideRange();
+        }
+    }
+
+    @Test(timeout=1800000)
+    public void testNextPoisson() throws Exception {
+        if (verifyNoPropertyViolation(config)) {
+               org.apache.commons.math3.random.Well44497aTest object = new org.apache.commons.math3.random.Well44497aTest();
+               object.setUp();
+               object.testNextPoisson();
+        }
+    }
+
+    @Test(timeout=1800000)
+    public void testNextPoissonConsistency() throws Exception {
+        if (verifyNoPropertyViolation(config)) {
+               org.apache.commons.math3.random.Well44497aTest object = new org.apache.commons.math3.random.Well44497aTest();
+               object.setUp();
+               object.testNextPoissonConsistency();
+        }
+    }
+
+    @Test(timeout=1800000)
     public void testNextHex() throws Exception {
         if (verifyNoPropertyViolation(config)) {
                org.apache.commons.math3.random.Well44497aTest object = new org.apache.commons.math3.random.Well44497aTest();
@@ -456,42 +492,6 @@ public class Well44497aTest extends TestJPF {
                org.apache.commons.math3.random.Well44497aTest object = new org.apache.commons.math3.random.Well44497aTest();
                object.setUp();
                object.testReseed();
-        }
-    }
-
-    @Test(timeout=1800000)
-    public void testNextLongWideRange() throws Exception {
-        if (verifyNoPropertyViolation(config)) {
-               org.apache.commons.math3.random.Well44497aTest object = new org.apache.commons.math3.random.Well44497aTest();
-               object.setUp();
-               object.testNextLongWideRange();
-        }
-    }
-
-    @Test(timeout=1800000)
-    public void testNextLongPositiveRange() throws Exception {
-        if (verifyNoPropertyViolation(config)) {
-               org.apache.commons.math3.random.Well44497aTest object = new org.apache.commons.math3.random.Well44497aTest();
-               object.setUp();
-               object.testNextLongPositiveRange();
-        }
-    }
-
-    @Test(timeout=1800000)
-    public void testNextPoisson() throws Exception {
-        if (verifyNoPropertyViolation(config)) {
-               org.apache.commons.math3.random.Well44497aTest object = new org.apache.commons.math3.random.Well44497aTest();
-               object.setUp();
-               object.testNextPoisson();
-        }
-    }
-
-    @Test(timeout=1800000)
-    public void testNextPoissonConsistency() throws Exception {
-        if (verifyNoPropertyViolation(config)) {
-               org.apache.commons.math3.random.Well44497aTest object = new org.apache.commons.math3.random.Well44497aTest();
-               object.setUp();
-               object.testNextPoissonConsistency();
         }
     }
 

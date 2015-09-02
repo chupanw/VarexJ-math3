@@ -34,6 +34,22 @@ public class MultivariateSummaryStatisticsTest extends TestJPF {
     }
 
     @Test(timeout=1800000)
+    public void testSetterInjection() throws Exception {
+        if (verifyNoPropertyViolation(config)) {
+               org.apache.commons.math3.stat.descriptive.MultivariateSummaryStatisticsTest object = new org.apache.commons.math3.stat.descriptive.MultivariateSummaryStatisticsTest();
+               object.testSetterInjection();
+        }
+    }
+
+    @Test(timeout=1800000)
+    public void testShuffledStatistics() throws Exception {
+        if (verifyNoPropertyViolation(config)) {
+               org.apache.commons.math3.stat.descriptive.MultivariateSummaryStatisticsTest object = new org.apache.commons.math3.stat.descriptive.MultivariateSummaryStatisticsTest();
+               object.testShuffledStatistics();
+        }
+    }
+
+    @Test(timeout=1800000)
     public void testStats() throws Exception {
         if (verifyNoPropertyViolation(config)) {
                org.apache.commons.math3.stat.descriptive.MultivariateSummaryStatisticsTest object = new org.apache.commons.math3.stat.descriptive.MultivariateSummaryStatisticsTest();
@@ -70,22 +86,6 @@ public class MultivariateSummaryStatisticsTest extends TestJPF {
         if (verifyNoPropertyViolation(config)) {
                org.apache.commons.math3.stat.descriptive.MultivariateSummaryStatisticsTest object = new org.apache.commons.math3.stat.descriptive.MultivariateSummaryStatisticsTest();
                object.testNaNContracts();
-        }
-    }
-
-    @Test(timeout=1800000)
-    public void testSetterInjection() throws Exception {
-        if (verifyNoPropertyViolation(config)) {
-               org.apache.commons.math3.stat.descriptive.MultivariateSummaryStatisticsTest object = new org.apache.commons.math3.stat.descriptive.MultivariateSummaryStatisticsTest();
-               object.testSetterInjection();
-        }
-    }
-
-    @Test(timeout=1800000)
-    public void testShuffledStatistics() throws Exception {
-        if (verifyNoPropertyViolation(config)) {
-               org.apache.commons.math3.stat.descriptive.MultivariateSummaryStatisticsTest object = new org.apache.commons.math3.stat.descriptive.MultivariateSummaryStatisticsTest();
-               object.testShuffledStatistics();
         }
     }
 

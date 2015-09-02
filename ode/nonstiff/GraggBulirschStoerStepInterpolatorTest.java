@@ -10,10 +10,10 @@ public class GraggBulirschStoerStepInterpolatorTest extends TestJPF {
         runTestsOfThisClass(testMethods);
     }
     @Test(timeout=1800000)
-    public void serialization() throws Exception {
+    public void checklone() throws Exception {
         if (verifyNoPropertyViolation(config)) {
                org.apache.commons.math3.ode.nonstiff.GraggBulirschStoerStepInterpolatorTest object = new org.apache.commons.math3.ode.nonstiff.GraggBulirschStoerStepInterpolatorTest();
-               object.serialization();
+               object.checklone();
         }
     }
 
@@ -26,10 +26,10 @@ public class GraggBulirschStoerStepInterpolatorTest extends TestJPF {
     }
 
     @Test(timeout=1800000)
-    public void checklone() throws Exception {
+    public void serialization() throws Exception {
         if (verifyNoPropertyViolation(config)) {
                org.apache.commons.math3.ode.nonstiff.GraggBulirschStoerStepInterpolatorTest object = new org.apache.commons.math3.ode.nonstiff.GraggBulirschStoerStepInterpolatorTest();
-               object.checklone();
+               object.serialization();
         }
     }
 
