@@ -18,6 +18,14 @@ public class UniformIntegerDistributionTest extends TestJPF {
     }
 
     @Test(timeout=1800000)
+    public void testIllegalArguments() throws Exception {
+        if (verifyNoPropertyViolation(config)) {
+               org.apache.commons.math3.distribution.UniformIntegerDistributionTest object = new org.apache.commons.math3.distribution.UniformIntegerDistributionTest();
+               object.testIllegalArguments();
+        }
+    }
+
+    @Test(timeout=1800000)
     public void testDensities() throws Exception {
         if (verifyNoPropertyViolation(config)) {
                org.apache.commons.math3.distribution.UniformIntegerDistributionTest object = new org.apache.commons.math3.distribution.UniformIntegerDistributionTest();
@@ -54,14 +62,6 @@ public class UniformIntegerDistributionTest extends TestJPF {
         if (verifyNoPropertyViolation(config)) {
                org.apache.commons.math3.distribution.UniformIntegerDistributionTest object = new org.apache.commons.math3.distribution.UniformIntegerDistributionTest();
                object.testSampling();
-        }
-    }
-
-    @Test(timeout=1800000)
-    public void testIllegalArguments() throws Exception {
-        if (verifyNoPropertyViolation(config)) {
-               org.apache.commons.math3.distribution.UniformIntegerDistributionTest object = new org.apache.commons.math3.distribution.UniformIntegerDistributionTest();
-               object.testIllegalArguments();
         }
     }
 

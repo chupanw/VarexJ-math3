@@ -10,38 +10,6 @@ public class CholeskyDecompositionTest extends TestJPF {
         runTestsOfThisClass(testMethods);
     }
     @Test(timeout=1800000)
-    public void testNonSquare() throws Exception {
-        if (verifyUnhandledException("org.apache.commons.math3.linear.NonSquareMatrixException", config)) {
-               org.apache.commons.math3.linear.CholeskyDecompositionTest object = new org.apache.commons.math3.linear.CholeskyDecompositionTest();
-               object.testNonSquare();
-        }
-    }
-
-    @Test(timeout=1800000)
-    public void testMatricesValues() throws Exception {
-        if (verifyNoPropertyViolation(config)) {
-               org.apache.commons.math3.linear.CholeskyDecompositionTest object = new org.apache.commons.math3.linear.CholeskyDecompositionTest();
-               object.testMatricesValues();
-        }
-    }
-
-    @Test(timeout=1800000)
-    public void testAEqualLLT() throws Exception {
-        if (verifyNoPropertyViolation(config)) {
-               org.apache.commons.math3.linear.CholeskyDecompositionTest object = new org.apache.commons.math3.linear.CholeskyDecompositionTest();
-               object.testAEqualLLT();
-        }
-    }
-
-    @Test(timeout=1800000)
-    public void testMath274() throws Exception {
-        if (verifyUnhandledException("org.apache.commons.math3.linear.NonPositiveDefiniteMatrixException", config)) {
-               org.apache.commons.math3.linear.CholeskyDecompositionTest object = new org.apache.commons.math3.linear.CholeskyDecompositionTest();
-               object.testMath274();
-        }
-    }
-
-    @Test(timeout=1800000)
     public void testNotSymmetricMatrixException() throws Exception {
         if (verifyUnhandledException("org.apache.commons.math3.linear.NonSymmetricMatrixException", config)) {
                org.apache.commons.math3.linear.CholeskyDecompositionTest object = new org.apache.commons.math3.linear.CholeskyDecompositionTest();
@@ -58,6 +26,22 @@ public class CholeskyDecompositionTest extends TestJPF {
     }
 
     @Test(timeout=1800000)
+    public void testMath274() throws Exception {
+        if (verifyUnhandledException("org.apache.commons.math3.linear.NonPositiveDefiniteMatrixException", config)) {
+               org.apache.commons.math3.linear.CholeskyDecompositionTest object = new org.apache.commons.math3.linear.CholeskyDecompositionTest();
+               object.testMath274();
+        }
+    }
+
+    @Test(timeout=1800000)
+    public void testAEqualLLT() throws Exception {
+        if (verifyNoPropertyViolation(config)) {
+               org.apache.commons.math3.linear.CholeskyDecompositionTest object = new org.apache.commons.math3.linear.CholeskyDecompositionTest();
+               object.testAEqualLLT();
+        }
+    }
+
+    @Test(timeout=1800000)
     public void testLLowerTriangular() throws Exception {
         if (verifyNoPropertyViolation(config)) {
                org.apache.commons.math3.linear.CholeskyDecompositionTest object = new org.apache.commons.math3.linear.CholeskyDecompositionTest();
@@ -70,6 +54,22 @@ public class CholeskyDecompositionTest extends TestJPF {
         if (verifyNoPropertyViolation(config)) {
                org.apache.commons.math3.linear.CholeskyDecompositionTest object = new org.apache.commons.math3.linear.CholeskyDecompositionTest();
                object.testLTTransposed();
+        }
+    }
+
+    @Test(timeout=1800000)
+    public void testNonSquare() throws Exception {
+        if (verifyUnhandledException("org.apache.commons.math3.linear.NonSquareMatrixException", config)) {
+               org.apache.commons.math3.linear.CholeskyDecompositionTest object = new org.apache.commons.math3.linear.CholeskyDecompositionTest();
+               object.testNonSquare();
+        }
+    }
+
+    @Test(timeout=1800000)
+    public void testMatricesValues() throws Exception {
+        if (verifyNoPropertyViolation(config)) {
+               org.apache.commons.math3.linear.CholeskyDecompositionTest object = new org.apache.commons.math3.linear.CholeskyDecompositionTest();
+               object.testMatricesValues();
         }
     }
 

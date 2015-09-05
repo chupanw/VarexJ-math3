@@ -10,10 +10,26 @@ public class EnumeratedIntegerDistributionTest extends TestJPF {
         runTestsOfThisClass(testMethods);
     }
     @Test(timeout=1800000)
-    public void testCumulativeProbability() throws Exception {
+    public void testExceptions() throws Exception {
         if (verifyNoPropertyViolation(config)) {
                org.apache.commons.math3.distribution.EnumeratedIntegerDistributionTest object = new org.apache.commons.math3.distribution.EnumeratedIntegerDistributionTest();
-               object.testCumulativeProbability();
+               object.testExceptions();
+        }
+    }
+
+    @Test(timeout=1800000)
+    public void testSample() throws Exception {
+        if (verifyNoPropertyViolation(config)) {
+               org.apache.commons.math3.distribution.EnumeratedIntegerDistributionTest object = new org.apache.commons.math3.distribution.EnumeratedIntegerDistributionTest();
+               object.testSample();
+        }
+    }
+
+    @Test(timeout=1800000)
+    public void testProbability() throws Exception {
+        if (verifyNoPropertyViolation(config)) {
+               org.apache.commons.math3.distribution.EnumeratedIntegerDistributionTest object = new org.apache.commons.math3.distribution.EnumeratedIntegerDistributionTest();
+               object.testProbability();
         }
     }
 
@@ -22,6 +38,14 @@ public class EnumeratedIntegerDistributionTest extends TestJPF {
         if (verifyNoPropertyViolation(config)) {
                org.apache.commons.math3.distribution.EnumeratedIntegerDistributionTest object = new org.apache.commons.math3.distribution.EnumeratedIntegerDistributionTest();
                object.testGetNumericalMean();
+        }
+    }
+
+    @Test(timeout=1800000)
+    public void testCumulativeProbability() throws Exception {
+        if (verifyNoPropertyViolation(config)) {
+               org.apache.commons.math3.distribution.EnumeratedIntegerDistributionTest object = new org.apache.commons.math3.distribution.EnumeratedIntegerDistributionTest();
+               object.testCumulativeProbability();
         }
     }
 
@@ -54,30 +78,6 @@ public class EnumeratedIntegerDistributionTest extends TestJPF {
         if (verifyNoPropertyViolation(config)) {
                org.apache.commons.math3.distribution.EnumeratedIntegerDistributionTest object = new org.apache.commons.math3.distribution.EnumeratedIntegerDistributionTest();
                object.testIsSupportConnected();
-        }
-    }
-
-    @Test(timeout=1800000)
-    public void testSample() throws Exception {
-        if (verifyNoPropertyViolation(config)) {
-               org.apache.commons.math3.distribution.EnumeratedIntegerDistributionTest object = new org.apache.commons.math3.distribution.EnumeratedIntegerDistributionTest();
-               object.testSample();
-        }
-    }
-
-    @Test(timeout=1800000)
-    public void testExceptions() throws Exception {
-        if (verifyNoPropertyViolation(config)) {
-               org.apache.commons.math3.distribution.EnumeratedIntegerDistributionTest object = new org.apache.commons.math3.distribution.EnumeratedIntegerDistributionTest();
-               object.testExceptions();
-        }
-    }
-
-    @Test(timeout=1800000)
-    public void testProbability() throws Exception {
-        if (verifyNoPropertyViolation(config)) {
-               org.apache.commons.math3.distribution.EnumeratedIntegerDistributionTest object = new org.apache.commons.math3.distribution.EnumeratedIntegerDistributionTest();
-               object.testProbability();
         }
     }
 

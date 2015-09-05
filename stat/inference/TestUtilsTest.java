@@ -26,14 +26,6 @@ public class TestUtilsTest extends TestJPF {
     }
 
     @Test(timeout=1800000)
-    public void testSmallSamples() throws Exception {
-        if (verifyNoPropertyViolation(config)) {
-               org.apache.commons.math3.stat.inference.TestUtilsTest object = new org.apache.commons.math3.stat.inference.TestUtilsTest();
-               object.testSmallSamples();
-        }
-    }
-
-    @Test(timeout=1800000)
     public void testChiSquareIndependence() throws Exception {
         if (verifyNoPropertyViolation(config)) {
                org.apache.commons.math3.stat.inference.TestUtilsTest object = new org.apache.commons.math3.stat.inference.TestUtilsTest();
@@ -54,6 +46,14 @@ public class TestUtilsTest extends TestJPF {
         if (verifyNoPropertyViolation(config)) {
                org.apache.commons.math3.stat.inference.TestUtilsTest object = new org.apache.commons.math3.stat.inference.TestUtilsTest();
                object.testChiSquareZeroCount();
+        }
+    }
+
+    @Test(timeout=1800000)
+    public void testSmallSamples() throws Exception {
+        if (verifyNoPropertyViolation(config)) {
+               org.apache.commons.math3.stat.inference.TestUtilsTest object = new org.apache.commons.math3.stat.inference.TestUtilsTest();
+               object.testSmallSamples();
         }
     }
 

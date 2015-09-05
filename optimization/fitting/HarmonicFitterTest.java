@@ -10,10 +10,10 @@ public class HarmonicFitterTest extends TestJPF {
         runTestsOfThisClass(testMethods);
     }
     @Test(timeout=1800000)
-    public void testNoError() throws Exception {
+    public void testInitialGuess() throws Exception {
         if (verifyNoPropertyViolation(config)) {
                org.apache.commons.math3.optimization.fitting.HarmonicFitterTest object = new org.apache.commons.math3.optimization.fitting.HarmonicFitterTest();
-               object.testNoError();
+               object.testInitialGuess();
         }
     }
 
@@ -50,10 +50,10 @@ public class HarmonicFitterTest extends TestJPF {
     }
 
     @Test(timeout=1800000)
-    public void testInitialGuess() throws Exception {
+    public void testNoError() throws Exception {
         if (verifyNoPropertyViolation(config)) {
                org.apache.commons.math3.optimization.fitting.HarmonicFitterTest object = new org.apache.commons.math3.optimization.fitting.HarmonicFitterTest();
-               object.testInitialGuess();
+               object.testNoError();
         }
     }
 

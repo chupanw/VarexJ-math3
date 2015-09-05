@@ -10,114 +10,6 @@ public class DfpTest extends TestJPF {
         runTestsOfThisClass(testMethods);
     }
     @Test(timeout=1800000)
-    public void testDivide() throws Exception {
-        if (verifyNoPropertyViolation(config)) {
-               org.apache.commons.math3.dfp.DfpTest object = new org.apache.commons.math3.dfp.DfpTest();
-               object.setUp();
-               object.testDivide();
-        }
-    }
-
-    @Test(timeout=1800000)
-    public void testAdd() throws Exception {
-        if (verifyNoPropertyViolation(config)) {
-               org.apache.commons.math3.dfp.DfpTest object = new org.apache.commons.math3.dfp.DfpTest();
-               object.setUp();
-               object.testAdd();
-        }
-    }
-
-    @Test(timeout=1800000)
-    public void testMultiply() throws Exception {
-        if (verifyNoPropertyViolation(config)) {
-               org.apache.commons.math3.dfp.DfpTest object = new org.apache.commons.math3.dfp.DfpTest();
-               object.setUp();
-               object.testMultiply();
-        }
-    }
-
-    @Test(timeout=1800000)
-    public void testReciprocal() throws Exception {
-        if (verifyNoPropertyViolation(config)) {
-               org.apache.commons.math3.dfp.DfpTest object = new org.apache.commons.math3.dfp.DfpTest();
-               object.setUp();
-               object.testReciprocal();
-        }
-    }
-
-    @Test(timeout=1800000)
-    public void testRemainder() throws Exception {
-        if (verifyNoPropertyViolation(config)) {
-               org.apache.commons.math3.dfp.DfpTest object = new org.apache.commons.math3.dfp.DfpTest();
-               object.setUp();
-               object.testRemainder();
-        }
-    }
-
-    @Test(timeout=1800000)
-    public void testCopySign() throws Exception {
-        if (verifyNoPropertyViolation(config)) {
-               org.apache.commons.math3.dfp.DfpTest object = new org.apache.commons.math3.dfp.DfpTest();
-               object.setUp();
-               object.testCopySign();
-        }
-    }
-
-    @Test(timeout=1800000)
-    public void testSqrt() throws Exception {
-        if (verifyNoPropertyViolation(config)) {
-               org.apache.commons.math3.dfp.DfpTest object = new org.apache.commons.math3.dfp.DfpTest();
-               object.setUp();
-               object.testSqrt();
-        }
-    }
-
-    @Test(timeout=1800000)
-    public void testCeil() throws Exception {
-        if (verifyNoPropertyViolation(config)) {
-               org.apache.commons.math3.dfp.DfpTest object = new org.apache.commons.math3.dfp.DfpTest();
-               object.setUp();
-               object.testCeil();
-        }
-    }
-
-    @Test(timeout=1800000)
-    public void testFloor() throws Exception {
-        if (verifyNoPropertyViolation(config)) {
-               org.apache.commons.math3.dfp.DfpTest object = new org.apache.commons.math3.dfp.DfpTest();
-               object.setUp();
-               object.testFloor();
-        }
-    }
-
-    @Test(timeout=1800000)
-    public void testRint() throws Exception {
-        if (verifyNoPropertyViolation(config)) {
-               org.apache.commons.math3.dfp.DfpTest object = new org.apache.commons.math3.dfp.DfpTest();
-               object.setUp();
-               object.testRint();
-        }
-    }
-
-    @Test(timeout=1800000)
-    public void testRound() throws Exception {
-        if (verifyNoPropertyViolation(config)) {
-               org.apache.commons.math3.dfp.DfpTest object = new org.apache.commons.math3.dfp.DfpTest();
-               object.setUp();
-               object.testRound();
-        }
-    }
-
-    @Test(timeout=1800000)
-    public void testToString() throws Exception {
-        if (verifyNoPropertyViolation(config)) {
-               org.apache.commons.math3.dfp.DfpTest object = new org.apache.commons.math3.dfp.DfpTest();
-               object.setUp();
-               object.testToString();
-        }
-    }
-
-    @Test(timeout=1800000)
     public void testNextAfter() throws Exception {
         if (verifyNoPropertyViolation(config)) {
                org.apache.commons.math3.dfp.DfpTest object = new org.apache.commons.math3.dfp.DfpTest();
@@ -253,6 +145,114 @@ public class DfpTest extends TestJPF {
     }
 
     @Test(timeout=1800000)
+    public void testAdd() throws Exception {
+        if (verifyNoPropertyViolation(config)) {
+               org.apache.commons.math3.dfp.DfpTest object = new org.apache.commons.math3.dfp.DfpTest();
+               object.setUp();
+               object.testAdd();
+        }
+    }
+
+    @Test(timeout=1800000)
+    public void testMultiply() throws Exception {
+        if (verifyNoPropertyViolation(config)) {
+               org.apache.commons.math3.dfp.DfpTest object = new org.apache.commons.math3.dfp.DfpTest();
+               object.setUp();
+               object.testMultiply();
+        }
+    }
+
+    @Test(timeout=1800000)
+    public void testReciprocal() throws Exception {
+        if (verifyNoPropertyViolation(config)) {
+               org.apache.commons.math3.dfp.DfpTest object = new org.apache.commons.math3.dfp.DfpTest();
+               object.setUp();
+               object.testReciprocal();
+        }
+    }
+
+    @Test(timeout=1800000)
+    public void testRemainder() throws Exception {
+        if (verifyNoPropertyViolation(config)) {
+               org.apache.commons.math3.dfp.DfpTest object = new org.apache.commons.math3.dfp.DfpTest();
+               object.setUp();
+               object.testRemainder();
+        }
+    }
+
+    @Test(timeout=1800000)
+    public void testCopySign() throws Exception {
+        if (verifyNoPropertyViolation(config)) {
+               org.apache.commons.math3.dfp.DfpTest object = new org.apache.commons.math3.dfp.DfpTest();
+               object.setUp();
+               object.testCopySign();
+        }
+    }
+
+    @Test(timeout=1800000)
+    public void testSqrt() throws Exception {
+        if (verifyNoPropertyViolation(config)) {
+               org.apache.commons.math3.dfp.DfpTest object = new org.apache.commons.math3.dfp.DfpTest();
+               object.setUp();
+               object.testSqrt();
+        }
+    }
+
+    @Test(timeout=1800000)
+    public void testCeil() throws Exception {
+        if (verifyNoPropertyViolation(config)) {
+               org.apache.commons.math3.dfp.DfpTest object = new org.apache.commons.math3.dfp.DfpTest();
+               object.setUp();
+               object.testCeil();
+        }
+    }
+
+    @Test(timeout=1800000)
+    public void testFloor() throws Exception {
+        if (verifyNoPropertyViolation(config)) {
+               org.apache.commons.math3.dfp.DfpTest object = new org.apache.commons.math3.dfp.DfpTest();
+               object.setUp();
+               object.testFloor();
+        }
+    }
+
+    @Test(timeout=1800000)
+    public void testRint() throws Exception {
+        if (verifyNoPropertyViolation(config)) {
+               org.apache.commons.math3.dfp.DfpTest object = new org.apache.commons.math3.dfp.DfpTest();
+               object.setUp();
+               object.testRint();
+        }
+    }
+
+    @Test(timeout=1800000)
+    public void testRound() throws Exception {
+        if (verifyNoPropertyViolation(config)) {
+               org.apache.commons.math3.dfp.DfpTest object = new org.apache.commons.math3.dfp.DfpTest();
+               object.setUp();
+               object.testRound();
+        }
+    }
+
+    @Test(timeout=1800000)
+    public void testToString() throws Exception {
+        if (verifyNoPropertyViolation(config)) {
+               org.apache.commons.math3.dfp.DfpTest object = new org.apache.commons.math3.dfp.DfpTest();
+               object.setUp();
+               object.testToString();
+        }
+    }
+
+    @Test(timeout=1800000)
+    public void testDivide() throws Exception {
+        if (verifyNoPropertyViolation(config)) {
+               org.apache.commons.math3.dfp.DfpTest object = new org.apache.commons.math3.dfp.DfpTest();
+               object.setUp();
+               object.testDivide();
+        }
+    }
+
+    @Test(timeout=1800000)
     public void testExp() throws Exception {
         if (verifyNoPropertyViolation(config)) {
                org.apache.commons.math3.dfp.DfpTest object = new org.apache.commons.math3.dfp.DfpTest();
@@ -294,15 +294,6 @@ public class DfpTest extends TestJPF {
                org.apache.commons.math3.dfp.DfpTest object = new org.apache.commons.math3.dfp.DfpTest();
                object.setUp();
                object.testSignum();
-        }
-    }
-
-    @Test(timeout=1800000)
-    public void testLinearCombinationFaFa() throws Exception {
-        if (verifyNoPropertyViolation(config)) {
-               org.apache.commons.math3.dfp.DfpTest object = new org.apache.commons.math3.dfp.DfpTest();
-               object.setUp();
-               object.testLinearCombinationFaFa();
         }
     }
 
@@ -609,6 +600,15 @@ public class DfpTest extends TestJPF {
                org.apache.commons.math3.dfp.DfpTest object = new org.apache.commons.math3.dfp.DfpTest();
                object.setUp();
                object.testScalb();
+        }
+    }
+
+    @Test(timeout=1800000)
+    public void testLinearCombinationFaFa() throws Exception {
+        if (verifyNoPropertyViolation(config)) {
+               org.apache.commons.math3.dfp.DfpTest object = new org.apache.commons.math3.dfp.DfpTest();
+               object.setUp();
+               object.testLinearCombinationFaFa();
         }
     }
 

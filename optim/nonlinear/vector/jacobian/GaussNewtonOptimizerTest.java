@@ -10,14 +10,6 @@ public class GaussNewtonOptimizerTest extends TestJPF {
         runTestsOfThisClass(testMethods);
     }
     @Test(timeout=1800000)
-    public void testConstraintsUnsupported() throws Exception {
-        if (verifyUnhandledException("org.apache.commons.math3.exception.MathUnsupportedOperationException", config)) {
-               org.apache.commons.math3.optim.nonlinear.vector.jacobian.GaussNewtonOptimizerTest object = new org.apache.commons.math3.optim.nonlinear.vector.jacobian.GaussNewtonOptimizerTest();
-               object.testConstraintsUnsupported();
-        }
-    }
-
-    @Test(timeout=1800000)
     public void testMoreEstimatedParametersSimple() throws Exception {
         if (verifyUnhandledException("org.apache.commons.math3.exception.ConvergenceException", config)) {
                org.apache.commons.math3.optim.nonlinear.vector.jacobian.GaussNewtonOptimizerTest object = new org.apache.commons.math3.optim.nonlinear.vector.jacobian.GaussNewtonOptimizerTest();
@@ -46,6 +38,14 @@ public class GaussNewtonOptimizerTest extends TestJPF {
         if (verifyUnhandledException("org.apache.commons.math3.exception.ConvergenceException", config)) {
                org.apache.commons.math3.optim.nonlinear.vector.jacobian.GaussNewtonOptimizerTest object = new org.apache.commons.math3.optim.nonlinear.vector.jacobian.GaussNewtonOptimizerTest();
                object.testHahn1();
+        }
+    }
+
+    @Test(timeout=1800000)
+    public void testConstraintsUnsupported() throws Exception {
+        if (verifyUnhandledException("org.apache.commons.math3.exception.MathUnsupportedOperationException", config)) {
+               org.apache.commons.math3.optim.nonlinear.vector.jacobian.GaussNewtonOptimizerTest object = new org.apache.commons.math3.optim.nonlinear.vector.jacobian.GaussNewtonOptimizerTest();
+               object.testConstraintsUnsupported();
         }
     }
 

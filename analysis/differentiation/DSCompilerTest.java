@@ -10,14 +10,6 @@ public class DSCompilerTest extends TestJPF {
         runTestsOfThisClass(testMethods);
     }
     @Test(timeout=1800000)
-    public void testSize() throws Exception {
-        if (verifyNoPropertyViolation(config)) {
-               org.apache.commons.math3.analysis.differentiation.DSCompilerTest object = new org.apache.commons.math3.analysis.differentiation.DSCompilerTest();
-               object.testSize();
-        }
-    }
-
-    @Test(timeout=1800000)
     public void testIndices() throws Exception {
         if (verifyNoPropertyViolation(config)) {
                org.apache.commons.math3.analysis.differentiation.DSCompilerTest object = new org.apache.commons.math3.analysis.differentiation.DSCompilerTest();
@@ -54,6 +46,14 @@ public class DSCompilerTest extends TestJPF {
         if (verifyNoPropertyViolation(config)) {
                org.apache.commons.math3.analysis.differentiation.DSCompilerTest object = new org.apache.commons.math3.analysis.differentiation.DSCompilerTest();
                object.testMultiplicationRules();
+        }
+    }
+
+    @Test(timeout=1800000)
+    public void testSize() throws Exception {
+        if (verifyNoPropertyViolation(config)) {
+               org.apache.commons.math3.analysis.differentiation.DSCompilerTest object = new org.apache.commons.math3.analysis.differentiation.DSCompilerTest();
+               object.testSize();
         }
     }
 

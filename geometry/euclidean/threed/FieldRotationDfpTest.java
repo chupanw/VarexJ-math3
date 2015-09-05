@@ -18,14 +18,6 @@ public class FieldRotationDfpTest extends TestJPF {
     }
 
     @Test(timeout=1800000)
-    public void testIdentity() throws Exception {
-        if (verifyNoPropertyViolation(config)) {
-               org.apache.commons.math3.geometry.euclidean.threed.FieldRotationDfpTest object = new org.apache.commons.math3.geometry.euclidean.threed.FieldRotationDfpTest();
-               object.testIdentity();
-        }
-    }
-
-    @Test(timeout=1800000)
     public void testAxisAngle() throws Exception {
         if (verifyNoPropertyViolation(config)) {
                org.apache.commons.math3.geometry.euclidean.threed.FieldRotationDfpTest object = new org.apache.commons.math3.geometry.euclidean.threed.FieldRotationDfpTest();
@@ -38,6 +30,14 @@ public class FieldRotationDfpTest extends TestJPF {
         if (verifyNoPropertyViolation(config)) {
                org.apache.commons.math3.geometry.euclidean.threed.FieldRotationDfpTest object = new org.apache.commons.math3.geometry.euclidean.threed.FieldRotationDfpTest();
                object.testRevert();
+        }
+    }
+
+    @Test(timeout=1800000)
+    public void testIdentity() throws Exception {
+        if (verifyNoPropertyViolation(config)) {
+               org.apache.commons.math3.geometry.euclidean.threed.FieldRotationDfpTest object = new org.apache.commons.math3.geometry.euclidean.threed.FieldRotationDfpTest();
+               object.testIdentity();
         }
     }
 

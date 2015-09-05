@@ -26,6 +26,30 @@ public class MeanTest extends TestJPF {
     }
 
     @Test(timeout=1800000)
+    public void testConsistency() throws Exception {
+        if (verifyNoPropertyViolation(config)) {
+               org.apache.commons.math3.stat.descriptive.moment.MeanTest object = new org.apache.commons.math3.stat.descriptive.moment.MeanTest();
+               object.testConsistency();
+        }
+    }
+
+    @Test(timeout=1800000)
+    public void testSerial() throws Exception {
+        if (verifyNoPropertyViolation(config)) {
+               org.apache.commons.math3.stat.descriptive.moment.MeanTest object = new org.apache.commons.math3.stat.descriptive.moment.MeanTest();
+               object.testSerial();
+        }
+    }
+
+    @Test(timeout=1800000)
+    public void testEqualsAndHashCode() throws Exception {
+        if (verifyNoPropertyViolation(config)) {
+               org.apache.commons.math3.stat.descriptive.moment.MeanTest object = new org.apache.commons.math3.stat.descriptive.moment.MeanTest();
+               object.testEqualsAndHashCode();
+        }
+    }
+
+    @Test(timeout=1800000)
     public void testIncrementation() throws Exception {
         if (verifyNoPropertyViolation(config)) {
                org.apache.commons.math3.stat.descriptive.moment.MeanTest object = new org.apache.commons.math3.stat.descriptive.moment.MeanTest();
@@ -54,30 +78,6 @@ public class MeanTest extends TestJPF {
         if (verifyNoPropertyViolation(config)) {
                org.apache.commons.math3.stat.descriptive.moment.MeanTest object = new org.apache.commons.math3.stat.descriptive.moment.MeanTest();
                object.testSerialization();
-        }
-    }
-
-    @Test(timeout=1800000)
-    public void testSerial() throws Exception {
-        if (verifyNoPropertyViolation(config)) {
-               org.apache.commons.math3.stat.descriptive.moment.MeanTest object = new org.apache.commons.math3.stat.descriptive.moment.MeanTest();
-               object.testSerial();
-        }
-    }
-
-    @Test(timeout=1800000)
-    public void testEqualsAndHashCode() throws Exception {
-        if (verifyNoPropertyViolation(config)) {
-               org.apache.commons.math3.stat.descriptive.moment.MeanTest object = new org.apache.commons.math3.stat.descriptive.moment.MeanTest();
-               object.testEqualsAndHashCode();
-        }
-    }
-
-    @Test(timeout=1800000)
-    public void testConsistency() throws Exception {
-        if (verifyNoPropertyViolation(config)) {
-               org.apache.commons.math3.stat.descriptive.moment.MeanTest object = new org.apache.commons.math3.stat.descriptive.moment.MeanTest();
-               object.testConsistency();
         }
     }
 

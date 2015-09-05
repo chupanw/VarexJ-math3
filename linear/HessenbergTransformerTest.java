@@ -10,14 +10,6 @@ public class HessenbergTransformerTest extends TestJPF {
         runTestsOfThisClass(testMethods);
     }
     @Test(timeout=1800000)
-    public void testNonSquare() throws Exception {
-        if (verifyNoPropertyViolation(config)) {
-               org.apache.commons.math3.linear.HessenbergTransformerTest object = new org.apache.commons.math3.linear.HessenbergTransformerTest();
-               object.testNonSquare();
-        }
-    }
-
-    @Test(timeout=1800000)
     public void testAEqualPHPt() throws Exception {
         if (verifyNoPropertyViolation(config)) {
                org.apache.commons.math3.linear.HessenbergTransformerTest object = new org.apache.commons.math3.linear.HessenbergTransformerTest();
@@ -78,6 +70,14 @@ public class HessenbergTransformerTest extends TestJPF {
         if (verifyNoPropertyViolation(config)) {
                org.apache.commons.math3.linear.HessenbergTransformerTest object = new org.apache.commons.math3.linear.HessenbergTransformerTest();
                object.testMatricesValues3();
+        }
+    }
+
+    @Test(timeout=1800000)
+    public void testNonSquare() throws Exception {
+        if (verifyNoPropertyViolation(config)) {
+               org.apache.commons.math3.linear.HessenbergTransformerTest object = new org.apache.commons.math3.linear.HessenbergTransformerTest();
+               object.testNonSquare();
         }
     }
 

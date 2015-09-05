@@ -10,10 +10,10 @@ public class KMeansPlusPlusClustererTest extends TestJPF {
         runTestsOfThisClass(testMethods);
     }
     @Test(timeout=1800000)
-    public void dimension2() throws Exception {
+    public void testPerformClusterAnalysisDegenerate() throws Exception {
         if (verifyNoPropertyViolation(config)) {
                org.apache.commons.math3.stat.clustering.KMeansPlusPlusClustererTest object = new org.apache.commons.math3.stat.clustering.KMeansPlusPlusClustererTest();
-               object.dimension2();
+               object.testPerformClusterAnalysisDegenerate();
         }
     }
 
@@ -26,18 +26,10 @@ public class KMeansPlusPlusClustererTest extends TestJPF {
     }
 
     @Test(timeout=1800000)
-    public void testPerformClusterAnalysisToManyClusters() throws Exception {
-        if (verifyUnhandledException("org.apache.commons.math3.exception.NumberIsTooSmallException", config)) {
-               org.apache.commons.math3.stat.clustering.KMeansPlusPlusClustererTest object = new org.apache.commons.math3.stat.clustering.KMeansPlusPlusClustererTest();
-               object.testPerformClusterAnalysisToManyClusters();
-        }
-    }
-
-    @Test(timeout=1800000)
-    public void testPerformClusterAnalysisDegenerate() throws Exception {
+    public void dimension2() throws Exception {
         if (verifyNoPropertyViolation(config)) {
                org.apache.commons.math3.stat.clustering.KMeansPlusPlusClustererTest object = new org.apache.commons.math3.stat.clustering.KMeansPlusPlusClustererTest();
-               object.testPerformClusterAnalysisDegenerate();
+               object.dimension2();
         }
     }
 
@@ -46,6 +38,14 @@ public class KMeansPlusPlusClustererTest extends TestJPF {
         if (verifyNoPropertyViolation(config)) {
                org.apache.commons.math3.stat.clustering.KMeansPlusPlusClustererTest object = new org.apache.commons.math3.stat.clustering.KMeansPlusPlusClustererTest();
                object.testSmallDistances();
+        }
+    }
+
+    @Test(timeout=1800000)
+    public void testPerformClusterAnalysisToManyClusters() throws Exception {
+        if (verifyUnhandledException("org.apache.commons.math3.exception.NumberIsTooSmallException", config)) {
+               org.apache.commons.math3.stat.clustering.KMeansPlusPlusClustererTest object = new org.apache.commons.math3.stat.clustering.KMeansPlusPlusClustererTest();
+               object.testPerformClusterAnalysisToManyClusters();
         }
     }
 

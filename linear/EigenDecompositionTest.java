@@ -10,6 +10,15 @@ public class EigenDecompositionTest extends TestJPF {
         runTestsOfThisClass(testMethods);
     }
     @Test(timeout=1800000)
+    public void testSquareRoot() throws Exception {
+        if (verifyNoPropertyViolation(config)) {
+               org.apache.commons.math3.linear.EigenDecompositionTest object = new org.apache.commons.math3.linear.EigenDecompositionTest();
+               object.setUp();
+               object.testSquareRoot();
+        }
+    }
+
+    @Test(timeout=1800000)
     public void testDimension1() throws Exception {
         if (verifyNoPropertyViolation(config)) {
                org.apache.commons.math3.linear.EigenDecompositionTest object = new org.apache.commons.math3.linear.EigenDecompositionTest();
@@ -231,15 +240,6 @@ public class EigenDecompositionTest extends TestJPF {
                org.apache.commons.math3.linear.EigenDecompositionTest object = new org.apache.commons.math3.linear.EigenDecompositionTest();
                object.setUp();
                object.testZeroDivide();
-        }
-    }
-
-    @Test(timeout=1800000)
-    public void testSquareRoot() throws Exception {
-        if (verifyNoPropertyViolation(config)) {
-               org.apache.commons.math3.linear.EigenDecompositionTest object = new org.apache.commons.math3.linear.EigenDecompositionTest();
-               object.setUp();
-               object.testSquareRoot();
         }
     }
 

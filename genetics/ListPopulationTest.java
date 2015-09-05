@@ -10,18 +10,18 @@ public class ListPopulationTest extends TestJPF {
         runTestsOfThisClass(testMethods);
     }
     @Test(timeout=1800000)
-    public void testGetFittestChromosome() throws Exception {
-        if (verifyNoPropertyViolation(config)) {
-               org.apache.commons.math3.genetics.ListPopulationTest object = new org.apache.commons.math3.genetics.ListPopulationTest();
-               object.testGetFittestChromosome();
-        }
-    }
-
-    @Test(timeout=1800000)
     public void testChromosomes() throws Exception {
         if (verifyNoPropertyViolation(config)) {
                org.apache.commons.math3.genetics.ListPopulationTest object = new org.apache.commons.math3.genetics.ListPopulationTest();
                object.testChromosomes();
+        }
+    }
+
+    @Test(timeout=1800000)
+    public void testGetFittestChromosome() throws Exception {
+        if (verifyNoPropertyViolation(config)) {
+               org.apache.commons.math3.genetics.ListPopulationTest object = new org.apache.commons.math3.genetics.ListPopulationTest();
+               object.testGetFittestChromosome();
         }
     }
 

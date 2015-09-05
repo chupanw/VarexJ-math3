@@ -26,26 +26,10 @@ public class FiniteDifferencesDifferentiatorTest extends TestJPF {
     }
 
     @Test(timeout=1800000)
-    public void testWrongNumberOfPoints() throws Exception {
-        if (verifyUnhandledException("org.apache.commons.math3.exception.NumberIsTooSmallException", config)) {
-               org.apache.commons.math3.analysis.differentiation.FiniteDifferencesDifferentiatorTest object = new org.apache.commons.math3.analysis.differentiation.FiniteDifferencesDifferentiatorTest();
-               object.testWrongNumberOfPoints();
-        }
-    }
-
-    @Test(timeout=1800000)
     public void testWrongStepSize() throws Exception {
         if (verifyUnhandledException("org.apache.commons.math3.exception.NotPositiveException", config)) {
                org.apache.commons.math3.analysis.differentiation.FiniteDifferencesDifferentiatorTest object = new org.apache.commons.math3.analysis.differentiation.FiniteDifferencesDifferentiatorTest();
                object.testWrongStepSize();
-        }
-    }
-
-    @Test(timeout=1800000)
-    public void testLinear() throws Exception {
-        if (verifyNoPropertyViolation(config)) {
-               org.apache.commons.math3.analysis.differentiation.FiniteDifferencesDifferentiatorTest object = new org.apache.commons.math3.analysis.differentiation.FiniteDifferencesDifferentiatorTest();
-               object.testLinear();
         }
     }
 
@@ -102,6 +86,22 @@ public class FiniteDifferencesDifferentiatorTest extends TestJPF {
         if (verifyNoPropertyViolation(config)) {
                org.apache.commons.math3.analysis.differentiation.FiniteDifferencesDifferentiatorTest object = new org.apache.commons.math3.analysis.differentiation.FiniteDifferencesDifferentiatorTest();
                object.testBounds();
+        }
+    }
+
+    @Test(timeout=1800000)
+    public void testWrongNumberOfPoints() throws Exception {
+        if (verifyUnhandledException("org.apache.commons.math3.exception.NumberIsTooSmallException", config)) {
+               org.apache.commons.math3.analysis.differentiation.FiniteDifferencesDifferentiatorTest object = new org.apache.commons.math3.analysis.differentiation.FiniteDifferencesDifferentiatorTest();
+               object.testWrongNumberOfPoints();
+        }
+    }
+
+    @Test(timeout=1800000)
+    public void testLinear() throws Exception {
+        if (verifyNoPropertyViolation(config)) {
+               org.apache.commons.math3.analysis.differentiation.FiniteDifferencesDifferentiatorTest object = new org.apache.commons.math3.analysis.differentiation.FiniteDifferencesDifferentiatorTest();
+               object.testLinear();
         }
     }
 

@@ -10,14 +10,6 @@ public class GraggBulirschStoerStepInterpolatorTest extends TestJPF {
         runTestsOfThisClass(testMethods);
     }
     @Test(timeout=1800000)
-    public void checklone() throws Exception {
-        if (verifyNoPropertyViolation(config)) {
-               org.apache.commons.math3.ode.nonstiff.GraggBulirschStoerStepInterpolatorTest object = new org.apache.commons.math3.ode.nonstiff.GraggBulirschStoerStepInterpolatorTest();
-               object.checklone();
-        }
-    }
-
-    @Test(timeout=1800000)
     public void derivativesConsistency() throws Exception {
         if (verifyNoPropertyViolation(config)) {
                org.apache.commons.math3.ode.nonstiff.GraggBulirschStoerStepInterpolatorTest object = new org.apache.commons.math3.ode.nonstiff.GraggBulirschStoerStepInterpolatorTest();
@@ -30,6 +22,14 @@ public class GraggBulirschStoerStepInterpolatorTest extends TestJPF {
         if (verifyNoPropertyViolation(config)) {
                org.apache.commons.math3.ode.nonstiff.GraggBulirschStoerStepInterpolatorTest object = new org.apache.commons.math3.ode.nonstiff.GraggBulirschStoerStepInterpolatorTest();
                object.serialization();
+        }
+    }
+
+    @Test(timeout=1800000)
+    public void checklone() throws Exception {
+        if (verifyNoPropertyViolation(config)) {
+               org.apache.commons.math3.ode.nonstiff.GraggBulirschStoerStepInterpolatorTest object = new org.apache.commons.math3.ode.nonstiff.GraggBulirschStoerStepInterpolatorTest();
+               object.checklone();
         }
     }
 

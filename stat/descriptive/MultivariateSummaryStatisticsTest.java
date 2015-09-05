@@ -10,18 +10,42 @@ public class MultivariateSummaryStatisticsTest extends TestJPF {
         runTestsOfThisClass(testMethods);
     }
     @Test(timeout=1800000)
-    public void testSerialization() throws Exception {
+    public void testN0andN1Conditions() throws Exception {
         if (verifyNoPropertyViolation(config)) {
                org.apache.commons.math3.stat.descriptive.MultivariateSummaryStatisticsTest object = new org.apache.commons.math3.stat.descriptive.MultivariateSummaryStatisticsTest();
-               object.testSerialization();
+               object.testN0andN1Conditions();
         }
     }
 
     @Test(timeout=1800000)
-    public void testToString() throws Exception {
+    public void testStats() throws Exception {
         if (verifyNoPropertyViolation(config)) {
                org.apache.commons.math3.stat.descriptive.MultivariateSummaryStatisticsTest object = new org.apache.commons.math3.stat.descriptive.MultivariateSummaryStatisticsTest();
-               object.testToString();
+               object.testStats();
+        }
+    }
+
+    @Test(timeout=1800000)
+    public void testSetterIllegalState() throws Exception {
+        if (verifyNoPropertyViolation(config)) {
+               org.apache.commons.math3.stat.descriptive.MultivariateSummaryStatisticsTest object = new org.apache.commons.math3.stat.descriptive.MultivariateSummaryStatisticsTest();
+               object.testSetterIllegalState();
+        }
+    }
+
+    @Test(timeout=1800000)
+    public void testDimension() throws Exception {
+        if (verifyNoPropertyViolation(config)) {
+               org.apache.commons.math3.stat.descriptive.MultivariateSummaryStatisticsTest object = new org.apache.commons.math3.stat.descriptive.MultivariateSummaryStatisticsTest();
+               object.testDimension();
+        }
+    }
+
+    @Test(timeout=1800000)
+    public void testNaNContracts() throws Exception {
+        if (verifyNoPropertyViolation(config)) {
+               org.apache.commons.math3.stat.descriptive.MultivariateSummaryStatisticsTest object = new org.apache.commons.math3.stat.descriptive.MultivariateSummaryStatisticsTest();
+               object.testNaNContracts();
         }
     }
 
@@ -50,42 +74,18 @@ public class MultivariateSummaryStatisticsTest extends TestJPF {
     }
 
     @Test(timeout=1800000)
-    public void testStats() throws Exception {
+    public void testSerialization() throws Exception {
         if (verifyNoPropertyViolation(config)) {
                org.apache.commons.math3.stat.descriptive.MultivariateSummaryStatisticsTest object = new org.apache.commons.math3.stat.descriptive.MultivariateSummaryStatisticsTest();
-               object.testStats();
+               object.testSerialization();
         }
     }
 
     @Test(timeout=1800000)
-    public void testN0andN1Conditions() throws Exception {
+    public void testToString() throws Exception {
         if (verifyNoPropertyViolation(config)) {
                org.apache.commons.math3.stat.descriptive.MultivariateSummaryStatisticsTest object = new org.apache.commons.math3.stat.descriptive.MultivariateSummaryStatisticsTest();
-               object.testN0andN1Conditions();
-        }
-    }
-
-    @Test(timeout=1800000)
-    public void testSetterIllegalState() throws Exception {
-        if (verifyNoPropertyViolation(config)) {
-               org.apache.commons.math3.stat.descriptive.MultivariateSummaryStatisticsTest object = new org.apache.commons.math3.stat.descriptive.MultivariateSummaryStatisticsTest();
-               object.testSetterIllegalState();
-        }
-    }
-
-    @Test(timeout=1800000)
-    public void testDimension() throws Exception {
-        if (verifyNoPropertyViolation(config)) {
-               org.apache.commons.math3.stat.descriptive.MultivariateSummaryStatisticsTest object = new org.apache.commons.math3.stat.descriptive.MultivariateSummaryStatisticsTest();
-               object.testDimension();
-        }
-    }
-
-    @Test(timeout=1800000)
-    public void testNaNContracts() throws Exception {
-        if (verifyNoPropertyViolation(config)) {
-               org.apache.commons.math3.stat.descriptive.MultivariateSummaryStatisticsTest object = new org.apache.commons.math3.stat.descriptive.MultivariateSummaryStatisticsTest();
-               object.testNaNContracts();
+               object.testToString();
         }
     }
 

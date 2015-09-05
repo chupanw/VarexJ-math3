@@ -18,14 +18,6 @@ public class MultidimensionalCounterTest extends TestJPF {
     }
 
     @Test(timeout=1800000)
-    public void testAccessors() throws Exception {
-        if (verifyNoPropertyViolation(config)) {
-               org.apache.commons.math3.util.MultidimensionalCounterTest object = new org.apache.commons.math3.util.MultidimensionalCounterTest();
-               object.testAccessors();
-        }
-    }
-
-    @Test(timeout=1800000)
     public void testIteratorPreconditions() throws Exception {
         if (verifyNoPropertyViolation(config)) {
                org.apache.commons.math3.util.MultidimensionalCounterTest object = new org.apache.commons.math3.util.MultidimensionalCounterTest();
@@ -46,6 +38,14 @@ public class MultidimensionalCounterTest extends TestJPF {
         if (verifyNoPropertyViolation(config)) {
                org.apache.commons.math3.util.MultidimensionalCounterTest object = new org.apache.commons.math3.util.MultidimensionalCounterTest();
                object.testIterationConsistency();
+        }
+    }
+
+    @Test(timeout=1800000)
+    public void testAccessors() throws Exception {
+        if (verifyNoPropertyViolation(config)) {
+               org.apache.commons.math3.util.MultidimensionalCounterTest object = new org.apache.commons.math3.util.MultidimensionalCounterTest();
+               object.testAccessors();
         }
     }
 

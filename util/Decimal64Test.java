@@ -10,10 +10,18 @@ public class Decimal64Test extends TestJPF {
         runTestsOfThisClass(testMethods);
     }
     @Test(timeout=1800000)
-    public void testDivide() throws Exception {
+    public void testIsNaN() throws Exception {
         if (verifyNoPropertyViolation(config)) {
                org.apache.commons.math3.util.Decimal64Test object = new org.apache.commons.math3.util.Decimal64Test();
-               object.testDivide();
+               object.testIsNaN();
+        }
+    }
+
+    @Test(timeout=1800000)
+    public void testIsInfinite() throws Exception {
+        if (verifyNoPropertyViolation(config)) {
+               org.apache.commons.math3.util.Decimal64Test object = new org.apache.commons.math3.util.Decimal64Test();
+               object.testIsInfinite();
         }
     }
 
@@ -58,18 +66,10 @@ public class Decimal64Test extends TestJPF {
     }
 
     @Test(timeout=1800000)
-    public void testIsNaN() throws Exception {
+    public void testDivide() throws Exception {
         if (verifyNoPropertyViolation(config)) {
                org.apache.commons.math3.util.Decimal64Test object = new org.apache.commons.math3.util.Decimal64Test();
-               object.testIsNaN();
-        }
-    }
-
-    @Test(timeout=1800000)
-    public void testIsInfinite() throws Exception {
-        if (verifyNoPropertyViolation(config)) {
-               org.apache.commons.math3.util.Decimal64Test object = new org.apache.commons.math3.util.Decimal64Test();
-               object.testIsInfinite();
+               object.testDivide();
         }
     }
 
@@ -110,14 +110,6 @@ public class Decimal64Test extends TestJPF {
         if (verifyNoPropertyViolation(config)) {
                org.apache.commons.math3.util.Decimal64Test object = new org.apache.commons.math3.util.Decimal64Test();
                object.testSignum();
-        }
-    }
-
-    @Test(timeout=1800000)
-    public void testLinearCombinationFaFa() throws Exception {
-        if (verifyNoPropertyViolation(config)) {
-               org.apache.commons.math3.util.Decimal64Test object = new org.apache.commons.math3.util.Decimal64Test();
-               object.testLinearCombinationFaFa();
         }
     }
 
@@ -430,6 +422,14 @@ public class Decimal64Test extends TestJPF {
         if (verifyNoPropertyViolation(config)) {
                org.apache.commons.math3.util.Decimal64Test object = new org.apache.commons.math3.util.Decimal64Test();
                object.testScalb();
+        }
+    }
+
+    @Test(timeout=1800000)
+    public void testLinearCombinationFaFa() throws Exception {
+        if (verifyNoPropertyViolation(config)) {
+               org.apache.commons.math3.util.Decimal64Test object = new org.apache.commons.math3.util.Decimal64Test();
+               object.testLinearCombinationFaFa();
         }
     }
 

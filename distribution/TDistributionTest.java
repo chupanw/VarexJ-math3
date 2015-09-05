@@ -10,22 +10,6 @@ public class TDistributionTest extends TestJPF {
         runTestsOfThisClass(testMethods);
     }
     @Test(timeout=1800000)
-    public void nistData() throws Exception {
-        if (verifyNoPropertyViolation(config)) {
-               org.apache.commons.math3.distribution.TDistributionTest object = new org.apache.commons.math3.distribution.TDistributionTest();
-               object.nistData();
-        }
-    }
-
-    @Test(timeout=1800000)
-    public void testCumulativeProbabilityAgainstStackOverflow() throws Exception {
-        if (verifyNoPropertyViolation(config)) {
-               org.apache.commons.math3.distribution.TDistributionTest object = new org.apache.commons.math3.distribution.TDistributionTest();
-               object.testCumulativeProbabilityAgainstStackOverflow();
-        }
-    }
-
-    @Test(timeout=1800000)
     public void testPreconditions() throws Exception {
         if (verifyUnhandledException("org.apache.commons.math3.exception.NotStrictlyPositiveException", config)) {
                org.apache.commons.math3.distribution.TDistributionTest object = new org.apache.commons.math3.distribution.TDistributionTest();
@@ -34,10 +18,10 @@ public class TDistributionTest extends TestJPF {
     }
 
     @Test(timeout=1800000)
-    public void testMoments() throws Exception {
+    public void testInverseCumulativeProbabilityExtremes() throws Exception {
         if (verifyNoPropertyViolation(config)) {
                org.apache.commons.math3.distribution.TDistributionTest object = new org.apache.commons.math3.distribution.TDistributionTest();
-               object.testMoments();
+               object.testInverseCumulativeProbabilityExtremes();
         }
     }
 
@@ -58,42 +42,34 @@ public class TDistributionTest extends TestJPF {
     }
 
     @Test(timeout=1800000)
-    public void testInverseCumulativeProbabilityExtremes() throws Exception {
+    public void testCumulativeProbabilityAgainstStackOverflow() throws Exception {
         if (verifyNoPropertyViolation(config)) {
                org.apache.commons.math3.distribution.TDistributionTest object = new org.apache.commons.math3.distribution.TDistributionTest();
-               object.testInverseCumulativeProbabilityExtremes();
+               object.testCumulativeProbabilityAgainstStackOverflow();
         }
     }
 
     @Test(timeout=1800000)
-    public void testDensities() throws Exception {
+    public void nistData() throws Exception {
         if (verifyNoPropertyViolation(config)) {
                org.apache.commons.math3.distribution.TDistributionTest object = new org.apache.commons.math3.distribution.TDistributionTest();
-               object.testDensities();
+               object.nistData();
         }
     }
 
     @Test(timeout=1800000)
-    public void testCumulativeProbabilities() throws Exception {
+    public void testMoments() throws Exception {
         if (verifyNoPropertyViolation(config)) {
                org.apache.commons.math3.distribution.TDistributionTest object = new org.apache.commons.math3.distribution.TDistributionTest();
-               object.testCumulativeProbabilities();
+               object.testMoments();
         }
     }
 
     @Test(timeout=1800000)
-    public void testInverseCumulativeProbabilities() throws Exception {
+    public void testIllegalArguments() throws Exception {
         if (verifyNoPropertyViolation(config)) {
                org.apache.commons.math3.distribution.TDistributionTest object = new org.apache.commons.math3.distribution.TDistributionTest();
-               object.testInverseCumulativeProbabilities();
-        }
-    }
-
-    @Test(timeout=1800000)
-    public void testSampling() throws Exception {
-        if (verifyNoPropertyViolation(config)) {
-               org.apache.commons.math3.distribution.TDistributionTest object = new org.apache.commons.math3.distribution.TDistributionTest();
-               object.testSampling();
+               object.testIllegalArguments();
         }
     }
 
@@ -138,10 +114,34 @@ public class TDistributionTest extends TestJPF {
     }
 
     @Test(timeout=1800000)
-    public void testIllegalArguments() throws Exception {
+    public void testDensities() throws Exception {
         if (verifyNoPropertyViolation(config)) {
                org.apache.commons.math3.distribution.TDistributionTest object = new org.apache.commons.math3.distribution.TDistributionTest();
-               object.testIllegalArguments();
+               object.testDensities();
+        }
+    }
+
+    @Test(timeout=1800000)
+    public void testCumulativeProbabilities() throws Exception {
+        if (verifyNoPropertyViolation(config)) {
+               org.apache.commons.math3.distribution.TDistributionTest object = new org.apache.commons.math3.distribution.TDistributionTest();
+               object.testCumulativeProbabilities();
+        }
+    }
+
+    @Test(timeout=1800000)
+    public void testInverseCumulativeProbabilities() throws Exception {
+        if (verifyNoPropertyViolation(config)) {
+               org.apache.commons.math3.distribution.TDistributionTest object = new org.apache.commons.math3.distribution.TDistributionTest();
+               object.testInverseCumulativeProbabilities();
+        }
+    }
+
+    @Test(timeout=1800000)
+    public void testSampling() throws Exception {
+        if (verifyNoPropertyViolation(config)) {
+               org.apache.commons.math3.distribution.TDistributionTest object = new org.apache.commons.math3.distribution.TDistributionTest();
+               object.testSampling();
         }
     }
 

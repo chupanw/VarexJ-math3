@@ -10,18 +10,18 @@ public class AdamsMoultonIntegratorTest extends TestJPF {
         runTestsOfThisClass(testMethods);
     }
     @Test(timeout=1800000)
-    public void dimensionCheck() throws Exception {
-        if (verifyUnhandledException("org.apache.commons.math3.exception.DimensionMismatchException", config)) {
-               org.apache.commons.math3.ode.nonstiff.AdamsMoultonIntegratorTest object = new org.apache.commons.math3.ode.nonstiff.AdamsMoultonIntegratorTest();
-               object.dimensionCheck();
-        }
-    }
-
-    @Test(timeout=1800000)
     public void testMinStep() throws Exception {
         if (verifyUnhandledException("org.apache.commons.math3.exception.NumberIsTooSmallException", config)) {
                org.apache.commons.math3.ode.nonstiff.AdamsMoultonIntegratorTest object = new org.apache.commons.math3.ode.nonstiff.AdamsMoultonIntegratorTest();
                object.testMinStep();
+        }
+    }
+
+    @Test(timeout=1800000)
+    public void dimensionCheck() throws Exception {
+        if (verifyUnhandledException("org.apache.commons.math3.exception.DimensionMismatchException", config)) {
+               org.apache.commons.math3.ode.nonstiff.AdamsMoultonIntegratorTest object = new org.apache.commons.math3.ode.nonstiff.AdamsMoultonIntegratorTest();
+               object.dimensionCheck();
         }
     }
 

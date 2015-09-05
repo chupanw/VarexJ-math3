@@ -10,6 +10,46 @@ public class GaussianTest extends TestJPF {
         runTestsOfThisClass(testMethods);
     }
     @Test(timeout=1800000)
+    public void testPreconditions() throws Exception {
+        if (verifyUnhandledException("org.apache.commons.math3.exception.NotStrictlyPositiveException", config)) {
+               org.apache.commons.math3.analysis.function.GaussianTest object = new org.apache.commons.math3.analysis.function.GaussianTest();
+               object.testPreconditions();
+        }
+    }
+
+    @Test(timeout=1800000)
+    public void testSomeValues() throws Exception {
+        if (verifyNoPropertyViolation(config)) {
+               org.apache.commons.math3.analysis.function.GaussianTest object = new org.apache.commons.math3.analysis.function.GaussianTest();
+               object.testSomeValues();
+        }
+    }
+
+    @Test(timeout=1800000)
+    public void testLargeArguments() throws Exception {
+        if (verifyNoPropertyViolation(config)) {
+               org.apache.commons.math3.analysis.function.GaussianTest object = new org.apache.commons.math3.analysis.function.GaussianTest();
+               object.testLargeArguments();
+        }
+    }
+
+    @Test(timeout=1800000)
+    public void testDerivatives() throws Exception {
+        if (verifyNoPropertyViolation(config)) {
+               org.apache.commons.math3.analysis.function.GaussianTest object = new org.apache.commons.math3.analysis.function.GaussianTest();
+               object.testDerivatives();
+        }
+    }
+
+    @Test(timeout=1800000)
+    public void testDerivativeLargeArguments() throws Exception {
+        if (verifyNoPropertyViolation(config)) {
+               org.apache.commons.math3.analysis.function.GaussianTest object = new org.apache.commons.math3.analysis.function.GaussianTest();
+               object.testDerivativeLargeArguments();
+        }
+    }
+
+    @Test(timeout=1800000)
     public void testDerivativesNaN() throws Exception {
         if (verifyNoPropertyViolation(config)) {
                org.apache.commons.math3.analysis.function.GaussianTest object = new org.apache.commons.math3.analysis.function.GaussianTest();
@@ -78,46 +118,6 @@ public class GaussianTest extends TestJPF {
         if (verifyNoPropertyViolation(config)) {
                org.apache.commons.math3.analysis.function.GaussianTest object = new org.apache.commons.math3.analysis.function.GaussianTest();
                object.testParametricGradient();
-        }
-    }
-
-    @Test(timeout=1800000)
-    public void testSomeValues() throws Exception {
-        if (verifyNoPropertyViolation(config)) {
-               org.apache.commons.math3.analysis.function.GaussianTest object = new org.apache.commons.math3.analysis.function.GaussianTest();
-               object.testSomeValues();
-        }
-    }
-
-    @Test(timeout=1800000)
-    public void testLargeArguments() throws Exception {
-        if (verifyNoPropertyViolation(config)) {
-               org.apache.commons.math3.analysis.function.GaussianTest object = new org.apache.commons.math3.analysis.function.GaussianTest();
-               object.testLargeArguments();
-        }
-    }
-
-    @Test(timeout=1800000)
-    public void testDerivatives() throws Exception {
-        if (verifyNoPropertyViolation(config)) {
-               org.apache.commons.math3.analysis.function.GaussianTest object = new org.apache.commons.math3.analysis.function.GaussianTest();
-               object.testDerivatives();
-        }
-    }
-
-    @Test(timeout=1800000)
-    public void testDerivativeLargeArguments() throws Exception {
-        if (verifyNoPropertyViolation(config)) {
-               org.apache.commons.math3.analysis.function.GaussianTest object = new org.apache.commons.math3.analysis.function.GaussianTest();
-               object.testDerivativeLargeArguments();
-        }
-    }
-
-    @Test(timeout=1800000)
-    public void testPreconditions() throws Exception {
-        if (verifyUnhandledException("org.apache.commons.math3.exception.NotStrictlyPositiveException", config)) {
-               org.apache.commons.math3.analysis.function.GaussianTest object = new org.apache.commons.math3.analysis.function.GaussianTest();
-               object.testPreconditions();
         }
     }
 

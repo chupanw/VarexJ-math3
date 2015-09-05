@@ -10,15 +10,6 @@ public class LevyDistributionTest extends TestJPF {
         runTestsOfThisClass(testMethods);
     }
     @Test(timeout=1800000)
-    public void testParameters() throws Exception {
-        if (verifyNoPropertyViolation(config)) {
-               org.apache.commons.math3.distribution.LevyDistributionTest object = new org.apache.commons.math3.distribution.LevyDistributionTest();
-               object.setUp();
-               object.testParameters();
-        }
-    }
-
-    @Test(timeout=1800000)
     public void testSupport() throws Exception {
         if (verifyNoPropertyViolation(config)) {
                org.apache.commons.math3.distribution.LevyDistributionTest object = new org.apache.commons.math3.distribution.LevyDistributionTest();
@@ -28,38 +19,20 @@ public class LevyDistributionTest extends TestJPF {
     }
 
     @Test(timeout=1800000)
-    public void testDensities() throws Exception {
+    public void testParameters() throws Exception {
         if (verifyNoPropertyViolation(config)) {
                org.apache.commons.math3.distribution.LevyDistributionTest object = new org.apache.commons.math3.distribution.LevyDistributionTest();
                object.setUp();
-               object.testDensities();
+               object.testParameters();
         }
     }
 
     @Test(timeout=1800000)
-    public void testCumulativeProbabilities() throws Exception {
+    public void testIllegalArguments() throws Exception {
         if (verifyNoPropertyViolation(config)) {
                org.apache.commons.math3.distribution.LevyDistributionTest object = new org.apache.commons.math3.distribution.LevyDistributionTest();
                object.setUp();
-               object.testCumulativeProbabilities();
-        }
-    }
-
-    @Test(timeout=1800000)
-    public void testInverseCumulativeProbabilities() throws Exception {
-        if (verifyNoPropertyViolation(config)) {
-               org.apache.commons.math3.distribution.LevyDistributionTest object = new org.apache.commons.math3.distribution.LevyDistributionTest();
-               object.setUp();
-               object.testInverseCumulativeProbabilities();
-        }
-    }
-
-    @Test(timeout=1800000)
-    public void testSampling() throws Exception {
-        if (verifyNoPropertyViolation(config)) {
-               org.apache.commons.math3.distribution.LevyDistributionTest object = new org.apache.commons.math3.distribution.LevyDistributionTest();
-               object.setUp();
-               object.testSampling();
+               object.testIllegalArguments();
         }
     }
 
@@ -109,11 +82,38 @@ public class LevyDistributionTest extends TestJPF {
     }
 
     @Test(timeout=1800000)
-    public void testIllegalArguments() throws Exception {
+    public void testDensities() throws Exception {
         if (verifyNoPropertyViolation(config)) {
                org.apache.commons.math3.distribution.LevyDistributionTest object = new org.apache.commons.math3.distribution.LevyDistributionTest();
                object.setUp();
-               object.testIllegalArguments();
+               object.testDensities();
+        }
+    }
+
+    @Test(timeout=1800000)
+    public void testCumulativeProbabilities() throws Exception {
+        if (verifyNoPropertyViolation(config)) {
+               org.apache.commons.math3.distribution.LevyDistributionTest object = new org.apache.commons.math3.distribution.LevyDistributionTest();
+               object.setUp();
+               object.testCumulativeProbabilities();
+        }
+    }
+
+    @Test(timeout=1800000)
+    public void testInverseCumulativeProbabilities() throws Exception {
+        if (verifyNoPropertyViolation(config)) {
+               org.apache.commons.math3.distribution.LevyDistributionTest object = new org.apache.commons.math3.distribution.LevyDistributionTest();
+               object.setUp();
+               object.testInverseCumulativeProbabilities();
+        }
+    }
+
+    @Test(timeout=1800000)
+    public void testSampling() throws Exception {
+        if (verifyNoPropertyViolation(config)) {
+               org.apache.commons.math3.distribution.LevyDistributionTest object = new org.apache.commons.math3.distribution.LevyDistributionTest();
+               object.setUp();
+               object.testSampling();
         }
     }
 

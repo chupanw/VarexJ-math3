@@ -10,18 +10,18 @@ public class ReappearingEventTest extends TestJPF {
         runTestsOfThisClass(testMethods);
     }
     @Test(timeout=1800000)
-    public void testGragg() throws Exception {
-        if (verifyNoPropertyViolation(config)) {
-               org.apache.commons.math3.ode.events.ReappearingEventTest object = new org.apache.commons.math3.ode.events.ReappearingEventTest();
-               object.testGragg();
-        }
-    }
-
-    @Test(timeout=1800000)
     public void testDormandPrince() throws Exception {
         if (verifyNoPropertyViolation(config)) {
                org.apache.commons.math3.ode.events.ReappearingEventTest object = new org.apache.commons.math3.ode.events.ReappearingEventTest();
                object.testDormandPrince();
+        }
+    }
+
+    @Test(timeout=1800000)
+    public void testGragg() throws Exception {
+        if (verifyNoPropertyViolation(config)) {
+               org.apache.commons.math3.ode.events.ReappearingEventTest object = new org.apache.commons.math3.ode.events.ReappearingEventTest();
+               object.testGragg();
         }
     }
 

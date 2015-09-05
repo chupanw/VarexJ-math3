@@ -10,18 +10,18 @@ public class PolynomialFunctionNewtonFormTest extends TestJPF {
         runTestsOfThisClass(testMethods);
     }
     @Test(timeout=1800000)
-    public void testQuinticFunction() throws Exception {
-        if (verifyNoPropertyViolation(config)) {
-               org.apache.commons.math3.analysis.polynomials.PolynomialFunctionNewtonFormTest object = new org.apache.commons.math3.analysis.polynomials.PolynomialFunctionNewtonFormTest();
-               object.testQuinticFunction();
-        }
-    }
-
-    @Test(timeout=1800000)
     public void testDerivative() throws Exception {
         if (verifyNoPropertyViolation(config)) {
                org.apache.commons.math3.analysis.polynomials.PolynomialFunctionNewtonFormTest object = new org.apache.commons.math3.analysis.polynomials.PolynomialFunctionNewtonFormTest();
                object.testDerivative();
+        }
+    }
+
+    @Test(timeout=1800000)
+    public void testQuinticFunction() throws Exception {
+        if (verifyNoPropertyViolation(config)) {
+               org.apache.commons.math3.analysis.polynomials.PolynomialFunctionNewtonFormTest object = new org.apache.commons.math3.analysis.polynomials.PolynomialFunctionNewtonFormTest();
+               object.testQuinticFunction();
         }
     }
 

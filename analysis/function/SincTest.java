@@ -10,14 +10,6 @@ public class SincTest extends TestJPF {
         runTestsOfThisClass(testMethods);
     }
     @Test(timeout=1800000)
-    public void testShortcut() throws Exception {
-        if (verifyNoPropertyViolation(config)) {
-               org.apache.commons.math3.analysis.function.SincTest object = new org.apache.commons.math3.analysis.function.SincTest();
-               object.testShortcut();
-        }
-    }
-
-    @Test(timeout=1800000)
     public void testCrossings() throws Exception {
         if (verifyNoPropertyViolation(config)) {
                org.apache.commons.math3.analysis.function.SincTest object = new org.apache.commons.math3.analysis.function.SincTest();
@@ -38,6 +30,14 @@ public class SincTest extends TestJPF {
         if (verifyNoPropertyViolation(config)) {
                org.apache.commons.math3.analysis.function.SincTest object = new org.apache.commons.math3.analysis.function.SincTest();
                object.testEuler();
+        }
+    }
+
+    @Test(timeout=1800000)
+    public void testShortcut() throws Exception {
+        if (verifyNoPropertyViolation(config)) {
+               org.apache.commons.math3.analysis.function.SincTest object = new org.apache.commons.math3.analysis.function.SincTest();
+               object.testShortcut();
         }
     }
 

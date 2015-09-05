@@ -10,30 +10,6 @@ public class SplineInterpolatorTest extends TestJPF {
         runTestsOfThisClass(testMethods);
     }
     @Test(timeout=1800000)
-    public void testInterpolateSin() throws Exception {
-        if (verifyNoPropertyViolation(config)) {
-               org.apache.commons.math3.analysis.interpolation.SplineInterpolatorTest object = new org.apache.commons.math3.analysis.interpolation.SplineInterpolatorTest();
-               object.testInterpolateSin();
-        }
-    }
-
-    @Test(timeout=1800000)
-    public void testIllegalArguments() throws Exception {
-        if (verifyNoPropertyViolation(config)) {
-               org.apache.commons.math3.analysis.interpolation.SplineInterpolatorTest object = new org.apache.commons.math3.analysis.interpolation.SplineInterpolatorTest();
-               object.testIllegalArguments();
-        }
-    }
-
-    @Test(timeout=1800000)
-    public void testInterpolateLinear() throws Exception {
-        if (verifyNoPropertyViolation(config)) {
-               org.apache.commons.math3.analysis.interpolation.SplineInterpolatorTest object = new org.apache.commons.math3.analysis.interpolation.SplineInterpolatorTest();
-               object.testInterpolateLinear();
-        }
-    }
-
-    @Test(timeout=1800000)
     public void testInterpolateLinearDegenerateTwoSegment() throws Exception {
         if (verifyNoPropertyViolation(config)) {
                org.apache.commons.math3.analysis.interpolation.SplineInterpolatorTest object = new org.apache.commons.math3.analysis.interpolation.SplineInterpolatorTest();
@@ -46,6 +22,30 @@ public class SplineInterpolatorTest extends TestJPF {
         if (verifyNoPropertyViolation(config)) {
                org.apache.commons.math3.analysis.interpolation.SplineInterpolatorTest object = new org.apache.commons.math3.analysis.interpolation.SplineInterpolatorTest();
                object.testInterpolateLinearDegenerateThreeSegment();
+        }
+    }
+
+    @Test(timeout=1800000)
+    public void testInterpolateLinear() throws Exception {
+        if (verifyNoPropertyViolation(config)) {
+               org.apache.commons.math3.analysis.interpolation.SplineInterpolatorTest object = new org.apache.commons.math3.analysis.interpolation.SplineInterpolatorTest();
+               object.testInterpolateLinear();
+        }
+    }
+
+    @Test(timeout=1800000)
+    public void testIllegalArguments() throws Exception {
+        if (verifyNoPropertyViolation(config)) {
+               org.apache.commons.math3.analysis.interpolation.SplineInterpolatorTest object = new org.apache.commons.math3.analysis.interpolation.SplineInterpolatorTest();
+               object.testIllegalArguments();
+        }
+    }
+
+    @Test(timeout=1800000)
+    public void testInterpolateSin() throws Exception {
+        if (verifyNoPropertyViolation(config)) {
+               org.apache.commons.math3.analysis.interpolation.SplineInterpolatorTest object = new org.apache.commons.math3.analysis.interpolation.SplineInterpolatorTest();
+               object.testInterpolateSin();
         }
     }
 

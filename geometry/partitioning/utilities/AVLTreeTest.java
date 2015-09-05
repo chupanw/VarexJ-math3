@@ -10,14 +10,6 @@ public class AVLTreeTest extends TestJPF {
         runTestsOfThisClass(testMethods);
     }
     @Test(timeout=1800000)
-    public void testInsert() throws Exception {
-        if (verifyNoPropertyViolation(config)) {
-               org.apache.commons.math3.geometry.partitioning.utilities.AVLTreeTest object = new org.apache.commons.math3.geometry.partitioning.utilities.AVLTreeTest();
-               object.testInsert();
-        }
-    }
-
-    @Test(timeout=1800000)
     public void testDelete1() throws Exception {
         if (verifyNoPropertyViolation(config)) {
                org.apache.commons.math3.geometry.partitioning.utilities.AVLTreeTest object = new org.apache.commons.math3.geometry.partitioning.utilities.AVLTreeTest();
@@ -46,6 +38,14 @@ public class AVLTreeTest extends TestJPF {
         if (verifyNoPropertyViolation(config)) {
                org.apache.commons.math3.geometry.partitioning.utilities.AVLTreeTest object = new org.apache.commons.math3.geometry.partitioning.utilities.AVLTreeTest();
                object.testRepetition();
+        }
+    }
+
+    @Test(timeout=1800000)
+    public void testInsert() throws Exception {
+        if (verifyNoPropertyViolation(config)) {
+               org.apache.commons.math3.geometry.partitioning.utilities.AVLTreeTest object = new org.apache.commons.math3.geometry.partitioning.utilities.AVLTreeTest();
+               object.testInsert();
         }
     }
 

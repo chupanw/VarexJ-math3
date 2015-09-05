@@ -10,6 +10,30 @@ public class TriangularDistributionTest extends TestJPF {
         runTestsOfThisClass(testMethods);
     }
     @Test(timeout=1800000)
+    public void testMeanVariance() throws Exception {
+        if (verifyNoPropertyViolation(config)) {
+               org.apache.commons.math3.distribution.TriangularDistributionTest object = new org.apache.commons.math3.distribution.TriangularDistributionTest();
+               object.testMeanVariance();
+        }
+    }
+
+    @Test(timeout=1800000)
+    public void testPreconditions3() throws Exception {
+        if (verifyUnhandledException("org.apache.commons.math3.exception.NumberIsTooLargeException", config)) {
+               org.apache.commons.math3.distribution.TriangularDistributionTest object = new org.apache.commons.math3.distribution.TriangularDistributionTest();
+               object.testPreconditions3();
+        }
+    }
+
+    @Test(timeout=1800000)
+    public void testPreconditions4() throws Exception {
+        if (verifyUnhandledException("org.apache.commons.math3.exception.NumberIsTooSmallException", config)) {
+               org.apache.commons.math3.distribution.TriangularDistributionTest object = new org.apache.commons.math3.distribution.TriangularDistributionTest();
+               object.testPreconditions4();
+        }
+    }
+
+    @Test(timeout=1800000)
     public void testGetLowerBound() throws Exception {
         if (verifyNoPropertyViolation(config)) {
                org.apache.commons.math3.distribution.TriangularDistributionTest object = new org.apache.commons.math3.distribution.TriangularDistributionTest();
@@ -42,58 +66,10 @@ public class TriangularDistributionTest extends TestJPF {
     }
 
     @Test(timeout=1800000)
-    public void testPreconditions3() throws Exception {
-        if (verifyUnhandledException("org.apache.commons.math3.exception.NumberIsTooLargeException", config)) {
-               org.apache.commons.math3.distribution.TriangularDistributionTest object = new org.apache.commons.math3.distribution.TriangularDistributionTest();
-               object.testPreconditions3();
-        }
-    }
-
-    @Test(timeout=1800000)
-    public void testPreconditions4() throws Exception {
-        if (verifyUnhandledException("org.apache.commons.math3.exception.NumberIsTooSmallException", config)) {
-               org.apache.commons.math3.distribution.TriangularDistributionTest object = new org.apache.commons.math3.distribution.TriangularDistributionTest();
-               object.testPreconditions4();
-        }
-    }
-
-    @Test(timeout=1800000)
-    public void testMeanVariance() throws Exception {
+    public void testIllegalArguments() throws Exception {
         if (verifyNoPropertyViolation(config)) {
                org.apache.commons.math3.distribution.TriangularDistributionTest object = new org.apache.commons.math3.distribution.TriangularDistributionTest();
-               object.testMeanVariance();
-        }
-    }
-
-    @Test(timeout=1800000)
-    public void testDensities() throws Exception {
-        if (verifyNoPropertyViolation(config)) {
-               org.apache.commons.math3.distribution.TriangularDistributionTest object = new org.apache.commons.math3.distribution.TriangularDistributionTest();
-               object.testDensities();
-        }
-    }
-
-    @Test(timeout=1800000)
-    public void testCumulativeProbabilities() throws Exception {
-        if (verifyNoPropertyViolation(config)) {
-               org.apache.commons.math3.distribution.TriangularDistributionTest object = new org.apache.commons.math3.distribution.TriangularDistributionTest();
-               object.testCumulativeProbabilities();
-        }
-    }
-
-    @Test(timeout=1800000)
-    public void testInverseCumulativeProbabilities() throws Exception {
-        if (verifyNoPropertyViolation(config)) {
-               org.apache.commons.math3.distribution.TriangularDistributionTest object = new org.apache.commons.math3.distribution.TriangularDistributionTest();
-               object.testInverseCumulativeProbabilities();
-        }
-    }
-
-    @Test(timeout=1800000)
-    public void testSampling() throws Exception {
-        if (verifyNoPropertyViolation(config)) {
-               org.apache.commons.math3.distribution.TriangularDistributionTest object = new org.apache.commons.math3.distribution.TriangularDistributionTest();
-               object.testSampling();
+               object.testIllegalArguments();
         }
     }
 
@@ -138,10 +114,34 @@ public class TriangularDistributionTest extends TestJPF {
     }
 
     @Test(timeout=1800000)
-    public void testIllegalArguments() throws Exception {
+    public void testDensities() throws Exception {
         if (verifyNoPropertyViolation(config)) {
                org.apache.commons.math3.distribution.TriangularDistributionTest object = new org.apache.commons.math3.distribution.TriangularDistributionTest();
-               object.testIllegalArguments();
+               object.testDensities();
+        }
+    }
+
+    @Test(timeout=1800000)
+    public void testCumulativeProbabilities() throws Exception {
+        if (verifyNoPropertyViolation(config)) {
+               org.apache.commons.math3.distribution.TriangularDistributionTest object = new org.apache.commons.math3.distribution.TriangularDistributionTest();
+               object.testCumulativeProbabilities();
+        }
+    }
+
+    @Test(timeout=1800000)
+    public void testInverseCumulativeProbabilities() throws Exception {
+        if (verifyNoPropertyViolation(config)) {
+               org.apache.commons.math3.distribution.TriangularDistributionTest object = new org.apache.commons.math3.distribution.TriangularDistributionTest();
+               object.testInverseCumulativeProbabilities();
+        }
+    }
+
+    @Test(timeout=1800000)
+    public void testSampling() throws Exception {
+        if (verifyNoPropertyViolation(config)) {
+               org.apache.commons.math3.distribution.TriangularDistributionTest object = new org.apache.commons.math3.distribution.TriangularDistributionTest();
+               object.testSampling();
         }
     }
 

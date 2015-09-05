@@ -58,14 +58,6 @@ public class HighamHall54IntegratorTest extends TestJPF {
     }
 
     @Test(timeout=1800000)
-    public void testEvents() throws Exception {
-        if (verifyNoPropertyViolation(config)) {
-               org.apache.commons.math3.ode.nonstiff.HighamHall54IntegratorTest object = new org.apache.commons.math3.ode.nonstiff.HighamHall54IntegratorTest();
-               object.testEvents();
-        }
-    }
-
-    @Test(timeout=1800000)
     public void testMinStep() throws Exception {
         if (verifyUnhandledException("org.apache.commons.math3.exception.NumberIsTooSmallException", config)) {
                org.apache.commons.math3.ode.nonstiff.HighamHall54IntegratorTest object = new org.apache.commons.math3.ode.nonstiff.HighamHall54IntegratorTest();
@@ -78,6 +70,14 @@ public class HighamHall54IntegratorTest extends TestJPF {
         if (verifyNoPropertyViolation(config)) {
                org.apache.commons.math3.ode.nonstiff.HighamHall54IntegratorTest object = new org.apache.commons.math3.ode.nonstiff.HighamHall54IntegratorTest();
                object.testIncreasingTolerance();
+        }
+    }
+
+    @Test(timeout=1800000)
+    public void testEvents() throws Exception {
+        if (verifyNoPropertyViolation(config)) {
+               org.apache.commons.math3.ode.nonstiff.HighamHall54IntegratorTest object = new org.apache.commons.math3.ode.nonstiff.HighamHall54IntegratorTest();
+               object.testEvents();
         }
     }
 

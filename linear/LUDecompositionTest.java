@@ -10,6 +10,14 @@ public class LUDecompositionTest extends TestJPF {
         runTestsOfThisClass(testMethods);
     }
     @Test(timeout=1800000)
+    public void testLLowerTriangular() throws Exception {
+        if (verifyNoPropertyViolation(config)) {
+               org.apache.commons.math3.linear.LUDecompositionTest object = new org.apache.commons.math3.linear.LUDecompositionTest();
+               object.testLLowerTriangular();
+        }
+    }
+
+    @Test(timeout=1800000)
     public void testNonSquare() throws Exception {
         if (verifyNoPropertyViolation(config)) {
                org.apache.commons.math3.linear.LUDecompositionTest object = new org.apache.commons.math3.linear.LUDecompositionTest();
@@ -18,10 +26,18 @@ public class LUDecompositionTest extends TestJPF {
     }
 
     @Test(timeout=1800000)
-    public void testLLowerTriangular() throws Exception {
+    public void testDimensions() throws Exception {
         if (verifyNoPropertyViolation(config)) {
                org.apache.commons.math3.linear.LUDecompositionTest object = new org.apache.commons.math3.linear.LUDecompositionTest();
-               object.testLLowerTriangular();
+               object.testDimensions();
+        }
+    }
+
+    @Test(timeout=1800000)
+    public void testPAEqualLU() throws Exception {
+        if (verifyNoPropertyViolation(config)) {
+               org.apache.commons.math3.linear.LUDecompositionTest object = new org.apache.commons.math3.linear.LUDecompositionTest();
+               object.testPAEqualLU();
         }
     }
 
@@ -38,14 +54,6 @@ public class LUDecompositionTest extends TestJPF {
         if (verifyNoPropertyViolation(config)) {
                org.apache.commons.math3.linear.LUDecompositionTest object = new org.apache.commons.math3.linear.LUDecompositionTest();
                object.testPPermutation();
-        }
-    }
-
-    @Test(timeout=1800000)
-    public void testPAEqualLU() throws Exception {
-        if (verifyNoPropertyViolation(config)) {
-               org.apache.commons.math3.linear.LUDecompositionTest object = new org.apache.commons.math3.linear.LUDecompositionTest();
-               object.testPAEqualLU();
         }
     }
 
@@ -70,14 +78,6 @@ public class LUDecompositionTest extends TestJPF {
         if (verifyNoPropertyViolation(config)) {
                org.apache.commons.math3.linear.LUDecompositionTest object = new org.apache.commons.math3.linear.LUDecompositionTest();
                object.testMatricesValues2();
-        }
-    }
-
-    @Test(timeout=1800000)
-    public void testDimensions() throws Exception {
-        if (verifyNoPropertyViolation(config)) {
-               org.apache.commons.math3.linear.LUDecompositionTest object = new org.apache.commons.math3.linear.LUDecompositionTest();
-               object.testDimensions();
         }
     }
 

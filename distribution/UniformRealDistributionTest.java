@@ -10,6 +10,14 @@ public class UniformRealDistributionTest extends TestJPF {
         runTestsOfThisClass(testMethods);
     }
     @Test(timeout=1800000)
+    public void testMeanVariance() throws Exception {
+        if (verifyNoPropertyViolation(config)) {
+               org.apache.commons.math3.distribution.UniformRealDistributionTest object = new org.apache.commons.math3.distribution.UniformRealDistributionTest();
+               object.testMeanVariance();
+        }
+    }
+
+    @Test(timeout=1800000)
     public void testGetLowerBound() throws Exception {
         if (verifyNoPropertyViolation(config)) {
                org.apache.commons.math3.distribution.UniformRealDistributionTest object = new org.apache.commons.math3.distribution.UniformRealDistributionTest();
@@ -42,42 +50,10 @@ public class UniformRealDistributionTest extends TestJPF {
     }
 
     @Test(timeout=1800000)
-    public void testMeanVariance() throws Exception {
+    public void testIllegalArguments() throws Exception {
         if (verifyNoPropertyViolation(config)) {
                org.apache.commons.math3.distribution.UniformRealDistributionTest object = new org.apache.commons.math3.distribution.UniformRealDistributionTest();
-               object.testMeanVariance();
-        }
-    }
-
-    @Test(timeout=1800000)
-    public void testDensities() throws Exception {
-        if (verifyNoPropertyViolation(config)) {
-               org.apache.commons.math3.distribution.UniformRealDistributionTest object = new org.apache.commons.math3.distribution.UniformRealDistributionTest();
-               object.testDensities();
-        }
-    }
-
-    @Test(timeout=1800000)
-    public void testCumulativeProbabilities() throws Exception {
-        if (verifyNoPropertyViolation(config)) {
-               org.apache.commons.math3.distribution.UniformRealDistributionTest object = new org.apache.commons.math3.distribution.UniformRealDistributionTest();
-               object.testCumulativeProbabilities();
-        }
-    }
-
-    @Test(timeout=1800000)
-    public void testInverseCumulativeProbabilities() throws Exception {
-        if (verifyNoPropertyViolation(config)) {
-               org.apache.commons.math3.distribution.UniformRealDistributionTest object = new org.apache.commons.math3.distribution.UniformRealDistributionTest();
-               object.testInverseCumulativeProbabilities();
-        }
-    }
-
-    @Test(timeout=1800000)
-    public void testSampling() throws Exception {
-        if (verifyNoPropertyViolation(config)) {
-               org.apache.commons.math3.distribution.UniformRealDistributionTest object = new org.apache.commons.math3.distribution.UniformRealDistributionTest();
-               object.testSampling();
+               object.testIllegalArguments();
         }
     }
 
@@ -122,10 +98,34 @@ public class UniformRealDistributionTest extends TestJPF {
     }
 
     @Test(timeout=1800000)
-    public void testIllegalArguments() throws Exception {
+    public void testDensities() throws Exception {
         if (verifyNoPropertyViolation(config)) {
                org.apache.commons.math3.distribution.UniformRealDistributionTest object = new org.apache.commons.math3.distribution.UniformRealDistributionTest();
-               object.testIllegalArguments();
+               object.testDensities();
+        }
+    }
+
+    @Test(timeout=1800000)
+    public void testCumulativeProbabilities() throws Exception {
+        if (verifyNoPropertyViolation(config)) {
+               org.apache.commons.math3.distribution.UniformRealDistributionTest object = new org.apache.commons.math3.distribution.UniformRealDistributionTest();
+               object.testCumulativeProbabilities();
+        }
+    }
+
+    @Test(timeout=1800000)
+    public void testInverseCumulativeProbabilities() throws Exception {
+        if (verifyNoPropertyViolation(config)) {
+               org.apache.commons.math3.distribution.UniformRealDistributionTest object = new org.apache.commons.math3.distribution.UniformRealDistributionTest();
+               object.testInverseCumulativeProbabilities();
+        }
+    }
+
+    @Test(timeout=1800000)
+    public void testSampling() throws Exception {
+        if (verifyNoPropertyViolation(config)) {
+               org.apache.commons.math3.distribution.UniformRealDistributionTest object = new org.apache.commons.math3.distribution.UniformRealDistributionTest();
+               object.testSampling();
         }
     }
 

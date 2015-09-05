@@ -10,6 +10,14 @@ public class RectangularCholeskyDecompositionTest extends TestJPF {
         runTestsOfThisClass(testMethods);
     }
     @Test(timeout=1800000)
+    public void testDecomposition3x3() throws Exception {
+        if (verifyNoPropertyViolation(config)) {
+               org.apache.commons.math3.linear.RectangularCholeskyDecompositionTest object = new org.apache.commons.math3.linear.RectangularCholeskyDecompositionTest();
+               object.testDecomposition3x3();
+        }
+    }
+
+    @Test(timeout=1800000)
     public void testFullRank() throws Exception {
         if (verifyNoPropertyViolation(config)) {
                org.apache.commons.math3.linear.RectangularCholeskyDecompositionTest object = new org.apache.commons.math3.linear.RectangularCholeskyDecompositionTest();
@@ -22,14 +30,6 @@ public class RectangularCholeskyDecompositionTest extends TestJPF {
         if (verifyNoPropertyViolation(config)) {
                org.apache.commons.math3.linear.RectangularCholeskyDecompositionTest object = new org.apache.commons.math3.linear.RectangularCholeskyDecompositionTest();
                object.testMath789();
-        }
-    }
-
-    @Test(timeout=1800000)
-    public void testDecomposition3x3() throws Exception {
-        if (verifyNoPropertyViolation(config)) {
-               org.apache.commons.math3.linear.RectangularCholeskyDecompositionTest object = new org.apache.commons.math3.linear.RectangularCholeskyDecompositionTest();
-               object.testDecomposition3x3();
         }
     }
 

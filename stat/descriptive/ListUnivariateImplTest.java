@@ -10,22 +10,6 @@ public class ListUnivariateImplTest extends TestJPF {
         runTestsOfThisClass(testMethods);
     }
     @Test(timeout=1800000)
-    public void testSerialization() throws Exception {
-        if (verifyNoPropertyViolation(config)) {
-               org.apache.commons.math3.stat.descriptive.ListUnivariateImplTest object = new org.apache.commons.math3.stat.descriptive.ListUnivariateImplTest();
-               object.testSerialization();
-        }
-    }
-
-    @Test(timeout=1800000)
-    public void testStats() throws Exception {
-        if (verifyNoPropertyViolation(config)) {
-               org.apache.commons.math3.stat.descriptive.ListUnivariateImplTest object = new org.apache.commons.math3.stat.descriptive.ListUnivariateImplTest();
-               object.testStats();
-        }
-    }
-
-    @Test(timeout=1800000)
     public void testN0andN1Conditions() throws Exception {
         if (verifyNoPropertyViolation(config)) {
                org.apache.commons.math3.stat.descriptive.ListUnivariateImplTest object = new org.apache.commons.math3.stat.descriptive.ListUnivariateImplTest();
@@ -46,6 +30,22 @@ public class ListUnivariateImplTest extends TestJPF {
         if (verifyNoPropertyViolation(config)) {
                org.apache.commons.math3.stat.descriptive.ListUnivariateImplTest object = new org.apache.commons.math3.stat.descriptive.ListUnivariateImplTest();
                object.testProductAndGeometricMean();
+        }
+    }
+
+    @Test(timeout=1800000)
+    public void testStats() throws Exception {
+        if (verifyNoPropertyViolation(config)) {
+               org.apache.commons.math3.stat.descriptive.ListUnivariateImplTest object = new org.apache.commons.math3.stat.descriptive.ListUnivariateImplTest();
+               object.testStats();
+        }
+    }
+
+    @Test(timeout=1800000)
+    public void testSerialization() throws Exception {
+        if (verifyNoPropertyViolation(config)) {
+               org.apache.commons.math3.stat.descriptive.ListUnivariateImplTest object = new org.apache.commons.math3.stat.descriptive.ListUnivariateImplTest();
+               object.testSerialization();
         }
     }
 

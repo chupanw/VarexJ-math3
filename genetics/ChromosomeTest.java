@@ -10,18 +10,18 @@ public class ChromosomeTest extends TestJPF {
         runTestsOfThisClass(testMethods);
     }
     @Test(timeout=1800000)
-    public void testFindSameChromosome() throws Exception {
-        if (verifyNoPropertyViolation(config)) {
-               org.apache.commons.math3.genetics.ChromosomeTest object = new org.apache.commons.math3.genetics.ChromosomeTest();
-               object.testFindSameChromosome();
-        }
-    }
-
-    @Test(timeout=1800000)
     public void testCompareTo() throws Exception {
         if (verifyNoPropertyViolation(config)) {
                org.apache.commons.math3.genetics.ChromosomeTest object = new org.apache.commons.math3.genetics.ChromosomeTest();
                object.testCompareTo();
+        }
+    }
+
+    @Test(timeout=1800000)
+    public void testFindSameChromosome() throws Exception {
+        if (verifyNoPropertyViolation(config)) {
+               org.apache.commons.math3.genetics.ChromosomeTest object = new org.apache.commons.math3.genetics.ChromosomeTest();
+               object.testFindSameChromosome();
         }
     }
 

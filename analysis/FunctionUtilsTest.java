@@ -10,30 +10,6 @@ public class FunctionUtilsTest extends TestJPF {
         runTestsOfThisClass(testMethods);
     }
     @Test(timeout=1800000)
-    public void testAdd() throws Exception {
-        if (verifyNoPropertyViolation(config)) {
-               org.apache.commons.math3.analysis.FunctionUtilsTest object = new org.apache.commons.math3.analysis.FunctionUtilsTest();
-               object.testAdd();
-        }
-    }
-
-    @Test(timeout=1800000)
-    public void testMultiply() throws Exception {
-        if (verifyNoPropertyViolation(config)) {
-               org.apache.commons.math3.analysis.FunctionUtilsTest object = new org.apache.commons.math3.analysis.FunctionUtilsTest();
-               object.testMultiply();
-        }
-    }
-
-    @Test(timeout=1800000)
-    public void testCompose() throws Exception {
-        if (verifyNoPropertyViolation(config)) {
-               org.apache.commons.math3.analysis.FunctionUtilsTest object = new org.apache.commons.math3.analysis.FunctionUtilsTest();
-               object.testCompose();
-        }
-    }
-
-    @Test(timeout=1800000)
     public void testAddDifferentiable() throws Exception {
         if (verifyNoPropertyViolation(config)) {
                org.apache.commons.math3.analysis.FunctionUtilsTest object = new org.apache.commons.math3.analysis.FunctionUtilsTest();
@@ -150,6 +126,30 @@ public class FunctionUtilsTest extends TestJPF {
         if (verifyNoPropertyViolation(config)) {
                org.apache.commons.math3.analysis.FunctionUtilsTest object = new org.apache.commons.math3.analysis.FunctionUtilsTest();
                object.testToMultivariateDifferentiableFunction();
+        }
+    }
+
+    @Test(timeout=1800000)
+    public void testAdd() throws Exception {
+        if (verifyNoPropertyViolation(config)) {
+               org.apache.commons.math3.analysis.FunctionUtilsTest object = new org.apache.commons.math3.analysis.FunctionUtilsTest();
+               object.testAdd();
+        }
+    }
+
+    @Test(timeout=1800000)
+    public void testMultiply() throws Exception {
+        if (verifyNoPropertyViolation(config)) {
+               org.apache.commons.math3.analysis.FunctionUtilsTest object = new org.apache.commons.math3.analysis.FunctionUtilsTest();
+               object.testMultiply();
+        }
+    }
+
+    @Test(timeout=1800000)
+    public void testCompose() throws Exception {
+        if (verifyNoPropertyViolation(config)) {
+               org.apache.commons.math3.analysis.FunctionUtilsTest object = new org.apache.commons.math3.analysis.FunctionUtilsTest();
+               object.testCompose();
         }
     }
 

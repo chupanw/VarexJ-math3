@@ -10,18 +10,10 @@ public class SingularValueSolverTest extends TestJPF {
         runTestsOfThisClass(testMethods);
     }
     @Test(timeout=1800000)
-    public void testSolve() throws Exception {
+    public void testLeastSquareSolve() throws Exception {
         if (verifyNoPropertyViolation(config)) {
                org.apache.commons.math3.linear.SingularValueSolverTest object = new org.apache.commons.math3.linear.SingularValueSolverTest();
-               object.testSolve();
-        }
-    }
-
-    @Test(timeout=1800000)
-    public void testSolveDimensionErrors() throws Exception {
-        if (verifyNoPropertyViolation(config)) {
-               org.apache.commons.math3.linear.SingularValueSolverTest object = new org.apache.commons.math3.linear.SingularValueSolverTest();
-               object.testSolveDimensionErrors();
+               object.testLeastSquareSolve();
         }
     }
 
@@ -34,18 +26,26 @@ public class SingularValueSolverTest extends TestJPF {
     }
 
     @Test(timeout=1800000)
-    public void testLeastSquareSolve() throws Exception {
-        if (verifyNoPropertyViolation(config)) {
-               org.apache.commons.math3.linear.SingularValueSolverTest object = new org.apache.commons.math3.linear.SingularValueSolverTest();
-               object.testLeastSquareSolve();
-        }
-    }
-
-    @Test(timeout=1800000)
     public void testMath320B() throws Exception {
         if (verifyNoPropertyViolation(config)) {
                org.apache.commons.math3.linear.SingularValueSolverTest object = new org.apache.commons.math3.linear.SingularValueSolverTest();
                object.testMath320B();
+        }
+    }
+
+    @Test(timeout=1800000)
+    public void testSolve() throws Exception {
+        if (verifyNoPropertyViolation(config)) {
+               org.apache.commons.math3.linear.SingularValueSolverTest object = new org.apache.commons.math3.linear.SingularValueSolverTest();
+               object.testSolve();
+        }
+    }
+
+    @Test(timeout=1800000)
+    public void testSolveDimensionErrors() throws Exception {
+        if (verifyNoPropertyViolation(config)) {
+               org.apache.commons.math3.linear.SingularValueSolverTest object = new org.apache.commons.math3.linear.SingularValueSolverTest();
+               object.testSolveDimensionErrors();
         }
     }
 

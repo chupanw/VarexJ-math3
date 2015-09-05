@@ -10,6 +10,14 @@ public class UnmodifiableOpenMapRealVectorTest extends TestJPF {
         runTestsOfThisClass(testMethods);
     }
     @Test(timeout=1800000)
+    public void testIterator() throws Exception {
+        if (verifyNoPropertyViolation(config)) {
+               org.apache.commons.math3.linear.UnmodifiableOpenMapRealVectorTest object = new org.apache.commons.math3.linear.UnmodifiableOpenMapRealVectorTest();
+               object.testIterator();
+        }
+    }
+
+    @Test(timeout=1800000)
     public void testAllButExcluded() throws Exception {
         if (verifyNoPropertyViolation(config)) {
                org.apache.commons.math3.linear.UnmodifiableOpenMapRealVectorTest object = new org.apache.commons.math3.linear.UnmodifiableOpenMapRealVectorTest();
@@ -22,22 +30,6 @@ public class UnmodifiableOpenMapRealVectorTest extends TestJPF {
         if (verifyUnhandledException("org.apache.commons.math3.exception.MathUnsupportedOperationException", config)) {
                org.apache.commons.math3.linear.UnmodifiableOpenMapRealVectorTest object = new org.apache.commons.math3.linear.UnmodifiableOpenMapRealVectorTest();
                object.testSetSubVector();
-        }
-    }
-
-    @Test(timeout=1800000)
-    public void testSparseIterator() throws Exception {
-        if (verifyNoPropertyViolation(config)) {
-               org.apache.commons.math3.linear.UnmodifiableOpenMapRealVectorTest object = new org.apache.commons.math3.linear.UnmodifiableOpenMapRealVectorTest();
-               object.testSparseIterator();
-        }
-    }
-
-    @Test(timeout=1800000)
-    public void testIterator() throws Exception {
-        if (verifyNoPropertyViolation(config)) {
-               org.apache.commons.math3.linear.UnmodifiableOpenMapRealVectorTest object = new org.apache.commons.math3.linear.UnmodifiableOpenMapRealVectorTest();
-               object.testIterator();
         }
     }
 
@@ -70,6 +62,14 @@ public class UnmodifiableOpenMapRealVectorTest extends TestJPF {
         if (verifyNoPropertyViolation(config)) {
                org.apache.commons.math3.linear.UnmodifiableOpenMapRealVectorTest object = new org.apache.commons.math3.linear.UnmodifiableOpenMapRealVectorTest();
                object.testGetSubVector();
+        }
+    }
+
+    @Test(timeout=1800000)
+    public void testSparseIterator() throws Exception {
+        if (verifyNoPropertyViolation(config)) {
+               org.apache.commons.math3.linear.UnmodifiableOpenMapRealVectorTest object = new org.apache.commons.math3.linear.UnmodifiableOpenMapRealVectorTest();
+               object.testSparseIterator();
         }
     }
 

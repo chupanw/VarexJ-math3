@@ -10,42 +10,18 @@ public class LogitTest extends TestJPF {
         runTestsOfThisClass(testMethods);
     }
     @Test(timeout=1800000)
-    public void testDerivative() throws Exception {
+    public void testSomeValues() throws Exception {
         if (verifyNoPropertyViolation(config)) {
                org.apache.commons.math3.analysis.function.LogitTest object = new org.apache.commons.math3.analysis.function.LogitTest();
-               object.testDerivative();
+               object.testSomeValues();
         }
     }
 
     @Test(timeout=1800000)
-    public void testDerivativesHighOrder() throws Exception {
+    public void testDerivativeLargeArguments() throws Exception {
         if (verifyNoPropertyViolation(config)) {
                org.apache.commons.math3.analysis.function.LogitTest object = new org.apache.commons.math3.analysis.function.LogitTest();
-               object.testDerivativesHighOrder();
-        }
-    }
-
-    @Test(timeout=1800000)
-    public void testValueWithInverseFunction() throws Exception {
-        if (verifyNoPropertyViolation(config)) {
-               org.apache.commons.math3.analysis.function.LogitTest object = new org.apache.commons.math3.analysis.function.LogitTest();
-               object.testValueWithInverseFunction();
-        }
-    }
-
-    @Test(timeout=1800000)
-    public void testDerivativesWithInverseFunction() throws Exception {
-        if (verifyNoPropertyViolation(config)) {
-               org.apache.commons.math3.analysis.function.LogitTest object = new org.apache.commons.math3.analysis.function.LogitTest();
-               object.testDerivativesWithInverseFunction();
-        }
-    }
-
-    @Test(timeout=1800000)
-    public void testPreconditions1() throws Exception {
-        if (verifyUnhandledException("org.apache.commons.math3.exception.OutOfRangeException", config)) {
-               org.apache.commons.math3.analysis.function.LogitTest object = new org.apache.commons.math3.analysis.function.LogitTest();
-               object.testPreconditions1();
+               object.testDerivativeLargeArguments();
         }
     }
 
@@ -106,18 +82,42 @@ public class LogitTest extends TestJPF {
     }
 
     @Test(timeout=1800000)
-    public void testSomeValues() throws Exception {
+    public void testDerivativesHighOrder() throws Exception {
         if (verifyNoPropertyViolation(config)) {
                org.apache.commons.math3.analysis.function.LogitTest object = new org.apache.commons.math3.analysis.function.LogitTest();
-               object.testSomeValues();
+               object.testDerivativesHighOrder();
         }
     }
 
     @Test(timeout=1800000)
-    public void testDerivativeLargeArguments() throws Exception {
+    public void testValueWithInverseFunction() throws Exception {
         if (verifyNoPropertyViolation(config)) {
                org.apache.commons.math3.analysis.function.LogitTest object = new org.apache.commons.math3.analysis.function.LogitTest();
-               object.testDerivativeLargeArguments();
+               object.testValueWithInverseFunction();
+        }
+    }
+
+    @Test(timeout=1800000)
+    public void testDerivativesWithInverseFunction() throws Exception {
+        if (verifyNoPropertyViolation(config)) {
+               org.apache.commons.math3.analysis.function.LogitTest object = new org.apache.commons.math3.analysis.function.LogitTest();
+               object.testDerivativesWithInverseFunction();
+        }
+    }
+
+    @Test(timeout=1800000)
+    public void testDerivative() throws Exception {
+        if (verifyNoPropertyViolation(config)) {
+               org.apache.commons.math3.analysis.function.LogitTest object = new org.apache.commons.math3.analysis.function.LogitTest();
+               object.testDerivative();
+        }
+    }
+
+    @Test(timeout=1800000)
+    public void testPreconditions1() throws Exception {
+        if (verifyUnhandledException("org.apache.commons.math3.exception.OutOfRangeException", config)) {
+               org.apache.commons.math3.analysis.function.LogitTest object = new org.apache.commons.math3.analysis.function.LogitTest();
+               object.testPreconditions1();
         }
     }
 

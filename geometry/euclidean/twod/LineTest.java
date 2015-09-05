@@ -18,14 +18,6 @@ public class LineTest extends TestJPF {
     }
 
     @Test(timeout=1800000)
-    public void testOffset() throws Exception {
-        if (verifyNoPropertyViolation(config)) {
-               org.apache.commons.math3.geometry.euclidean.twod.LineTest object = new org.apache.commons.math3.geometry.euclidean.twod.LineTest();
-               object.testOffset();
-        }
-    }
-
-    @Test(timeout=1800000)
     public void testAbscissa() throws Exception {
         if (verifyNoPropertyViolation(config)) {
                org.apache.commons.math3.geometry.euclidean.twod.LineTest object = new org.apache.commons.math3.geometry.euclidean.twod.LineTest();
@@ -62,6 +54,14 @@ public class LineTest extends TestJPF {
         if (verifyNoPropertyViolation(config)) {
                org.apache.commons.math3.geometry.euclidean.twod.LineTest object = new org.apache.commons.math3.geometry.euclidean.twod.LineTest();
                object.testTransform();
+        }
+    }
+
+    @Test(timeout=1800000)
+    public void testOffset() throws Exception {
+        if (verifyNoPropertyViolation(config)) {
+               org.apache.commons.math3.geometry.euclidean.twod.LineTest object = new org.apache.commons.math3.geometry.euclidean.twod.LineTest();
+               object.testOffset();
         }
     }
 

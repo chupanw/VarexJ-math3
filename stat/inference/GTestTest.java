@@ -10,6 +10,14 @@ public class GTestTest extends TestJPF {
         runTestsOfThisClass(testMethods);
     }
     @Test(timeout=1800000)
+    public void testUnmatchedArrays() throws Exception {
+        if (verifyNoPropertyViolation(config)) {
+               org.apache.commons.math3.stat.inference.GTestTest object = new org.apache.commons.math3.stat.inference.GTestTest();
+               object.testUnmatchedArrays();
+        }
+    }
+
+    @Test(timeout=1800000)
     public void testGTestGoodnesOfFit1() throws Exception {
         if (verifyNoPropertyViolation(config)) {
                org.apache.commons.math3.stat.inference.GTestTest object = new org.apache.commons.math3.stat.inference.GTestTest();
@@ -62,14 +70,6 @@ public class GTestTest extends TestJPF {
         if (verifyNoPropertyViolation(config)) {
                org.apache.commons.math3.stat.inference.GTestTest object = new org.apache.commons.math3.stat.inference.GTestTest();
                object.testGTestSetsComparisonBadCounts();
-        }
-    }
-
-    @Test(timeout=1800000)
-    public void testUnmatchedArrays() throws Exception {
-        if (verifyNoPropertyViolation(config)) {
-               org.apache.commons.math3.stat.inference.GTestTest object = new org.apache.commons.math3.stat.inference.GTestTest();
-               object.testUnmatchedArrays();
         }
     }
 

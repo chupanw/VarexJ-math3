@@ -10,26 +10,10 @@ public class StatUtilsTest extends TestJPF {
         runTestsOfThisClass(testMethods);
     }
     @Test(timeout=1800000)
-    public void testMean() throws Exception {
-        if (verifyNoPropertyViolation(config)) {
-               org.apache.commons.math3.stat.StatUtilsTest object = new org.apache.commons.math3.stat.StatUtilsTest();
-               object.testMean();
-        }
-    }
-
-    @Test(timeout=1800000)
     public void testPercentile() throws Exception {
         if (verifyNoPropertyViolation(config)) {
                org.apache.commons.math3.stat.StatUtilsTest object = new org.apache.commons.math3.stat.StatUtilsTest();
                object.testPercentile();
-        }
-    }
-
-    @Test(timeout=1800000)
-    public void testStats() throws Exception {
-        if (verifyNoPropertyViolation(config)) {
-               org.apache.commons.math3.stat.StatUtilsTest object = new org.apache.commons.math3.stat.StatUtilsTest();
-               object.testStats();
         }
     }
 
@@ -42,10 +26,10 @@ public class StatUtilsTest extends TestJPF {
     }
 
     @Test(timeout=1800000)
-    public void testArrayIndexConditions() throws Exception {
+    public void testStats() throws Exception {
         if (verifyNoPropertyViolation(config)) {
                org.apache.commons.math3.stat.StatUtilsTest object = new org.apache.commons.math3.stat.StatUtilsTest();
-               object.testArrayIndexConditions();
+               object.testStats();
         }
     }
 
@@ -54,6 +38,14 @@ public class StatUtilsTest extends TestJPF {
         if (verifyNoPropertyViolation(config)) {
                org.apache.commons.math3.stat.StatUtilsTest object = new org.apache.commons.math3.stat.StatUtilsTest();
                object.testSumSq();
+        }
+    }
+
+    @Test(timeout=1800000)
+    public void testArrayIndexConditions() throws Exception {
+        if (verifyNoPropertyViolation(config)) {
+               org.apache.commons.math3.stat.StatUtilsTest object = new org.apache.commons.math3.stat.StatUtilsTest();
+               object.testArrayIndexConditions();
         }
     }
 
@@ -134,6 +126,14 @@ public class StatUtilsTest extends TestJPF {
         if (verifyNoPropertyViolation(config)) {
                org.apache.commons.math3.stat.StatUtilsTest object = new org.apache.commons.math3.stat.StatUtilsTest();
                object.testNormalize2();
+        }
+    }
+
+    @Test(timeout=1800000)
+    public void testMean() throws Exception {
+        if (verifyNoPropertyViolation(config)) {
+               org.apache.commons.math3.stat.StatUtilsTest object = new org.apache.commons.math3.stat.StatUtilsTest();
+               object.testMean();
         }
     }
 

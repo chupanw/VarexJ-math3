@@ -18,14 +18,6 @@ public class DescriptiveStatisticsTest extends TestJPF {
     }
 
     @Test(timeout=1800000)
-    public void testToString() throws Exception {
-        if (verifyNoPropertyViolation(config)) {
-               org.apache.commons.math3.stat.descriptive.DescriptiveStatisticsTest object = new org.apache.commons.math3.stat.descriptive.DescriptiveStatisticsTest();
-               object.testToString();
-        }
-    }
-
-    @Test(timeout=1800000)
     public void testSetterInjection() throws Exception {
         if (verifyNoPropertyViolation(config)) {
                org.apache.commons.math3.stat.descriptive.DescriptiveStatisticsTest object = new org.apache.commons.math3.stat.descriptive.DescriptiveStatisticsTest();
@@ -86,6 +78,14 @@ public class DescriptiveStatisticsTest extends TestJPF {
         if (verifyNoPropertyViolation(config)) {
                org.apache.commons.math3.stat.descriptive.DescriptiveStatisticsTest object = new org.apache.commons.math3.stat.descriptive.DescriptiveStatisticsTest();
                object.testSummaryConsistency();
+        }
+    }
+
+    @Test(timeout=1800000)
+    public void testToString() throws Exception {
+        if (verifyNoPropertyViolation(config)) {
+               org.apache.commons.math3.stat.descriptive.DescriptiveStatisticsTest object = new org.apache.commons.math3.stat.descriptive.DescriptiveStatisticsTest();
+               object.testToString();
         }
     }
 

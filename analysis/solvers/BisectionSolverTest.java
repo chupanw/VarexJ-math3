@@ -10,6 +10,14 @@ public class BisectionSolverTest extends TestJPF {
         runTestsOfThisClass(testMethods);
     }
     @Test(timeout=1800000)
+    public void testMath369() throws Exception {
+        if (verifyNoPropertyViolation(config)) {
+               org.apache.commons.math3.analysis.solvers.BisectionSolverTest object = new org.apache.commons.math3.analysis.solvers.BisectionSolverTest();
+               object.testMath369();
+        }
+    }
+
+    @Test(timeout=1800000)
     public void testSinZero() throws Exception {
         if (verifyNoPropertyViolation(config)) {
                org.apache.commons.math3.analysis.solvers.BisectionSolverTest object = new org.apache.commons.math3.analysis.solvers.BisectionSolverTest();
@@ -22,14 +30,6 @@ public class BisectionSolverTest extends TestJPF {
         if (verifyNoPropertyViolation(config)) {
                org.apache.commons.math3.analysis.solvers.BisectionSolverTest object = new org.apache.commons.math3.analysis.solvers.BisectionSolverTest();
                object.testQuinticZero();
-        }
-    }
-
-    @Test(timeout=1800000)
-    public void testMath369() throws Exception {
-        if (verifyNoPropertyViolation(config)) {
-               org.apache.commons.math3.analysis.solvers.BisectionSolverTest object = new org.apache.commons.math3.analysis.solvers.BisectionSolverTest();
-               object.testMath369();
         }
     }
 

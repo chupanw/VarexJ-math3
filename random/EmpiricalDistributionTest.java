@@ -10,24 +10,6 @@ public class EmpiricalDistributionTest extends TestJPF {
         runTestsOfThisClass(testMethods);
     }
     @Test(timeout=1800000)
-    public void testSerialization() throws Exception {
-        if (verifyNoPropertyViolation(config)) {
-               org.apache.commons.math3.random.EmpiricalDistributionTest object = new org.apache.commons.math3.random.EmpiricalDistributionTest();
-               object.setUp();
-               object.testSerialization();
-        }
-    }
-
-    @Test(timeout=1800000)
-    public void testDensityIntegrals() throws Exception {
-        if (verifyNoPropertyViolation(config)) {
-               org.apache.commons.math3.random.EmpiricalDistributionTest object = new org.apache.commons.math3.random.EmpiricalDistributionTest();
-               object.setUp();
-               object.testDensityIntegrals();
-        }
-    }
-
-    @Test(timeout=1800000)
     public void testLoad() throws Exception {
         if (verifyNoPropertyViolation(config)) {
                org.apache.commons.math3.random.EmpiricalDistributionTest object = new org.apache.commons.math3.random.EmpiricalDistributionTest();
@@ -163,38 +145,29 @@ public class EmpiricalDistributionTest extends TestJPF {
     }
 
     @Test(timeout=1800000)
-    public void testDensities() throws Exception {
+    public void testDensityIntegrals() throws Exception {
         if (verifyNoPropertyViolation(config)) {
                org.apache.commons.math3.random.EmpiricalDistributionTest object = new org.apache.commons.math3.random.EmpiricalDistributionTest();
                object.setUp();
-               object.testDensities();
+               object.testDensityIntegrals();
         }
     }
 
     @Test(timeout=1800000)
-    public void testCumulativeProbabilities() throws Exception {
+    public void testSerialization() throws Exception {
         if (verifyNoPropertyViolation(config)) {
                org.apache.commons.math3.random.EmpiricalDistributionTest object = new org.apache.commons.math3.random.EmpiricalDistributionTest();
                object.setUp();
-               object.testCumulativeProbabilities();
+               object.testSerialization();
         }
     }
 
     @Test(timeout=1800000)
-    public void testInverseCumulativeProbabilities() throws Exception {
+    public void testIllegalArguments() throws Exception {
         if (verifyNoPropertyViolation(config)) {
                org.apache.commons.math3.random.EmpiricalDistributionTest object = new org.apache.commons.math3.random.EmpiricalDistributionTest();
                object.setUp();
-               object.testInverseCumulativeProbabilities();
-        }
-    }
-
-    @Test(timeout=1800000)
-    public void testSampling() throws Exception {
-        if (verifyNoPropertyViolation(config)) {
-               org.apache.commons.math3.random.EmpiricalDistributionTest object = new org.apache.commons.math3.random.EmpiricalDistributionTest();
-               object.setUp();
-               object.testSampling();
+               object.testIllegalArguments();
         }
     }
 
@@ -235,11 +208,38 @@ public class EmpiricalDistributionTest extends TestJPF {
     }
 
     @Test(timeout=1800000)
-    public void testIllegalArguments() throws Exception {
+    public void testDensities() throws Exception {
         if (verifyNoPropertyViolation(config)) {
                org.apache.commons.math3.random.EmpiricalDistributionTest object = new org.apache.commons.math3.random.EmpiricalDistributionTest();
                object.setUp();
-               object.testIllegalArguments();
+               object.testDensities();
+        }
+    }
+
+    @Test(timeout=1800000)
+    public void testCumulativeProbabilities() throws Exception {
+        if (verifyNoPropertyViolation(config)) {
+               org.apache.commons.math3.random.EmpiricalDistributionTest object = new org.apache.commons.math3.random.EmpiricalDistributionTest();
+               object.setUp();
+               object.testCumulativeProbabilities();
+        }
+    }
+
+    @Test(timeout=1800000)
+    public void testInverseCumulativeProbabilities() throws Exception {
+        if (verifyNoPropertyViolation(config)) {
+               org.apache.commons.math3.random.EmpiricalDistributionTest object = new org.apache.commons.math3.random.EmpiricalDistributionTest();
+               object.setUp();
+               object.testInverseCumulativeProbabilities();
+        }
+    }
+
+    @Test(timeout=1800000)
+    public void testSampling() throws Exception {
+        if (verifyNoPropertyViolation(config)) {
+               org.apache.commons.math3.random.EmpiricalDistributionTest object = new org.apache.commons.math3.random.EmpiricalDistributionTest();
+               object.setUp();
+               object.testSampling();
         }
     }
 

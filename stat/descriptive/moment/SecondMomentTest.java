@@ -10,6 +10,30 @@ public class SecondMomentTest extends TestJPF {
         runTestsOfThisClass(testMethods);
     }
     @Test(timeout=1800000)
+    public void testConsistency() throws Exception {
+        if (verifyNoPropertyViolation(config)) {
+               org.apache.commons.math3.stat.descriptive.moment.SecondMomentTest object = new org.apache.commons.math3.stat.descriptive.moment.SecondMomentTest();
+               object.testConsistency();
+        }
+    }
+
+    @Test(timeout=1800000)
+    public void testSerial() throws Exception {
+        if (verifyNoPropertyViolation(config)) {
+               org.apache.commons.math3.stat.descriptive.moment.SecondMomentTest object = new org.apache.commons.math3.stat.descriptive.moment.SecondMomentTest();
+               object.testSerial();
+        }
+    }
+
+    @Test(timeout=1800000)
+    public void testEqualsAndHashCode() throws Exception {
+        if (verifyNoPropertyViolation(config)) {
+               org.apache.commons.math3.stat.descriptive.moment.SecondMomentTest object = new org.apache.commons.math3.stat.descriptive.moment.SecondMomentTest();
+               object.testEqualsAndHashCode();
+        }
+    }
+
+    @Test(timeout=1800000)
     public void testIncrementation() throws Exception {
         if (verifyNoPropertyViolation(config)) {
                org.apache.commons.math3.stat.descriptive.moment.SecondMomentTest object = new org.apache.commons.math3.stat.descriptive.moment.SecondMomentTest();
@@ -38,30 +62,6 @@ public class SecondMomentTest extends TestJPF {
         if (verifyNoPropertyViolation(config)) {
                org.apache.commons.math3.stat.descriptive.moment.SecondMomentTest object = new org.apache.commons.math3.stat.descriptive.moment.SecondMomentTest();
                object.testSerialization();
-        }
-    }
-
-    @Test(timeout=1800000)
-    public void testSerial() throws Exception {
-        if (verifyNoPropertyViolation(config)) {
-               org.apache.commons.math3.stat.descriptive.moment.SecondMomentTest object = new org.apache.commons.math3.stat.descriptive.moment.SecondMomentTest();
-               object.testSerial();
-        }
-    }
-
-    @Test(timeout=1800000)
-    public void testEqualsAndHashCode() throws Exception {
-        if (verifyNoPropertyViolation(config)) {
-               org.apache.commons.math3.stat.descriptive.moment.SecondMomentTest object = new org.apache.commons.math3.stat.descriptive.moment.SecondMomentTest();
-               object.testEqualsAndHashCode();
-        }
-    }
-
-    @Test(timeout=1800000)
-    public void testConsistency() throws Exception {
-        if (verifyNoPropertyViolation(config)) {
-               org.apache.commons.math3.stat.descriptive.moment.SecondMomentTest object = new org.apache.commons.math3.stat.descriptive.moment.SecondMomentTest();
-               object.testConsistency();
         }
     }
 

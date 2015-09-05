@@ -26,6 +26,14 @@ public class PolygonsSetTest extends TestJPF {
     }
 
     @Test(timeout=1800000)
+    public void testIntersection() throws Exception {
+        if (verifyNoPropertyViolation(config)) {
+               org.apache.commons.math3.geometry.euclidean.twod.PolygonsSetTest object = new org.apache.commons.math3.geometry.euclidean.twod.PolygonsSetTest();
+               object.testIntersection();
+        }
+    }
+
+    @Test(timeout=1800000)
     public void testHole() throws Exception {
         if (verifyNoPropertyViolation(config)) {
                org.apache.commons.math3.geometry.euclidean.twod.PolygonsSetTest object = new org.apache.commons.math3.geometry.euclidean.twod.PolygonsSetTest();
@@ -158,14 +166,6 @@ public class PolygonsSetTest extends TestJPF {
         if (verifyNoPropertyViolation(config)) {
                org.apache.commons.math3.geometry.euclidean.twod.PolygonsSetTest object = new org.apache.commons.math3.geometry.euclidean.twod.PolygonsSetTest();
                object.testIssue880Complete();
-        }
-    }
-
-    @Test(timeout=1800000)
-    public void testIntersection() throws Exception {
-        if (verifyNoPropertyViolation(config)) {
-               org.apache.commons.math3.geometry.euclidean.twod.PolygonsSetTest object = new org.apache.commons.math3.geometry.euclidean.twod.PolygonsSetTest();
-               object.testIntersection();
         }
     }
 

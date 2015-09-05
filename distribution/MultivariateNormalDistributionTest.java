@@ -10,18 +10,18 @@ public class MultivariateNormalDistributionTest extends TestJPF {
         runTestsOfThisClass(testMethods);
     }
     @Test(timeout=1800000)
-    public void testGetMean() throws Exception {
-        if (verifyNoPropertyViolation(config)) {
-               org.apache.commons.math3.distribution.MultivariateNormalDistributionTest object = new org.apache.commons.math3.distribution.MultivariateNormalDistributionTest();
-               object.testGetMean();
-        }
-    }
-
-    @Test(timeout=1800000)
     public void testGetCovarianceMatrix() throws Exception {
         if (verifyNoPropertyViolation(config)) {
                org.apache.commons.math3.distribution.MultivariateNormalDistributionTest object = new org.apache.commons.math3.distribution.MultivariateNormalDistributionTest();
                object.testGetCovarianceMatrix();
+        }
+    }
+
+    @Test(timeout=1800000)
+    public void testGetMean() throws Exception {
+        if (verifyNoPropertyViolation(config)) {
+               org.apache.commons.math3.distribution.MultivariateNormalDistributionTest object = new org.apache.commons.math3.distribution.MultivariateNormalDistributionTest();
+               object.testGetMean();
         }
     }
 

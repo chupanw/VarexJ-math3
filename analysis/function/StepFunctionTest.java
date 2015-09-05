@@ -10,26 +10,10 @@ public class StepFunctionTest extends TestJPF {
         runTestsOfThisClass(testMethods);
     }
     @Test(timeout=1800000)
-    public void testPreconditions1() throws Exception {
-        if (verifyUnhandledException("org.apache.commons.math3.exception.NullArgumentException", config)) {
-               org.apache.commons.math3.analysis.function.StepFunctionTest object = new org.apache.commons.math3.analysis.function.StepFunctionTest();
-               object.testPreconditions1();
-        }
-    }
-
-    @Test(timeout=1800000)
     public void testSomeValues() throws Exception {
         if (verifyNoPropertyViolation(config)) {
                org.apache.commons.math3.analysis.function.StepFunctionTest object = new org.apache.commons.math3.analysis.function.StepFunctionTest();
                object.testSomeValues();
-        }
-    }
-
-    @Test(timeout=1800000)
-    public void testPreconditions2() throws Exception {
-        if (verifyUnhandledException("org.apache.commons.math3.exception.NullArgumentException", config)) {
-               org.apache.commons.math3.analysis.function.StepFunctionTest object = new org.apache.commons.math3.analysis.function.StepFunctionTest();
-               object.testPreconditions2();
         }
     }
 
@@ -78,6 +62,22 @@ public class StepFunctionTest extends TestJPF {
         if (verifyNoPropertyViolation(config)) {
                org.apache.commons.math3.analysis.function.StepFunctionTest object = new org.apache.commons.math3.analysis.function.StepFunctionTest();
                object.testHeaviside();
+        }
+    }
+
+    @Test(timeout=1800000)
+    public void testPreconditions1() throws Exception {
+        if (verifyUnhandledException("org.apache.commons.math3.exception.NullArgumentException", config)) {
+               org.apache.commons.math3.analysis.function.StepFunctionTest object = new org.apache.commons.math3.analysis.function.StepFunctionTest();
+               object.testPreconditions1();
+        }
+    }
+
+    @Test(timeout=1800000)
+    public void testPreconditions2() throws Exception {
+        if (verifyUnhandledException("org.apache.commons.math3.exception.NullArgumentException", config)) {
+               org.apache.commons.math3.analysis.function.StepFunctionTest object = new org.apache.commons.math3.analysis.function.StepFunctionTest();
+               object.testPreconditions2();
         }
     }
 

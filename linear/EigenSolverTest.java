@@ -26,18 +26,18 @@ public class EigenSolverTest extends TestJPF {
     }
 
     @Test(timeout=1800000)
-    public void testNonInvertible() throws Exception {
-        if (verifyNoPropertyViolation(config)) {
-               org.apache.commons.math3.linear.EigenSolverTest object = new org.apache.commons.math3.linear.EigenSolverTest();
-               object.testNonInvertible();
-        }
-    }
-
-    @Test(timeout=1800000)
     public void testInvertible() throws Exception {
         if (verifyNoPropertyViolation(config)) {
                org.apache.commons.math3.linear.EigenSolverTest object = new org.apache.commons.math3.linear.EigenSolverTest();
                object.testInvertible();
+        }
+    }
+
+    @Test(timeout=1800000)
+    public void testNonInvertible() throws Exception {
+        if (verifyNoPropertyViolation(config)) {
+               org.apache.commons.math3.linear.EigenSolverTest object = new org.apache.commons.math3.linear.EigenSolverTest();
+               object.testNonInvertible();
         }
     }
 

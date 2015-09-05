@@ -10,24 +10,6 @@ public class OpenIntToFieldTest extends TestJPF {
         runTestsOfThisClass(testMethods);
     }
     @Test(timeout=1800000)
-    public void testCopy() throws Exception {
-        if (verifyNoPropertyViolation(config)) {
-               org.apache.commons.math3.util.OpenIntToFieldTest object = new org.apache.commons.math3.util.OpenIntToFieldTest();
-               object.setUp();
-               object.testCopy();
-        }
-    }
-
-    @Test(timeout=1800000)
-    public void testConcurrentModification() throws Exception {
-        if (verifyNoPropertyViolation(config)) {
-               org.apache.commons.math3.util.OpenIntToFieldTest object = new org.apache.commons.math3.util.OpenIntToFieldTest();
-               object.setUp();
-               object.testConcurrentModification();
-        }
-    }
-
-    @Test(timeout=1800000)
     public void testIterator() throws Exception {
         if (verifyNoPropertyViolation(config)) {
                org.apache.commons.math3.util.OpenIntToFieldTest object = new org.apache.commons.math3.util.OpenIntToFieldTest();
@@ -159,6 +141,24 @@ public class OpenIntToFieldTest extends TestJPF {
                org.apache.commons.math3.util.OpenIntToFieldTest object = new org.apache.commons.math3.util.OpenIntToFieldTest();
                object.setUp();
                object.testPutKeysWithCollision2();
+        }
+    }
+
+    @Test(timeout=1800000)
+    public void testCopy() throws Exception {
+        if (verifyNoPropertyViolation(config)) {
+               org.apache.commons.math3.util.OpenIntToFieldTest object = new org.apache.commons.math3.util.OpenIntToFieldTest();
+               object.setUp();
+               object.testCopy();
+        }
+    }
+
+    @Test(timeout=1800000)
+    public void testConcurrentModification() throws Exception {
+        if (verifyNoPropertyViolation(config)) {
+               org.apache.commons.math3.util.OpenIntToFieldTest object = new org.apache.commons.math3.util.OpenIntToFieldTest();
+               object.setUp();
+               object.testConcurrentModification();
         }
     }
 

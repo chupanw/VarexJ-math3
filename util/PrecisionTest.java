@@ -10,6 +10,14 @@ public class PrecisionTest extends TestJPF {
         runTestsOfThisClass(testMethods);
     }
     @Test(timeout=1800000)
+    public void testMath475() throws Exception {
+        if (verifyNoPropertyViolation(config)) {
+               org.apache.commons.math3.util.PrecisionTest object = new org.apache.commons.math3.util.PrecisionTest();
+               object.testMath475();
+        }
+    }
+
+    @Test(timeout=1800000)
     public void testEqualsWithRelativeTolerance() throws Exception {
         if (verifyNoPropertyViolation(config)) {
                org.apache.commons.math3.util.PrecisionTest object = new org.apache.commons.math3.util.PrecisionTest();
@@ -26,14 +34,6 @@ public class PrecisionTest extends TestJPF {
     }
 
     @Test(timeout=1800000)
-    public void testMath475() throws Exception {
-        if (verifyNoPropertyViolation(config)) {
-               org.apache.commons.math3.util.PrecisionTest object = new org.apache.commons.math3.util.PrecisionTest();
-               object.testMath475();
-        }
-    }
-
-    @Test(timeout=1800000)
     public void testEqualsWithAllowedDelta() throws Exception {
         if (verifyNoPropertyViolation(config)) {
                org.apache.commons.math3.util.PrecisionTest object = new org.apache.commons.math3.util.PrecisionTest();
@@ -42,18 +42,18 @@ public class PrecisionTest extends TestJPF {
     }
 
     @Test(timeout=1800000)
-    public void testEqualsIncludingNaNWithAllowedDelta() throws Exception {
-        if (verifyNoPropertyViolation(config)) {
-               org.apache.commons.math3.util.PrecisionTest object = new org.apache.commons.math3.util.PrecisionTest();
-               object.testEqualsIncludingNaNWithAllowedDelta();
-        }
-    }
-
-    @Test(timeout=1800000)
     public void testFloatEqualsWithAllowedUlps() throws Exception {
         if (verifyNoPropertyViolation(config)) {
                org.apache.commons.math3.util.PrecisionTest object = new org.apache.commons.math3.util.PrecisionTest();
                object.testFloatEqualsWithAllowedUlps();
+        }
+    }
+
+    @Test(timeout=1800000)
+    public void testEqualsIncludingNaNWithAllowedDelta() throws Exception {
+        if (verifyNoPropertyViolation(config)) {
+               org.apache.commons.math3.util.PrecisionTest object = new org.apache.commons.math3.util.PrecisionTest();
+               object.testEqualsIncludingNaNWithAllowedDelta();
         }
     }
 

@@ -10,6 +10,30 @@ public class ClassicalRungeKuttaIntegratorTest extends TestJPF {
         runTestsOfThisClass(testMethods);
     }
     @Test(timeout=1800000)
+    public void testDecreasingSteps() throws Exception {
+        if (verifyNoPropertyViolation(config)) {
+               org.apache.commons.math3.ode.nonstiff.ClassicalRungeKuttaIntegratorTest object = new org.apache.commons.math3.ode.nonstiff.ClassicalRungeKuttaIntegratorTest();
+               object.testDecreasingSteps();
+        }
+    }
+
+    @Test(timeout=1800000)
+    public void testSmallStep() throws Exception {
+        if (verifyNoPropertyViolation(config)) {
+               org.apache.commons.math3.ode.nonstiff.ClassicalRungeKuttaIntegratorTest object = new org.apache.commons.math3.ode.nonstiff.ClassicalRungeKuttaIntegratorTest();
+               object.testSmallStep();
+        }
+    }
+
+    @Test(timeout=1800000)
+    public void testBigStep() throws Exception {
+        if (verifyNoPropertyViolation(config)) {
+               org.apache.commons.math3.ode.nonstiff.ClassicalRungeKuttaIntegratorTest object = new org.apache.commons.math3.ode.nonstiff.ClassicalRungeKuttaIntegratorTest();
+               object.testBigStep();
+        }
+    }
+
+    @Test(timeout=1800000)
     public void testMissedEndEvent() throws Exception {
         if (verifyNoPropertyViolation(config)) {
                org.apache.commons.math3.ode.nonstiff.ClassicalRungeKuttaIntegratorTest object = new org.apache.commons.math3.ode.nonstiff.ClassicalRungeKuttaIntegratorTest();
@@ -46,30 +70,6 @@ public class ClassicalRungeKuttaIntegratorTest extends TestJPF {
         if (verifyNoPropertyViolation(config)) {
                org.apache.commons.math3.ode.nonstiff.ClassicalRungeKuttaIntegratorTest object = new org.apache.commons.math3.ode.nonstiff.ClassicalRungeKuttaIntegratorTest();
                object.testStepSize();
-        }
-    }
-
-    @Test(timeout=1800000)
-    public void testDecreasingSteps() throws Exception {
-        if (verifyNoPropertyViolation(config)) {
-               org.apache.commons.math3.ode.nonstiff.ClassicalRungeKuttaIntegratorTest object = new org.apache.commons.math3.ode.nonstiff.ClassicalRungeKuttaIntegratorTest();
-               object.testDecreasingSteps();
-        }
-    }
-
-    @Test(timeout=1800000)
-    public void testSmallStep() throws Exception {
-        if (verifyNoPropertyViolation(config)) {
-               org.apache.commons.math3.ode.nonstiff.ClassicalRungeKuttaIntegratorTest object = new org.apache.commons.math3.ode.nonstiff.ClassicalRungeKuttaIntegratorTest();
-               object.testSmallStep();
-        }
-    }
-
-    @Test(timeout=1800000)
-    public void testBigStep() throws Exception {
-        if (verifyNoPropertyViolation(config)) {
-               org.apache.commons.math3.ode.nonstiff.ClassicalRungeKuttaIntegratorTest object = new org.apache.commons.math3.ode.nonstiff.ClassicalRungeKuttaIntegratorTest();
-               object.testBigStep();
         }
     }
 

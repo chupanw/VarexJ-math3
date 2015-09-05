@@ -26,6 +26,30 @@ public class MinTest extends TestJPF {
     }
 
     @Test(timeout=1800000)
+    public void testConsistency() throws Exception {
+        if (verifyNoPropertyViolation(config)) {
+               org.apache.commons.math3.stat.descriptive.rank.MinTest object = new org.apache.commons.math3.stat.descriptive.rank.MinTest();
+               object.testConsistency();
+        }
+    }
+
+    @Test(timeout=1800000)
+    public void testSerial() throws Exception {
+        if (verifyNoPropertyViolation(config)) {
+               org.apache.commons.math3.stat.descriptive.rank.MinTest object = new org.apache.commons.math3.stat.descriptive.rank.MinTest();
+               object.testSerial();
+        }
+    }
+
+    @Test(timeout=1800000)
+    public void testEqualsAndHashCode() throws Exception {
+        if (verifyNoPropertyViolation(config)) {
+               org.apache.commons.math3.stat.descriptive.rank.MinTest object = new org.apache.commons.math3.stat.descriptive.rank.MinTest();
+               object.testEqualsAndHashCode();
+        }
+    }
+
+    @Test(timeout=1800000)
     public void testIncrementation() throws Exception {
         if (verifyNoPropertyViolation(config)) {
                org.apache.commons.math3.stat.descriptive.rank.MinTest object = new org.apache.commons.math3.stat.descriptive.rank.MinTest();
@@ -54,30 +78,6 @@ public class MinTest extends TestJPF {
         if (verifyNoPropertyViolation(config)) {
                org.apache.commons.math3.stat.descriptive.rank.MinTest object = new org.apache.commons.math3.stat.descriptive.rank.MinTest();
                object.testSerialization();
-        }
-    }
-
-    @Test(timeout=1800000)
-    public void testSerial() throws Exception {
-        if (verifyNoPropertyViolation(config)) {
-               org.apache.commons.math3.stat.descriptive.rank.MinTest object = new org.apache.commons.math3.stat.descriptive.rank.MinTest();
-               object.testSerial();
-        }
-    }
-
-    @Test(timeout=1800000)
-    public void testEqualsAndHashCode() throws Exception {
-        if (verifyNoPropertyViolation(config)) {
-               org.apache.commons.math3.stat.descriptive.rank.MinTest object = new org.apache.commons.math3.stat.descriptive.rank.MinTest();
-               object.testEqualsAndHashCode();
-        }
-    }
-
-    @Test(timeout=1800000)
-    public void testConsistency() throws Exception {
-        if (verifyNoPropertyViolation(config)) {
-               org.apache.commons.math3.stat.descriptive.rank.MinTest object = new org.apache.commons.math3.stat.descriptive.rank.MinTest();
-               object.testConsistency();
         }
     }
 

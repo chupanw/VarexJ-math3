@@ -10,6 +10,14 @@ public class EventFilterTest extends TestJPF {
         runTestsOfThisClass(testMethods);
     }
     @Test(timeout=1800000)
+    public void testHistoryIncreasingForward() throws Exception {
+        if (verifyNoPropertyViolation(config)) {
+               org.apache.commons.math3.ode.events.EventFilterTest object = new org.apache.commons.math3.ode.events.EventFilterTest();
+               object.testHistoryIncreasingForward();
+        }
+    }
+
+    @Test(timeout=1800000)
     public void testHistoryIncreasingBackward() throws Exception {
         if (verifyNoPropertyViolation(config)) {
                org.apache.commons.math3.ode.events.EventFilterTest object = new org.apache.commons.math3.ode.events.EventFilterTest();
@@ -22,14 +30,6 @@ public class EventFilterTest extends TestJPF {
         if (verifyNoPropertyViolation(config)) {
                org.apache.commons.math3.ode.events.EventFilterTest object = new org.apache.commons.math3.ode.events.EventFilterTest();
                object.testHistoryDecreasingForward();
-        }
-    }
-
-    @Test(timeout=1800000)
-    public void testHistoryIncreasingForward() throws Exception {
-        if (verifyNoPropertyViolation(config)) {
-               org.apache.commons.math3.ode.events.EventFilterTest object = new org.apache.commons.math3.ode.events.EventFilterTest();
-               object.testHistoryIncreasingForward();
         }
     }
 

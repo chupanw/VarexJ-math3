@@ -10,14 +10,6 @@ public class VarianceTest extends TestJPF {
         runTestsOfThisClass(testMethods);
     }
     @Test(timeout=1800000)
-    public void testNaN() throws Exception {
-        if (verifyNoPropertyViolation(config)) {
-               org.apache.commons.math3.stat.descriptive.moment.VarianceTest object = new org.apache.commons.math3.stat.descriptive.moment.VarianceTest();
-               object.testNaN();
-        }
-    }
-
-    @Test(timeout=1800000)
     public void testWeightedVariance() throws Exception {
         if (verifyNoPropertyViolation(config)) {
                org.apache.commons.math3.stat.descriptive.moment.VarianceTest object = new org.apache.commons.math3.stat.descriptive.moment.VarianceTest();
@@ -26,10 +18,42 @@ public class VarianceTest extends TestJPF {
     }
 
     @Test(timeout=1800000)
+    public void testNaN() throws Exception {
+        if (verifyNoPropertyViolation(config)) {
+               org.apache.commons.math3.stat.descriptive.moment.VarianceTest object = new org.apache.commons.math3.stat.descriptive.moment.VarianceTest();
+               object.testNaN();
+        }
+    }
+
+    @Test(timeout=1800000)
     public void testPopulation() throws Exception {
         if (verifyNoPropertyViolation(config)) {
                org.apache.commons.math3.stat.descriptive.moment.VarianceTest object = new org.apache.commons.math3.stat.descriptive.moment.VarianceTest();
                object.testPopulation();
+        }
+    }
+
+    @Test(timeout=1800000)
+    public void testConsistency() throws Exception {
+        if (verifyNoPropertyViolation(config)) {
+               org.apache.commons.math3.stat.descriptive.moment.VarianceTest object = new org.apache.commons.math3.stat.descriptive.moment.VarianceTest();
+               object.testConsistency();
+        }
+    }
+
+    @Test(timeout=1800000)
+    public void testSerial() throws Exception {
+        if (verifyNoPropertyViolation(config)) {
+               org.apache.commons.math3.stat.descriptive.moment.VarianceTest object = new org.apache.commons.math3.stat.descriptive.moment.VarianceTest();
+               object.testSerial();
+        }
+    }
+
+    @Test(timeout=1800000)
+    public void testEqualsAndHashCode() throws Exception {
+        if (verifyNoPropertyViolation(config)) {
+               org.apache.commons.math3.stat.descriptive.moment.VarianceTest object = new org.apache.commons.math3.stat.descriptive.moment.VarianceTest();
+               object.testEqualsAndHashCode();
         }
     }
 
@@ -62,30 +86,6 @@ public class VarianceTest extends TestJPF {
         if (verifyNoPropertyViolation(config)) {
                org.apache.commons.math3.stat.descriptive.moment.VarianceTest object = new org.apache.commons.math3.stat.descriptive.moment.VarianceTest();
                object.testSerialization();
-        }
-    }
-
-    @Test(timeout=1800000)
-    public void testSerial() throws Exception {
-        if (verifyNoPropertyViolation(config)) {
-               org.apache.commons.math3.stat.descriptive.moment.VarianceTest object = new org.apache.commons.math3.stat.descriptive.moment.VarianceTest();
-               object.testSerial();
-        }
-    }
-
-    @Test(timeout=1800000)
-    public void testEqualsAndHashCode() throws Exception {
-        if (verifyNoPropertyViolation(config)) {
-               org.apache.commons.math3.stat.descriptive.moment.VarianceTest object = new org.apache.commons.math3.stat.descriptive.moment.VarianceTest();
-               object.testEqualsAndHashCode();
-        }
-    }
-
-    @Test(timeout=1800000)
-    public void testConsistency() throws Exception {
-        if (verifyNoPropertyViolation(config)) {
-               org.apache.commons.math3.stat.descriptive.moment.VarianceTest object = new org.apache.commons.math3.stat.descriptive.moment.VarianceTest();
-               object.testConsistency();
         }
     }
 

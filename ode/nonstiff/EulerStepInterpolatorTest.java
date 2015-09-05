@@ -10,26 +10,18 @@ public class EulerStepInterpolatorTest extends TestJPF {
         runTestsOfThisClass(testMethods);
     }
     @Test(timeout=1800000)
-    public void derivativesConsistency() throws Exception {
-        if (verifyNoPropertyViolation(config)) {
-               org.apache.commons.math3.ode.nonstiff.EulerStepInterpolatorTest object = new org.apache.commons.math3.ode.nonstiff.EulerStepInterpolatorTest();
-               object.derivativesConsistency();
-        }
-    }
-
-    @Test(timeout=1800000)
-    public void serialization() throws Exception {
-        if (verifyNoPropertyViolation(config)) {
-               org.apache.commons.math3.ode.nonstiff.EulerStepInterpolatorTest object = new org.apache.commons.math3.ode.nonstiff.EulerStepInterpolatorTest();
-               object.serialization();
-        }
-    }
-
-    @Test(timeout=1800000)
     public void noReset() throws Exception {
         if (verifyNoPropertyViolation(config)) {
                org.apache.commons.math3.ode.nonstiff.EulerStepInterpolatorTest object = new org.apache.commons.math3.ode.nonstiff.EulerStepInterpolatorTest();
                object.noReset();
+        }
+    }
+
+    @Test(timeout=1800000)
+    public void interpolationAtBounds() throws Exception {
+        if (verifyNoPropertyViolation(config)) {
+               org.apache.commons.math3.ode.nonstiff.EulerStepInterpolatorTest object = new org.apache.commons.math3.ode.nonstiff.EulerStepInterpolatorTest();
+               object.interpolationAtBounds();
         }
     }
 
@@ -42,10 +34,18 @@ public class EulerStepInterpolatorTest extends TestJPF {
     }
 
     @Test(timeout=1800000)
-    public void interpolationAtBounds() throws Exception {
+    public void derivativesConsistency() throws Exception {
         if (verifyNoPropertyViolation(config)) {
                org.apache.commons.math3.ode.nonstiff.EulerStepInterpolatorTest object = new org.apache.commons.math3.ode.nonstiff.EulerStepInterpolatorTest();
-               object.interpolationAtBounds();
+               object.derivativesConsistency();
+        }
+    }
+
+    @Test(timeout=1800000)
+    public void serialization() throws Exception {
+        if (verifyNoPropertyViolation(config)) {
+               org.apache.commons.math3.ode.nonstiff.EulerStepInterpolatorTest object = new org.apache.commons.math3.ode.nonstiff.EulerStepInterpolatorTest();
+               object.serialization();
         }
     }
 

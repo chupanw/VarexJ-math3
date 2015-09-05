@@ -28,24 +28,6 @@ public class ValueServerTest extends TestJPF {
     }
 
     @Test(timeout=1800000)
-    public void testEmptyDigestFile() throws Exception {
-        if (verifyNoPropertyViolation(config)) {
-               org.apache.commons.math3.random.ValueServerTest object = new org.apache.commons.math3.random.ValueServerTest();
-               object.setUp();
-               object.testEmptyDigestFile();
-        }
-    }
-
-    @Test(timeout=1800000)
-    public void testReplay() throws Exception {
-        if (verifyNoPropertyViolation(config)) {
-               org.apache.commons.math3.random.ValueServerTest object = new org.apache.commons.math3.random.ValueServerTest();
-               object.setUp();
-               object.testReplay();
-        }
-    }
-
-    @Test(timeout=1800000)
     public void testNextDigestFail() throws Exception {
         if (verifyNoPropertyViolation(config)) {
                org.apache.commons.math3.random.ValueServerTest object = new org.apache.commons.math3.random.ValueServerTest();
@@ -60,6 +42,24 @@ public class ValueServerTest extends TestJPF {
                org.apache.commons.math3.random.ValueServerTest object = new org.apache.commons.math3.random.ValueServerTest();
                object.setUp();
                object.testEmptyReplayFile();
+        }
+    }
+
+    @Test(timeout=1800000)
+    public void testEmptyDigestFile() throws Exception {
+        if (verifyNoPropertyViolation(config)) {
+               org.apache.commons.math3.random.ValueServerTest object = new org.apache.commons.math3.random.ValueServerTest();
+               object.setUp();
+               object.testEmptyDigestFile();
+        }
+    }
+
+    @Test(timeout=1800000)
+    public void testReplay() throws Exception {
+        if (verifyNoPropertyViolation(config)) {
+               org.apache.commons.math3.random.ValueServerTest object = new org.apache.commons.math3.random.ValueServerTest();
+               object.setUp();
+               object.testReplay();
         }
     }
 

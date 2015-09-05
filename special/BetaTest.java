@@ -66,6 +66,46 @@ public class BetaTest extends TestJPF {
     }
 
     @Test(timeout=1800000)
+    public void testLogGammaMinusLogGammaSumPrecondition1() throws Exception {
+        if (verifyUnhandledException("org.apache.commons.math3.exception.NumberIsTooSmallException", config)) {
+               org.apache.commons.math3.special.BetaTest object = new org.apache.commons.math3.special.BetaTest();
+               object.testLogGammaMinusLogGammaSumPrecondition1();
+        }
+    }
+
+    @Test(timeout=1800000)
+    public void testLogGammaMinusLogGammaSumPrecondition2() throws Exception {
+        if (verifyUnhandledException("org.apache.commons.math3.exception.NumberIsTooSmallException", config)) {
+               org.apache.commons.math3.special.BetaTest object = new org.apache.commons.math3.special.BetaTest();
+               object.testLogGammaMinusLogGammaSumPrecondition2();
+        }
+    }
+
+    @Test(timeout=1800000)
+    public void testSumDeltaMinusDeltaSum() throws Exception {
+        if (verifyNoPropertyViolation(config)) {
+               org.apache.commons.math3.special.BetaTest object = new org.apache.commons.math3.special.BetaTest();
+               object.testSumDeltaMinusDeltaSum();
+        }
+    }
+
+    @Test(timeout=1800000)
+    public void testSumDeltaMinusDeltaSumPrecondition1() throws Exception {
+        if (verifyUnhandledException("org.apache.commons.math3.exception.NumberIsTooSmallException", config)) {
+               org.apache.commons.math3.special.BetaTest object = new org.apache.commons.math3.special.BetaTest();
+               object.testSumDeltaMinusDeltaSumPrecondition1();
+        }
+    }
+
+    @Test(timeout=1800000)
+    public void testSumDeltaMinusDeltaSumPrecondition2() throws Exception {
+        if (verifyUnhandledException("org.apache.commons.math3.exception.NumberIsTooSmallException", config)) {
+               org.apache.commons.math3.special.BetaTest object = new org.apache.commons.math3.special.BetaTest();
+               object.testSumDeltaMinusDeltaSumPrecondition2();
+        }
+    }
+
+    @Test(timeout=1800000)
     public void testRegularizedBetaZeroPositivePositive() throws Exception {
         if (verifyNoPropertyViolation(config)) {
                org.apache.commons.math3.special.BetaTest object = new org.apache.commons.math3.special.BetaTest();
@@ -198,46 +238,6 @@ public class BetaTest extends TestJPF {
         if (verifyNoPropertyViolation(config)) {
                org.apache.commons.math3.special.BetaTest object = new org.apache.commons.math3.special.BetaTest();
                object.testLogGammaMinusLogGammaSum();
-        }
-    }
-
-    @Test(timeout=1800000)
-    public void testLogGammaMinusLogGammaSumPrecondition1() throws Exception {
-        if (verifyUnhandledException("org.apache.commons.math3.exception.NumberIsTooSmallException", config)) {
-               org.apache.commons.math3.special.BetaTest object = new org.apache.commons.math3.special.BetaTest();
-               object.testLogGammaMinusLogGammaSumPrecondition1();
-        }
-    }
-
-    @Test(timeout=1800000)
-    public void testLogGammaMinusLogGammaSumPrecondition2() throws Exception {
-        if (verifyUnhandledException("org.apache.commons.math3.exception.NumberIsTooSmallException", config)) {
-               org.apache.commons.math3.special.BetaTest object = new org.apache.commons.math3.special.BetaTest();
-               object.testLogGammaMinusLogGammaSumPrecondition2();
-        }
-    }
-
-    @Test(timeout=1800000)
-    public void testSumDeltaMinusDeltaSum() throws Exception {
-        if (verifyNoPropertyViolation(config)) {
-               org.apache.commons.math3.special.BetaTest object = new org.apache.commons.math3.special.BetaTest();
-               object.testSumDeltaMinusDeltaSum();
-        }
-    }
-
-    @Test(timeout=1800000)
-    public void testSumDeltaMinusDeltaSumPrecondition1() throws Exception {
-        if (verifyUnhandledException("org.apache.commons.math3.exception.NumberIsTooSmallException", config)) {
-               org.apache.commons.math3.special.BetaTest object = new org.apache.commons.math3.special.BetaTest();
-               object.testSumDeltaMinusDeltaSumPrecondition1();
-        }
-    }
-
-    @Test(timeout=1800000)
-    public void testSumDeltaMinusDeltaSumPrecondition2() throws Exception {
-        if (verifyUnhandledException("org.apache.commons.math3.exception.NumberIsTooSmallException", config)) {
-               org.apache.commons.math3.special.BetaTest object = new org.apache.commons.math3.special.BetaTest();
-               object.testSumDeltaMinusDeltaSumPrecondition2();
         }
     }
 

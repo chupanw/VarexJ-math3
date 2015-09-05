@@ -10,30 +10,6 @@ public class MidpointIntegratorTest extends TestJPF {
         runTestsOfThisClass(testMethods);
     }
     @Test(timeout=1800000)
-    public void testBackward() throws Exception {
-        if (verifyNoPropertyViolation(config)) {
-               org.apache.commons.math3.ode.nonstiff.MidpointIntegratorTest object = new org.apache.commons.math3.ode.nonstiff.MidpointIntegratorTest();
-               object.testBackward();
-        }
-    }
-
-    @Test(timeout=1800000)
-    public void testStepSize() throws Exception {
-        if (verifyNoPropertyViolation(config)) {
-               org.apache.commons.math3.ode.nonstiff.MidpointIntegratorTest object = new org.apache.commons.math3.ode.nonstiff.MidpointIntegratorTest();
-               object.testStepSize();
-        }
-    }
-
-    @Test(timeout=1800000)
-    public void testDimensionCheck() throws Exception {
-        if (verifyUnhandledException("org.apache.commons.math3.exception.DimensionMismatchException", config)) {
-               org.apache.commons.math3.ode.nonstiff.MidpointIntegratorTest object = new org.apache.commons.math3.ode.nonstiff.MidpointIntegratorTest();
-               object.testDimensionCheck();
-        }
-    }
-
-    @Test(timeout=1800000)
     public void testDecreasingSteps() throws Exception {
         if (verifyNoPropertyViolation(config)) {
                org.apache.commons.math3.ode.nonstiff.MidpointIntegratorTest object = new org.apache.commons.math3.ode.nonstiff.MidpointIntegratorTest();
@@ -54,6 +30,30 @@ public class MidpointIntegratorTest extends TestJPF {
         if (verifyNoPropertyViolation(config)) {
                org.apache.commons.math3.ode.nonstiff.MidpointIntegratorTest object = new org.apache.commons.math3.ode.nonstiff.MidpointIntegratorTest();
                object.testBigStep();
+        }
+    }
+
+    @Test(timeout=1800000)
+    public void testBackward() throws Exception {
+        if (verifyNoPropertyViolation(config)) {
+               org.apache.commons.math3.ode.nonstiff.MidpointIntegratorTest object = new org.apache.commons.math3.ode.nonstiff.MidpointIntegratorTest();
+               object.testBackward();
+        }
+    }
+
+    @Test(timeout=1800000)
+    public void testStepSize() throws Exception {
+        if (verifyNoPropertyViolation(config)) {
+               org.apache.commons.math3.ode.nonstiff.MidpointIntegratorTest object = new org.apache.commons.math3.ode.nonstiff.MidpointIntegratorTest();
+               object.testStepSize();
+        }
+    }
+
+    @Test(timeout=1800000)
+    public void testDimensionCheck() throws Exception {
+        if (verifyUnhandledException("org.apache.commons.math3.exception.DimensionMismatchException", config)) {
+               org.apache.commons.math3.ode.nonstiff.MidpointIntegratorTest object = new org.apache.commons.math3.ode.nonstiff.MidpointIntegratorTest();
+               object.testDimensionCheck();
         }
     }
 

@@ -10,22 +10,6 @@ public class SimplexOptimizerNelderMeadTest extends TestJPF {
         runTestsOfThisClass(testMethods);
     }
     @Test(timeout=1800000)
-    public void testLeastSquares1() throws Exception {
-        if (verifyNoPropertyViolation(config)) {
-               org.apache.commons.math3.optimization.direct.SimplexOptimizerNelderMeadTest object = new org.apache.commons.math3.optimization.direct.SimplexOptimizerNelderMeadTest();
-               object.testLeastSquares1();
-        }
-    }
-
-    @Test(timeout=1800000)
-    public void testRosenbrock() throws Exception {
-        if (verifyNoPropertyViolation(config)) {
-               org.apache.commons.math3.optimization.direct.SimplexOptimizerNelderMeadTest object = new org.apache.commons.math3.optimization.direct.SimplexOptimizerNelderMeadTest();
-               object.testRosenbrock();
-        }
-    }
-
-    @Test(timeout=1800000)
     public void testMinimize1() throws Exception {
         if (verifyNoPropertyViolation(config)) {
                org.apache.commons.math3.optimization.direct.SimplexOptimizerNelderMeadTest object = new org.apache.commons.math3.optimization.direct.SimplexOptimizerNelderMeadTest();
@@ -66,6 +50,30 @@ public class SimplexOptimizerNelderMeadTest extends TestJPF {
     }
 
     @Test(timeout=1800000)
+    public void testRosenbrock() throws Exception {
+        if (verifyNoPropertyViolation(config)) {
+               org.apache.commons.math3.optimization.direct.SimplexOptimizerNelderMeadTest object = new org.apache.commons.math3.optimization.direct.SimplexOptimizerNelderMeadTest();
+               object.testRosenbrock();
+        }
+    }
+
+    @Test(timeout=1800000)
+    public void testLeastSquares2() throws Exception {
+        if (verifyNoPropertyViolation(config)) {
+               org.apache.commons.math3.optimization.direct.SimplexOptimizerNelderMeadTest object = new org.apache.commons.math3.optimization.direct.SimplexOptimizerNelderMeadTest();
+               object.testLeastSquares2();
+        }
+    }
+
+    @Test(timeout=1800000)
+    public void testLeastSquares1() throws Exception {
+        if (verifyNoPropertyViolation(config)) {
+               org.apache.commons.math3.optimization.direct.SimplexOptimizerNelderMeadTest object = new org.apache.commons.math3.optimization.direct.SimplexOptimizerNelderMeadTest();
+               object.testLeastSquares1();
+        }
+    }
+
+    @Test(timeout=1800000)
     public void testLeastSquares3() throws Exception {
         if (verifyNoPropertyViolation(config)) {
                org.apache.commons.math3.optimization.direct.SimplexOptimizerNelderMeadTest object = new org.apache.commons.math3.optimization.direct.SimplexOptimizerNelderMeadTest();
@@ -78,14 +86,6 @@ public class SimplexOptimizerNelderMeadTest extends TestJPF {
         if (verifyUnhandledException("org.apache.commons.math3.exception.TooManyEvaluationsException", config)) {
                org.apache.commons.math3.optimization.direct.SimplexOptimizerNelderMeadTest object = new org.apache.commons.math3.optimization.direct.SimplexOptimizerNelderMeadTest();
                object.testMaxIterations();
-        }
-    }
-
-    @Test(timeout=1800000)
-    public void testLeastSquares2() throws Exception {
-        if (verifyNoPropertyViolation(config)) {
-               org.apache.commons.math3.optimization.direct.SimplexOptimizerNelderMeadTest object = new org.apache.commons.math3.optimization.direct.SimplexOptimizerNelderMeadTest();
-               object.testLeastSquares2();
         }
     }
 

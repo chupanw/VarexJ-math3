@@ -10,22 +10,6 @@ public class PlaneTest extends TestJPF {
         runTestsOfThisClass(testMethods);
     }
     @Test(timeout=1800000)
-    public void testOffset() throws Exception {
-        if (verifyNoPropertyViolation(config)) {
-               org.apache.commons.math3.geometry.euclidean.threed.PlaneTest object = new org.apache.commons.math3.geometry.euclidean.threed.PlaneTest();
-               object.testOffset();
-        }
-    }
-
-    @Test(timeout=1800000)
-    public void testPoint() throws Exception {
-        if (verifyNoPropertyViolation(config)) {
-               org.apache.commons.math3.geometry.euclidean.threed.PlaneTest object = new org.apache.commons.math3.geometry.euclidean.threed.PlaneTest();
-               object.testPoint();
-        }
-    }
-
-    @Test(timeout=1800000)
     public void testThreePoints() throws Exception {
         if (verifyNoPropertyViolation(config)) {
                org.apache.commons.math3.geometry.euclidean.threed.PlaneTest object = new org.apache.commons.math3.geometry.euclidean.threed.PlaneTest();
@@ -38,6 +22,22 @@ public class PlaneTest extends TestJPF {
         if (verifyNoPropertyViolation(config)) {
                org.apache.commons.math3.geometry.euclidean.threed.PlaneTest object = new org.apache.commons.math3.geometry.euclidean.threed.PlaneTest();
                object.testRotate();
+        }
+    }
+
+    @Test(timeout=1800000)
+    public void testOffset() throws Exception {
+        if (verifyNoPropertyViolation(config)) {
+               org.apache.commons.math3.geometry.euclidean.threed.PlaneTest object = new org.apache.commons.math3.geometry.euclidean.threed.PlaneTest();
+               object.testOffset();
+        }
+    }
+
+    @Test(timeout=1800000)
+    public void testPoint() throws Exception {
+        if (verifyNoPropertyViolation(config)) {
+               org.apache.commons.math3.geometry.euclidean.threed.PlaneTest object = new org.apache.commons.math3.geometry.euclidean.threed.PlaneTest();
+               object.testPoint();
         }
     }
 

@@ -18,6 +18,14 @@ public class SparseFieldVectorTest extends TestJPF {
     }
 
     @Test(timeout=1800000)
+    public void testPredicates() throws Exception {
+        if (verifyNoPropertyViolation(config)) {
+               org.apache.commons.math3.linear.SparseFieldVectorTest object = new org.apache.commons.math3.linear.SparseFieldVectorTest();
+               object.testPredicates();
+        }
+    }
+
+    @Test(timeout=1800000)
     public void testMapFunctions() throws Exception {
         if (verifyNoPropertyViolation(config)) {
                org.apache.commons.math3.linear.SparseFieldVectorTest object = new org.apache.commons.math3.linear.SparseFieldVectorTest();
@@ -38,14 +46,6 @@ public class SparseFieldVectorTest extends TestJPF {
         if (verifyNoPropertyViolation(config)) {
                org.apache.commons.math3.linear.SparseFieldVectorTest object = new org.apache.commons.math3.linear.SparseFieldVectorTest();
                object.testOuterProduct();
-        }
-    }
-
-    @Test(timeout=1800000)
-    public void testPredicates() throws Exception {
-        if (verifyNoPropertyViolation(config)) {
-               org.apache.commons.math3.linear.SparseFieldVectorTest object = new org.apache.commons.math3.linear.SparseFieldVectorTest();
-               object.testPredicates();
         }
     }
 

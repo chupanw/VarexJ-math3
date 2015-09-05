@@ -10,6 +10,22 @@ public class LevenbergMarquardtOptimizerTest extends TestJPF {
         runTestsOfThisClass(testMethods);
     }
     @Test(timeout=1800000)
+    public void testCircleFitting2() throws Exception {
+        if (verifyNoPropertyViolation(config)) {
+               org.apache.commons.math3.optimization.general.LevenbergMarquardtOptimizerTest object = new org.apache.commons.math3.optimization.general.LevenbergMarquardtOptimizerTest();
+               object.testCircleFitting2();
+        }
+    }
+
+    @Test(timeout=1800000)
+    public void testNonInvertible() throws Exception {
+        if (verifyUnhandledException("org.apache.commons.math3.linear.SingularMatrixException", config)) {
+               org.apache.commons.math3.optimization.general.LevenbergMarquardtOptimizerTest object = new org.apache.commons.math3.optimization.general.LevenbergMarquardtOptimizerTest();
+               object.testNonInvertible();
+        }
+    }
+
+    @Test(timeout=1800000)
     public void testControlParameters() throws Exception {
         if (verifyNoPropertyViolation(config)) {
                org.apache.commons.math3.optimization.general.LevenbergMarquardtOptimizerTest object = new org.apache.commons.math3.optimization.general.LevenbergMarquardtOptimizerTest();
@@ -26,26 +42,10 @@ public class LevenbergMarquardtOptimizerTest extends TestJPF {
     }
 
     @Test(timeout=1800000)
-    public void testCircleFitting2() throws Exception {
-        if (verifyNoPropertyViolation(config)) {
-               org.apache.commons.math3.optimization.general.LevenbergMarquardtOptimizerTest object = new org.apache.commons.math3.optimization.general.LevenbergMarquardtOptimizerTest();
-               object.testCircleFitting2();
-        }
-    }
-
-    @Test(timeout=1800000)
     public void testMath199() throws Exception {
         if (verifyNoPropertyViolation(config)) {
                org.apache.commons.math3.optimization.general.LevenbergMarquardtOptimizerTest object = new org.apache.commons.math3.optimization.general.LevenbergMarquardtOptimizerTest();
                object.testMath199();
-        }
-    }
-
-    @Test(timeout=1800000)
-    public void testNonInvertible() throws Exception {
-        if (verifyUnhandledException("org.apache.commons.math3.linear.SingularMatrixException", config)) {
-               org.apache.commons.math3.optimization.general.LevenbergMarquardtOptimizerTest object = new org.apache.commons.math3.optimization.general.LevenbergMarquardtOptimizerTest();
-               object.testNonInvertible();
         }
     }
 

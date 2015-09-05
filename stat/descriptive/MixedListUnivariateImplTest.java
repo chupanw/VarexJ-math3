@@ -10,14 +10,6 @@ public class MixedListUnivariateImplTest extends TestJPF {
         runTestsOfThisClass(testMethods);
     }
     @Test(timeout=1800000)
-    public void testStats() throws Exception {
-        if (verifyNoPropertyViolation(config)) {
-               org.apache.commons.math3.stat.descriptive.MixedListUnivariateImplTest object = new org.apache.commons.math3.stat.descriptive.MixedListUnivariateImplTest();
-               object.testStats();
-        }
-    }
-
-    @Test(timeout=1800000)
     public void testN0andN1Conditions() throws Exception {
         if (verifyNoPropertyViolation(config)) {
                org.apache.commons.math3.stat.descriptive.MixedListUnivariateImplTest object = new org.apache.commons.math3.stat.descriptive.MixedListUnivariateImplTest();
@@ -38,6 +30,14 @@ public class MixedListUnivariateImplTest extends TestJPF {
         if (verifyNoPropertyViolation(config)) {
                org.apache.commons.math3.stat.descriptive.MixedListUnivariateImplTest object = new org.apache.commons.math3.stat.descriptive.MixedListUnivariateImplTest();
                object.testProductAndGeometricMean();
+        }
+    }
+
+    @Test(timeout=1800000)
+    public void testStats() throws Exception {
+        if (verifyNoPropertyViolation(config)) {
+               org.apache.commons.math3.stat.descriptive.MixedListUnivariateImplTest object = new org.apache.commons.math3.stat.descriptive.MixedListUnivariateImplTest();
+               object.testStats();
         }
     }
 

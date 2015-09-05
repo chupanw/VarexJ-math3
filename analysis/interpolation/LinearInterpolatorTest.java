@@ -10,22 +10,6 @@ public class LinearInterpolatorTest extends TestJPF {
         runTestsOfThisClass(testMethods);
     }
     @Test(timeout=1800000)
-    public void testIllegalArguments() throws Exception {
-        if (verifyNoPropertyViolation(config)) {
-               org.apache.commons.math3.analysis.interpolation.LinearInterpolatorTest object = new org.apache.commons.math3.analysis.interpolation.LinearInterpolatorTest();
-               object.testIllegalArguments();
-        }
-    }
-
-    @Test(timeout=1800000)
-    public void testInterpolateLinear() throws Exception {
-        if (verifyNoPropertyViolation(config)) {
-               org.apache.commons.math3.analysis.interpolation.LinearInterpolatorTest object = new org.apache.commons.math3.analysis.interpolation.LinearInterpolatorTest();
-               object.testInterpolateLinear();
-        }
-    }
-
-    @Test(timeout=1800000)
     public void testInterpolateLinearDegenerateTwoSegment() throws Exception {
         if (verifyNoPropertyViolation(config)) {
                org.apache.commons.math3.analysis.interpolation.LinearInterpolatorTest object = new org.apache.commons.math3.analysis.interpolation.LinearInterpolatorTest();
@@ -38,6 +22,22 @@ public class LinearInterpolatorTest extends TestJPF {
         if (verifyNoPropertyViolation(config)) {
                org.apache.commons.math3.analysis.interpolation.LinearInterpolatorTest object = new org.apache.commons.math3.analysis.interpolation.LinearInterpolatorTest();
                object.testInterpolateLinearDegenerateThreeSegment();
+        }
+    }
+
+    @Test(timeout=1800000)
+    public void testInterpolateLinear() throws Exception {
+        if (verifyNoPropertyViolation(config)) {
+               org.apache.commons.math3.analysis.interpolation.LinearInterpolatorTest object = new org.apache.commons.math3.analysis.interpolation.LinearInterpolatorTest();
+               object.testInterpolateLinear();
+        }
+    }
+
+    @Test(timeout=1800000)
+    public void testIllegalArguments() throws Exception {
+        if (verifyNoPropertyViolation(config)) {
+               org.apache.commons.math3.analysis.interpolation.LinearInterpolatorTest object = new org.apache.commons.math3.analysis.interpolation.LinearInterpolatorTest();
+               object.testIllegalArguments();
         }
     }
 

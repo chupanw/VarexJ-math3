@@ -18,10 +18,10 @@ public class SpearmansRankCorrelationTest extends TestJPF {
     }
 
     @Test(timeout=1800000)
-    public void testConstant() throws Exception {
+    public void testConsistency() throws Exception {
         if (verifyNoPropertyViolation(config)) {
                org.apache.commons.math3.stat.correlation.SpearmansRankCorrelationTest object = new org.apache.commons.math3.stat.correlation.SpearmansRankCorrelationTest();
-               object.testConstant();
+               object.testConsistency();
         }
     }
 
@@ -42,6 +42,14 @@ public class SpearmansRankCorrelationTest extends TestJPF {
     }
 
     @Test(timeout=1800000)
+    public void testConstant() throws Exception {
+        if (verifyNoPropertyViolation(config)) {
+               org.apache.commons.math3.stat.correlation.SpearmansRankCorrelationTest object = new org.apache.commons.math3.stat.correlation.SpearmansRankCorrelationTest();
+               object.testConstant();
+        }
+    }
+
+    @Test(timeout=1800000)
     public void testStdErrorConsistency() throws Exception {
         if (verifyNoPropertyViolation(config)) {
                org.apache.commons.math3.stat.correlation.SpearmansRankCorrelationTest object = new org.apache.commons.math3.stat.correlation.SpearmansRankCorrelationTest();
@@ -54,14 +62,6 @@ public class SpearmansRankCorrelationTest extends TestJPF {
         if (verifyNoPropertyViolation(config)) {
                org.apache.commons.math3.stat.correlation.SpearmansRankCorrelationTest object = new org.apache.commons.math3.stat.correlation.SpearmansRankCorrelationTest();
                object.testCovarianceConsistency();
-        }
-    }
-
-    @Test(timeout=1800000)
-    public void testConsistency() throws Exception {
-        if (verifyNoPropertyViolation(config)) {
-               org.apache.commons.math3.stat.correlation.SpearmansRankCorrelationTest object = new org.apache.commons.math3.stat.correlation.SpearmansRankCorrelationTest();
-               object.testConsistency();
         }
     }
 
